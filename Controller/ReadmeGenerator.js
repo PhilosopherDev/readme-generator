@@ -89,8 +89,11 @@ function generatePlatformProblems() {
     Object.keys(difficulties).forEach((diff) => {
         difficulties[diff] = Object.keys(solvedProblemModel).filter((key) => solvedProblemModel[key].difficulty === diff).sort((a, b) => solvedProblemModel[a].name.localeCompare(solvedProblemModel[b].name)).map((key) => {            
             let string = "- #### " + solvedProblemModel[key].name;
-            if (solvedProblemModel[key].url && solvedProblemModel[key].url.blog) string += ("\n" + "             - :pencil2: " + "[풀이]" + "(" + solvedProblemModel[key].url.blog + ")");
-            if (solvedProblemModel[key].url && solvedProblemModel[key].url.github) string += ("\n" + "             - :computer: " + "[코드]" + "(" + solvedProblemModel[key].url.github + ")");
+
+            if (solvedProblemModel[key].url && Array.isArray(solvedProblemModel[key].url) && solvedProblemModel[key].url.length > 0) {
+                solvedProblemModel[key].url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
+            }
+
             return string;
         }).join("\n         ");
     });
