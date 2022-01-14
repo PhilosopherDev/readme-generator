@@ -73,6 +73,7 @@ function makeTopics() {
 
 
 function generateOverview(difficulties, topics) {
+    /** difficulty */
     const level1 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num;
     const level2 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num
     const level3 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num
@@ -82,11 +83,19 @@ function generateOverview(difficulties, topics) {
     const silver = difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num
     const gold = difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num;
 
+    /** platform */
+    const programmers = level1 + level2 + level3;
+    const leetcode = easy + medium;
+    const boj = bronze + silver + gold;
+
+    /** data structure */
     const array = topics[TOPIC.DATA_STRUCTURE.ARRAY].num;
     const linkedList = topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].num;
     const hash = topics[TOPIC.DATA_STRUCTURE.HASH].num;
     const stack = topics[TOPIC.DATA_STRUCTURE.STACK].num;
     const queue = topics[TOPIC.DATA_STRUCTURE.QUEUE].num;
+
+    /** algorithm */
     const sorting = topics[TOPIC.SORTING].num;
     const bruteforce = topics[TOPIC.BRUTEFORCE].num;
     const dfs = topics[TOPIC.DFS].num;
@@ -94,17 +103,17 @@ function generateOverview(difficulties, topics) {
     const greedy = topics[TOPIC.GREEDY].num;
     const binarySearch = topics[TOPIC.BINARY_SEARCH].num;
 
-    return `# Coding Test Practice
+    return `# Coding Test Practice (${programmers + leetcode + boj})
  - # Overview
     - [Sort by Coding Test Platform](#sort-by-coding-test-platform)    
-      - [Programmers](#programmers)
+      - [Programmers (${programmers})](#programmers-${programmers})
         - [Level1 (${level1})](#level1-${level1})
         - [Level2 (${level2})](#level2-${level2})
         - [Level3 (${level3})](#level3-${level3})
-      - [Leetcode](#leetcode)
+      - [Leetcode (${leetcode})](#leetcode-${leetcode})
         - [Easy (${easy})](#easy-${easy})
         - [Medium (${medium})](#medium-${medium})
-      - [BOJ](#boj)
+      - [BOJ (${boj})](#boj-${boj})
         - [Bronze (${bronze})](#bronze-${bronze})
         - [Silver (${silver})](#silver-${silver})
         - [Gold (${gold})](#gold-${gold})
@@ -153,9 +162,13 @@ function generateOverview(difficulties, topics) {
 }
 
 function generatePlatformProblems(difficulties) {
+    const bronze = difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num;
+    const silver = difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num;
+    const gold = difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num;
+
     return `- ## Sort by Coding Test Platform
 
-    - ## Programmers
+    - ## Programmers (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num + difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num + difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
   
       - ### Level1 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num})
         ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].content}
@@ -164,28 +177,28 @@ function generatePlatformProblems(difficulties) {
       - ### Level3 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
         ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].content}
 
-    - ## Leetcode
+    - ## Leetcode (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num + difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
 
       - ### Easy (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num})
         ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].content}
       - ### Medium (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
         ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].content}
 
-    - ## BOJ
+    - ## BOJ (${bronze + silver + gold})
 
-      - ### Bronze (${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num})
+      - ### Bronze (${bronze})
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].content}
-      - ### Silver (${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num})
+      - ### Silver (${silver})
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].content}
-      - ### Gold (${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num})
+      - ### Gold (${gold})
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].content}
