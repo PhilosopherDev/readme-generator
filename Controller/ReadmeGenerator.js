@@ -13,8 +13,10 @@ function generateOverview() {
       - [Leetcode](#leetcode)
         - [Easy](#easy)
         - [Medium](#medium)
-        - [Hard](#hard)
       - [BOJ](#boj)
+        - [Bronze](#bronze)
+        - [Silver](#silver)
+        - [Gold](#gold)
     
     - [Sort by Related Topic](#sort-by-related-topic)
       - [자료구조](#자료구조)
@@ -66,24 +68,22 @@ function generatePlatformProblems() {
         [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3]: '',
         [DIFFICULTY[PLATFORM.LEETCODE].EASY]: '',
         [DIFFICULTY[PLATFORM.LEETCODE].MEDIUM]: '',
-        [DIFFICULTY[PLATFORM.LEETCODE].HARD]: '',
-        /**
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]]}
-         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]]}
-         */
+        // [DIFFICULTY[PLATFORM.LEETCODE].HARD]: '',
+        [DIFFICULTY[PLATFORM.BOJ].BRONZE[5]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].BRONZE[4]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].BRONZE[3]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].BRONZE[2]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].BRONZE[1]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].SILVER[5]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].SILVER[4]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].SILVER[3]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].SILVER[2]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].SILVER[1]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].GOLD[5]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].GOLD[4]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].GOLD[3]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].GOLD[2]]: '',
+        [DIFFICULTY[PLATFORM.BOJ].GOLD[1]]: ''
     } 
 
     Object.keys(difficulties).forEach((diff) => {
@@ -115,14 +115,27 @@ function generatePlatformProblems() {
         ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY]}
       - ### Medium
         ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM]}
-      - ### Hard
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].HARD]}
 
     - ## BOJ
 
       - ### Bronze
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]]}
       - ### Silver
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]]}
       - ### Gold
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]]}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]]}
     `
 }
 
