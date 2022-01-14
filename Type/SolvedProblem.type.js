@@ -49,7 +49,10 @@ const TOPIC = {
         HASH: "hash",
         STRING: "string",
         TREE: "tree",
-        BINARY_TREE: "binary_tree"
+        BINARY_TREE: "binary_tree",
+        DEQUE: "deque",
+        PRIORITY_QUEUE: "priority_queue",
+        GRAPH: "graph"
     },
     SORTING: "sorting",
     BRUTEFORCE: "bruteforce",
@@ -69,7 +72,8 @@ const TOPIC = {
     DVIDE_AND_CONQUER: "divide_and_conquer",
     COUNTING: "counting",
     MATRIX: "matrix",
-    SIMULATION: "simulation"
+    SIMULATION: "simulation",
+    CUMULATIVE_SUM: "cumulative_sum"
 }
 
 const LANGUAGE = {
