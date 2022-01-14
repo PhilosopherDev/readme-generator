@@ -1,3 +1,3 @@
-const { generateREADME } = require("./Controller/ReadmeGenerator");
+const { generateREADME } = require("./Generator/ReadmeGenerator");
 
 generateREADME();
