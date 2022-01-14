@@ -45,7 +45,34 @@ function makeDifficulties() {
   return difficulties;
 }
 
-function generateOverview(difficulties) {
+function makeTopics() {
+  const topics = {
+    [TOPIC.DATA_STRUCTURE.ARRAY]: {num: 0, content: ''},
+    [TOPIC.DATA_STRUCTURE.LINKED_LIST]: {num: 0, content: ''},
+    [TOPIC.DATA_STRUCTURE.HASH]: {num: 0, content: ''},
+    [TOPIC.DATA_STRUCTURE.STACK]: {num: 0, content: ''},
+    [TOPIC.DATA_STRUCTURE.QUEUE]: {num: 0, content: ''},
+    [TOPIC.SORTING]: {num: 0, content: ''},
+    [TOPIC.BRUTEFORCE]: {num: 0, content: ''},
+    [TOPIC.BFS]: {num: 0, content: ''},
+    [TOPIC.DFS]: {num: 0, content: ''},
+    [TOPIC.GREEDY]: {num: 0, content: ''},
+    [TOPIC.BINARY_SEARCH]: {num: 0, content: ''},
+  }   
+
+  Object.keys(topics).forEach((topic) => {
+      const filteredModel = Object.keys(solvedProblemModel).filter((key) => solvedProblemModel[key].topic.indexOf(topic) > -1);
+      topics[topic].num = filteredModel.length;
+      topics[topic].content = filteredModel.map((key) => {
+          return `- [${solvedProblemModel[key].name}](#${solvedProblemModel[key].name.split(" ").join("-")})\n`
+      }).join("        ");
+  });
+
+  return topics;
+}
+
+
+function generateOverview(difficulties, topics) {
     const level1 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num;
     const level2 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num
     const level3 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num
@@ -54,6 +81,18 @@ function generateOverview(difficulties) {
     const bronze = difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num;
     const silver = difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num
     const gold = difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num;
+
+    const array = topics[TOPIC.DATA_STRUCTURE.ARRAY].num;
+    const linkedList = topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].num;
+    const hash = topics[TOPIC.DATA_STRUCTURE.HASH].num;
+    const stack = topics[TOPIC.DATA_STRUCTURE.STACK].num;
+    const queue = topics[TOPIC.DATA_STRUCTURE.QUEUE].num;
+    const sorting = topics[TOPIC.SORTING].num;
+    const bruteforce = topics[TOPIC.BRUTEFORCE].num;
+    const dfs = topics[TOPIC.DFS].num;
+    const bfs = topics[TOPIC.BFS].num;
+    const greedy = topics[TOPIC.GREEDY].num;
+    const binarySearch = topics[TOPIC.BINARY_SEARCH].num;
 
     return `# Coding Test Practice
  - # Overview
@@ -72,18 +111,18 @@ function generateOverview(difficulties) {
     
     - [Sort by Related Topic](#sort-by-related-topic)
       - [자료구조](#자료구조)
-        - [배열](#배열)
-        - [연결 리스트](#연결-리스트)
-        - [해시](#해시)
-        - [스택](#스택)
-        - [큐](#큐)
+        - [배열 (${array})](#배열-${array})
+        - [연결 리스트 (${linkedList})](#연결-리스트-${linkedList})
+        - [해시 (${hash})](#해시-${hash})
+        - [스택 (${stack})](#스택-${stack})
+        - [큐 (${queue})](#큐-${queue})
       - [알고리즘](#알고리즘)
-        - [정렬](#정렬)
-        - [완전 탐색](#완전-탐색)
-        - [DFS](#DFS)
-        - [BFS](#BFS)
-        - [탐욕법](#탐욕법)
-        - [이분 탐색](#이분-탐색)
+        - [정렬 (${sorting})](#정렬-${sorting})
+        - [완전 탐색 (${bruteforce})](#완전-탐색-${bruteforce})
+        - [DFS (${dfs})](#DFS-${dfs})
+        - [BFS (${bfs})](#BFS-${bfs})
+        - [탐욕법 (${greedy})](#탐욕법-${greedy})
+        - [이분 탐색 (${binarySearch})](#이분-탐색-${binarySearch})
     `
 
     /**
@@ -155,60 +194,42 @@ function generatePlatformProblems(difficulties) {
     `
 }
 
-function generatorRelatedToTopicProblems() {
-    const topics = {
-        [TOPIC.DATA_STRUCTURE.ARRAY]: '',
-        [TOPIC.DATA_STRUCTURE.LINKED_LIST]: '',
-        [TOPIC.DATA_STRUCTURE.HASH]: '',
-        [TOPIC.DATA_STRUCTURE.STACK]: '',
-        [TOPIC.DATA_STRUCTURE.QUEUE]: '',
-        [TOPIC.SORTING]: '',
-        [TOPIC.BRUTEFORCE]: '',
-        [TOPIC.BFS]: '',
-        [TOPIC.DFS]: '',
-        [TOPIC.GREEDY]: '',
-        [TOPIC.BINARY_SEARCH]: '',
-    } 
-
-    Object.keys(topics).forEach((topic) => {
-        topics[topic] = Object.keys(solvedProblemModel).filter((key) => solvedProblemModel[key].topic.indexOf(topic) > -1).map((key) => {
-            return `- [${solvedProblemModel[key].name}](#${solvedProblemModel[key].name.split(" ").join("-")})\n`
-        }).join("        ");
-    });
-
+function generatorRelatedToTopicProblems(topics) {
+  
     return `
  - ## Sort by Related Topic
 
  - ## 자료구조
-    - ## 배열
-        ${topics[TOPIC.DATA_STRUCTURE.ARRAY]}  
-    - ## 연결 리스트
-        ${topics[TOPIC.DATA_STRUCTURE.LINKED_LIST]}
-    - ## 해시
-        ${topics[TOPIC.DATA_STRUCTURE.HASH]}
-    - ## 스택
-        ${topics[TOPIC.DATA_STRUCTURE.STACK]}
-    - ## 큐
-        ${topics[TOPIC.DATA_STRUCTURE.QUEUE]}
+    - ## 배열 (${topics[TOPIC.DATA_STRUCTURE.ARRAY].num})
+        ${topics[TOPIC.DATA_STRUCTURE.ARRAY].content}  
+    - ## 연결 리스트 (${topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].num})
+        ${topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].content}
+    - ## 해시 (${topics[TOPIC.DATA_STRUCTURE.HASH].num})
+        ${topics[TOPIC.DATA_STRUCTURE.HASH].content}
+    - ## 스택 (${topics[TOPIC.DATA_STRUCTURE.STACK].num})
+        ${topics[TOPIC.DATA_STRUCTURE.STACK].content}
+    - ## 큐 (${topics[TOPIC.DATA_STRUCTURE.QUEUE].num})
+        ${topics[TOPIC.DATA_STRUCTURE.QUEUE].content}
  - ## 알고리즘
-    - ## 정렬
-        ${topics[TOPIC.SORTING]}
-    - ## 완전 탐색
-        ${topics[TOPIC.BRUTEFORCE]}
-    - ## DFS
-        ${topics[TOPIC.DFS]}
-    - ## BFS
-        ${topics[TOPIC.BFS]}
-    - ## 탐욕법
-        ${topics[TOPIC.GREEDY]}
-    - ## 이분 탐색
-        ${topics[TOPIC.BINARY_SEARCH]}
+    - ## 정렬 (${topics[TOPIC.SORTING].num})
+        ${topics[TOPIC.SORTING].content}
+    - ## 완전 탐색 (${topics[TOPIC.BRUTEFORCE].num})
+        ${topics[TOPIC.BRUTEFORCE].content}
+    - ## DFS (${topics[TOPIC.DFS].num})
+        ${topics[TOPIC.DFS].content}
+    - ## BFS (${topics[TOPIC.BFS].num})
+        ${topics[TOPIC.BFS].content}
+    - ## 탐욕법 (${topics[TOPIC.GREEDY].num})
+        ${topics[TOPIC.GREEDY].content}
+    - ## 이분 탐색 (${topics[TOPIC.BINARY_SEARCH].num})
+        ${topics[TOPIC.BINARY_SEARCH].content}
     `;
 }
 
 function generateREADME() {
     const difficulties = makeDifficulties();
-    const README = generateOverview(difficulties) + "\n" + generatePlatformProblems(difficulties) + "\n" + generatorRelatedToTopicProblems();
+    const topics = makeTopics();
+    const README = generateOverview(difficulties, topics) + "\n" + generatePlatformProblems(difficulties) + "\n" + generatorRelatedToTopicProblems(topics);
     fs.writeFileSync('dist/README.md', README);
 }
  
