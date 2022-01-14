@@ -1097,8 +1097,439 @@ const solvedProblemModel = {
             "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/718"
         }]        
     },
+    "_q2k6jhc": { 
+        "name": "1000 A+B",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[5],
+        "language": [LANGUAGE.PYTHON, LANGUAGE.JAVASCRIPT],
+        "topic": [TOPIC.IMPLEMENT, TOPIC.MATH],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/1000"    
+        }]
+    },
+    "_893t5j2": { 
+        "name": "1001 A-B",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.MATH, TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/1001"
+        }]
+    },
+    "_wy3mob4": { 
+        "name": "2557 Hello World",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/2557"
+        }]
+    },
+    "_y3kx8p5": { 
+        "name": "3046 R2",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.MATH, TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/3046"
+        }]
+    },
+    "_kzpd5rh": { 
+        "name": "10699 오늘 날짜",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/10699"
+        }]
+    },
+    "_1a68hh8": { 
+        "name": "10718 We love kriii",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/10718"
+        }]
+    },
+    "_p5tp2df": { 
+        "name": "2309 일곱 난쟁이",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.BRUTEFORCE, TOPIC.SORTING],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/2309"
+        }]
+    },
+    "_v81921t": { 
+        "name": "2675 문자열 반복",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STRING, TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/2675"
+        }]
+    },
+    "_phrpp6h": { 
+        "name": "3040 백설 공주와 일곱 난쟁이",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.BRUTEFORCE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/3040"
+        }]
+    },
+    "_l6d8c6k": { 
+        "name": "10448 유레카 이론",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.BRUTEFORCE, TOPIC.MATH],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/10448"
+        }]
+    },
+    "_bc4lpd1": { 
+        "name": "10808 알파벳 개수",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.IMPLEMENT, TOPIC.DATA_STRUCTURE.STRING],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/10808"
+        }]
+    },
+    "_rjz3bk5": { 
+        "name": "10809 알파벳 찾기",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STRING, TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/10809"
+        }]
+    },
+    "_dmbas93": { 
+        "name": "15552 빠른 A+B",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.MATH, TOPIC.IMPLEMENT],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/15552"
+        }]
+    },
+    "_jn0c1zs": { 
+        "name": "9093 단어 뒤집기",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].BRONZE[1],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/1/9093"
+        }]
+    },
+    "_yhqvbt7": { 
+        "name": "1158 요세푸스 문제",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/1158"
+        }]
+    },
+    "_6uz2dc1": { 
+        "name": "7785 회사에 있는 사람",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[5],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.HASH],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/7758"
+        }]
+    },
+    "_3pte8xb": { 
+        "name": "1302 베스트셀러",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STRING, TOPIC.SORTING, TOPIC.DATA_STRUCTURE.HASH],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/1302"
+        }]
+    },
+    "_2n034jy": { 
+        "name": "2164 카드2",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/2164"
+        }]
+    },
+    "_mzqrpw4": { 
+        "name": "9012 괄호",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STRING, TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/9012"
+        }]
+    },
+    "_yvj2atm": { 
+        "name": "10828 스택",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10828"
+        }]
+    },
+    "_0tsqetw": { 
+        "name": "10845 큐",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10845"
+        }]
+    },
+    "_8ns6653": { 
+        "name": "10866 덱",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.DEQUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10866"
+        }]
+    },
+    "_hetqhyr": { 
+        "name": "11866 요세푸스 문제 0",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.IMPLEMENT, TOPIC.DATA_STRUCTURE.QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/11866"
+        }]
+    },
+    "_626bdbe": { 
+        "name": "1406 에디터",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[3],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.LINKED_LIST, TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/1406"
+        }]
+    },
+    "_feqb35y": { 
+        "name": "1449 수리공 항승",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[3],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.GREEDY, TOPIC.SORTING],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/1449"
+        }]
+    },
+    "_lhpyfky": { 
+        "name": "1874 스택 수열",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[3],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/1874"
+        }]
+    },
+    "_ljn3u9v": { 
+        "name": "3085 사탕 게임",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[3],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.IMPLEMENT, TOPIC.BRUTEFORCE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/3085"
+        }]
+    },
+    "_g5nyz9f": { 
+        "name": "11659 구간 합 구하기 4",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[3],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.CUMULATIVE_SUM],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/11659"
+        }]
+    },
+    "_unb693k": { 
+        "name": "17413 단어 뒤집기 2",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[3],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.IMPLEMENT, TOPIC.DATA_STRUCTURE.STRING, TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/17413"
+        }]
+    },
+    "_m5w5w45": { 
+        "name": "1931 회의실 배정",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.GREEDY, TOPIC.SORTING],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/2/1931"
+        }]
+    },
+    "_hwsguil": { 
+        "name": "11279 최대 힙",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.PRIORITY_QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/2/11279"
+        }]
+    },
+    "_o74yxhc": { 
+        "name": "11724 연결 요소의 개수",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[2],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.GRAPH, TOPIC.BFS, TOPIC.DFS],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/2/11724"
+        }]
+    },
+    "_i6kfia3": { 
+        "name": "1927 최소 힙",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[1],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.PRIORITY_QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/1/1927"
+        }]
+    },
+    "_5bs0hgp": { 
+        "name": "2178 미로 탐색",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[1],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.GRAPH, TOPIC.BFS],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/1/2178"
+        }]
+    },
+    "_rfz7ibx": { 
+        "name": "11286 절대값 힙",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[1],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.PRIORITY_QUEUE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/1/11286"
+        }]
+    },
+    "_ozilgei": { 
+        "name": "17298 오큰수",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].GOLD[4],
+        "language": [LANGUAGE.PYTHON],
+        "topic": [TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/3_Gold/4/17298"
+        }]
+    },
 }
-
 
 /**
     "_id": { 
@@ -1110,12 +1541,13 @@ const solvedProblemModel = {
         "url": [{
             "name": "풀이",
             "icon": ":pencil2:",
-            "blog": "",            "link": ""
+            "link": ""
         }, {
             "name": "코드",
             "icon": ":computer:",
-            "link": ""    }
-        },
+            "link": ""    
+        }]
+    }
  */
 
 module.exports = { solvedProblemModel };
