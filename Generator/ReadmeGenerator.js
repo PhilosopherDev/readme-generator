@@ -2,21 +2,73 @@ const fs = require("fs");
 const { TOPIC, DIFFICULTY, PLATFORM } = require("../Type/SolvedProblem.type");
 const { solvedProblemModel } = require("../Model/SolvedProblem.model");
 
-function generateOverview() {
+
+function makeDifficulties() {
+  const difficulties = {
+    [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.LEETCODE].EASY]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.LEETCODE].MEDIUM]: {num: 0, content: ''},
+    // [DIFFICULTY[PLATFORM.LEETCODE].HARD]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].BRONZE[5]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].BRONZE[4]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].BRONZE[3]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].BRONZE[2]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].BRONZE[1]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].SILVER[5]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].SILVER[4]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].SILVER[3]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].SILVER[2]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].SILVER[1]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].GOLD[5]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].GOLD[4]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].GOLD[3]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].GOLD[2]]: {num: 0, content: ''},
+    [DIFFICULTY[PLATFORM.BOJ].GOLD[1]]: {num: 0, content: ''}
+  } 
+
+  Object.keys(difficulties).forEach((diff) => {
+    const filteredModel = Object.keys(solvedProblemModel).filter((key) => solvedProblemModel[key].difficulty === diff);
+    difficulties[diff].num = filteredModel.length;
+    difficulties[diff].content = filteredModel.sort((a, b) => solvedProblemModel[a].name.localeCompare(solvedProblemModel[b].name)).map((key) => {            
+        let string = "- #### " + solvedProblemModel[key].name;
+
+        if (solvedProblemModel[key].url && Array.isArray(solvedProblemModel[key].url) && solvedProblemModel[key].url.length > 0) {
+            solvedProblemModel[key].url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
+        }
+
+        return string;
+    }).join("\n         ");
+  });
+
+  return difficulties;
+}
+
+function generateOverview(difficulties) {
+    const level1 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num;
+    const level2 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num
+    const level3 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num
+    const easy = difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num;
+    const medium = difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num;
+    const bronze = difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num;
+    const silver = difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num
+    const gold = difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num;
+
     return `# Coding Test Practice
  - # Overview
     - [Sort by Coding Test Platform](#sort-by-coding-test-platform)    
       - [Programmers](#programmers)
-        - [Level1](#level1)
-        - [Level2](#level2)
-        - [Level3](#level3)
+        - [Level1 (${level1})](#level1-${level1})
+        - [Level2 (${level2})](#level2-${level2})
+        - [Level3 (${level3})](#level3-${level3})
       - [Leetcode](#leetcode)
-        - [Easy](#easy)
-        - [Medium](#medium)
+        - [Easy (${easy})](#easy-${easy})
+        - [Medium (${medium})](#medium-${medium})
       - [BOJ](#boj)
-        - [Bronze](#bronze)
-        - [Silver](#silver)
-        - [Gold](#gold)
+        - [Bronze (${bronze})](#bronze-${bronze})
+        - [Silver (${silver})](#silver-${silver})
+        - [Gold (${gold})](#gold-${gold})
     
     - [Sort by Related Topic](#sort-by-related-topic)
       - [자료구조](#자료구조)
@@ -61,81 +113,45 @@ function generateOverview() {
      */
 }
 
-function generatePlatformProblems() {
-    const difficulties = {
-        [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1]: '',
-        [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2]: '',
-        [DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3]: '',
-        [DIFFICULTY[PLATFORM.LEETCODE].EASY]: '',
-        [DIFFICULTY[PLATFORM.LEETCODE].MEDIUM]: '',
-        // [DIFFICULTY[PLATFORM.LEETCODE].HARD]: '',
-        [DIFFICULTY[PLATFORM.BOJ].BRONZE[5]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].BRONZE[4]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].BRONZE[3]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].BRONZE[2]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].BRONZE[1]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].SILVER[5]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].SILVER[4]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].SILVER[3]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].SILVER[2]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].SILVER[1]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].GOLD[5]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].GOLD[4]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].GOLD[3]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].GOLD[2]]: '',
-        [DIFFICULTY[PLATFORM.BOJ].GOLD[1]]: ''
-    } 
-
-    Object.keys(difficulties).forEach((diff) => {
-        difficulties[diff] = Object.keys(solvedProblemModel).filter((key) => solvedProblemModel[key].difficulty === diff).sort((a, b) => solvedProblemModel[a].name.localeCompare(solvedProblemModel[b].name)).map((key) => {            
-            let string = "- #### " + solvedProblemModel[key].name;
-
-            if (solvedProblemModel[key].url && Array.isArray(solvedProblemModel[key].url) && solvedProblemModel[key].url.length > 0) {
-                solvedProblemModel[key].url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
-            }
-
-            return string;
-        }).join("\n         ");
-    });
-
+function generatePlatformProblems(difficulties) {
     return `- ## Sort by Coding Test Platform
 
     - ## Programmers
   
-      - ### Level1
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1]}
-      - ### Level2
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2]}
-      - ### Level3
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3]}
+      - ### Level1 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num})
+        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].content}
+      - ### Level2 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num})
+        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].content}
+      - ### Level3 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
+        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].content}
 
     - ## Leetcode
 
-      - ### Easy
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY]}
-      - ### Medium
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM]}
+      - ### Easy (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num})
+        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].content}
+      - ### Medium (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
+        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].content}
 
     - ## BOJ
 
-      - ### Bronze
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]]}
-      - ### Silver
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]]}
-      - ### Gold
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]]}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]]}
+      - ### Bronze (${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num})
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].content}
+      - ### Silver (${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num})
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].content}
+      - ### Gold (${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num})
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].content}
     `
 }
 
@@ -191,7 +207,8 @@ function generatorRelatedToTopicProblems() {
 }
 
 function generateREADME() {
-    const README = generateOverview() + "\n" + generatePlatformProblems() + "\n" + generatorRelatedToTopicProblems();
+    const difficulties = makeDifficulties();
+    const README = generateOverview(difficulties) + "\n" + generatePlatformProblems(difficulties) + "\n" + generatorRelatedToTopicProblems();
     fs.writeFileSync('dist/README.md', README);
 }
  
