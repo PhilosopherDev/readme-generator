@@ -1529,6 +1529,18 @@ const solvedProblemModel = {
             "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/3_Gold/4/17298"
         }]
     },
+    "_bcz365r": { 
+        "name": "4673 셀프 넘버",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[5],        
+        "language": [LANGUAGE.JAVASCRIPT],
+        "topic": [TOPIC.MATH, TOPIC.IMPLEMENT, TOPIC.BRUTEFORCE],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/4673"    
+        }]
+    }
 }
 
 /**
