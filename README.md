@@ -1,2 +1,3 @@
-# Coding-Test-Result-Generator
-Generate README.md and different types of chart about coding test practice result
+# Coding-Test-Readme-Generator
+
+### Generate README.md about coding test practice output
