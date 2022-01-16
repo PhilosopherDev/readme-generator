@@ -81,4 +81,15 @@ const LANGUAGE = {
     PYTHON: "python"
 }
 
-module.exports = { PLATFORM, DIFFICULTY, TOPIC, LANGUAGE};
+const GRIT = {
+    PSEUDO_CODE: "pseudo_code",
+    OPTIMIZATION: "optimization",
+    EDGE_CASE_TEST: "edge_case_test",
+    VISUALIZATION: "visualization",
+    BEST_PRACTICE: "best_practice",
+    MOCK_EXAM: "mock_exam"
+}
+
+// const ENLIGHTENMENT = {}
+
+module.exports = { PLATFORM, DIFFICULTY, TOPIC, LANGUAGE, GRIT};
