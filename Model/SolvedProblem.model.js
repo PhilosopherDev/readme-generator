@@ -1540,6 +1540,18 @@ const solvedProblemModel = {
             "icon": ":computer:",
             "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/4673"    
         }]
+    },
+    "_pag9dc2": { 
+        "name": "1920 수 찾기",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.JAVASCRIPT],
+        "topic": [TOPIC.BINARY_SEARCH],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/1920"    
+        }]
     }
 }
 
