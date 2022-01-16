@@ -5,7 +5,7 @@ interface SolvedProblemSchema {
         difficulty: DIFFICULTY[PlatformType.PROGRAMMERS] | DIFFICULTY[PlatformType.LEETCODE] | DIFFICULTY[PlatformType.BOJ];
         language: LANGUAGE
         // topic: 
-        // enlightenment?: Array<>
+        // verified?:
         // grit?:
         url?: Array<{name: string, icon: string, link: string}>;
     }
