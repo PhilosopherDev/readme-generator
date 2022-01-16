@@ -105,11 +105,13 @@ enum LanguageType {
 type GRIT = GritType.OPTIMIZATION | GritType.EDGE_CASE_TEST | GritType.VISUALIZATION | GritType.BEST_PRACTICE | GritType.MOCK_EXAM;
 
 enum GritType {
+    PSEUDO_CODE = "pseudo_code",
     OPTIMIZATION = "optimization",
     EDGE_CASE_TEST = "edge_case_test",
     VISUALIZATION = "visualization",
     BEST_PRACTICE = "best_practice",
-    MOCK_EXAM = "mock_exam"
+    MOCK_EXAM = "mock_exam",
+    VARIETY_CASE = "variety_case"
 }
 
 
