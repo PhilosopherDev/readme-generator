@@ -1552,6 +1552,18 @@ const solvedProblemModel = {
             "icon": ":computer:",
             "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/1920"    
         }]
+    },
+    "_coi5mln": { 
+        "name": "10773 제로",
+        "platform": PLATFORM.BOJ,
+        "difficulty": DIFFICULTY[PLATFORM.BOJ].SILVER[4],
+        "language": [LANGUAGE.JAVASCRIPT],
+        "topic": [TOPIC.IMPLEMENT, TOPIC.DATA_STRUCTURE.STACK],
+        "url": [{
+            "name": "코드",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10773"    
+        }]
     }
 }
 
@@ -1559,7 +1571,7 @@ const solvedProblemModel = {
     "_id": { 
         "name": "",
         "platform": PLATFORM,
-        "difficulty": DIFFICULTY,        
+        "difficulty": DIFFICULTY,
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [],
         "url": [{
