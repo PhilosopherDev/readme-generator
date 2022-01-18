@@ -1,3 +1,3 @@
-# Coding-Test-Readme-Generator
+# Readme-Generator
 
 ### Generate README.md about coding test practice output
