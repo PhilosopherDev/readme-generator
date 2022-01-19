@@ -1263,7 +1263,14 @@ const solvedProblemModel = {
             "name": "코드",
             "icon": ":computer:",
             "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/1/9093"
-        }]
+        }],
+        "reference": [
+            {
+                "name": "Javascript의 기본입출력",
+                "description": "nodejs 콘솔에서 stdin 값 넣고 EOF 주는 법",
+                "link": "https://lamarr.dev/javascript/node.js/2020/04/06/01.html"
+            }
+        ]
     },
     "_yhqvbt7": { 
         "name": "1158 요세푸스 문제",
