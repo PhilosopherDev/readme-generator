@@ -1293,7 +1293,7 @@ const solvedProblemModel = {
         "url": [{
             "name": "코드",
             "icon": ":computer:",
-            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/7758"
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/7785"
         }]
     },
     "_3pte8xb": { 
