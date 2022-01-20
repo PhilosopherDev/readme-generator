@@ -8,7 +8,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/86"
         }, {
@@ -24,7 +24,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STRING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/40"
         }, {
@@ -40,7 +40,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/41"
         }, {
@@ -56,7 +56,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/39"
         }, {
@@ -72,7 +72,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STACK, TOPIC.DATA_STRUCTURE.QUEUE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/15"
         }, {
@@ -88,7 +88,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.BFS],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/38"
         }, {
@@ -104,7 +104,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STACK],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/37"
         }, {
@@ -120,7 +120,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.QUEUE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/49"
         }, {
@@ -136,7 +136,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/53"
         }, {
@@ -152,7 +152,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.BRUTEFORCE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/48"
         }, {
@@ -168,7 +168,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.QUEUE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/50"
         }, {
@@ -184,7 +184,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/54"
         }, {
@@ -200,7 +200,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.BRUTEFORCE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/46"
         }, {
@@ -216,7 +216,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.GREEDY],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/69"
         }, {
@@ -232,7 +232,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.GREEDY],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/70"
         }, {
@@ -248,7 +248,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/44"
         }, {
@@ -264,7 +264,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STRING, TOPIC.DATA_STRUCTURE.ARRAY],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/45"
         }, {
@@ -280,7 +280,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/52"
         }, {
@@ -296,7 +296,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/8"
         }, {
@@ -312,7 +312,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/7"
         }, {
@@ -340,7 +340,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.BRUTEFORCE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/47"
         }, {
@@ -368,7 +368,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/9"
         }, {
@@ -384,7 +384,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/55"
         }, {
@@ -400,7 +400,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/79"
         }, {
@@ -416,7 +416,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.BRUTEFORCE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/59"
         }, {
@@ -432,7 +432,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/67"
         }, {
@@ -448,7 +448,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/80"
         }, {
@@ -464,7 +464,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/75"
         }, {
@@ -480,7 +480,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/43"
         }, {
@@ -496,7 +496,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STRING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/74"
         }, {
@@ -512,7 +512,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/77"
         }, {
@@ -528,7 +528,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/78"
         }, {
@@ -544,7 +544,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/76"
         }, {
@@ -560,7 +560,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/68"
         }, {
@@ -576,7 +576,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.IMPLEMENT],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/73"
         }, {
@@ -592,7 +592,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT, LANGUAGE.PYTHON],
         "topic": [TOPIC.DATA_STRUCTURE.HASH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/51"
         }, {
@@ -608,7 +608,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DATA_STRUCTURE.HASH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/17"
         }, {
@@ -624,7 +624,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.MATH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/20"
         }, {
@@ -640,7 +640,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STRING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/22"
         }, {
@@ -656,7 +656,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STRING, TOPIC.DATA_STRUCTURE.STACK],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/14"
         }, {
@@ -672,7 +672,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/28"
         }, {
@@ -688,7 +688,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.LINKED_LIST, TOPIC.RECURSION],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/57"
         }, {
@@ -704,7 +704,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.MATH, TOPIC.DYNAMIC_PROGRAMMING, TOPIC.MEMOIZATION],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/30"
         }, {
@@ -720,7 +720,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.TWO_POINTERS, TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/58"
         }, {
@@ -736,7 +736,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STACK, TOPIC.DATA_STRUCTURE.TREE, TOPIC.DFS],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/24"
         }, {
@@ -752,7 +752,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DYNAMIC_PROGRAMMING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/36"
         }, {
@@ -768,7 +768,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DYNAMIC_PROGRAMMING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/72"
         }, {
@@ -784,7 +784,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.BIT_MANIPULATION],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/32"
         }, {
@@ -800,7 +800,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH, TOPIC.DATA_STRUCTURE.LINKED_LIST, TOPIC.TWO_POINTERS],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/87"
         }, {
@@ -816,7 +816,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STACK, TOPIC.DATA_STRUCTURE.TREE, TOPIC.DFS],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/23"
         }, {
@@ -832,7 +832,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STACK, TOPIC.DATA_STRUCTURE.TREE, TOPIC.DFS],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/25"
         }, {
@@ -848,7 +848,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.STACK, TOPIC.DESIGN],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/16"
         }, {
@@ -864,7 +864,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DATA_STRUCTURE.HASH, TOPIC.SORTING, TOPIC.COUNTING, TOPIC.DVIDE_AND_CONQUER],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/29"
         }, {
@@ -880,7 +880,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH, TOPIC.MATH, TOPIC.TWO_POINTERS],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/34"
         }, {
@@ -896,7 +896,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DATA_STRUCTURE.HASH, TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/56"
         }, {
@@ -912,7 +912,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH, TOPIC.DATA_STRUCTURE.STRING, TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/84"
         }, {
@@ -928,7 +928,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DATA_STRUCTURE.HASH, TOPIC.TWO_POINTERS, TOPIC.BINARY_SEARCH, TOPIC.SORTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/71"
         }, {
@@ -944,7 +944,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH, TOPIC.DATA_STRUCTURE.STRING, TOPIC.COUNTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/83"
         }, {
@@ -960,7 +960,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.HASH, TOPIC.DATA_STRUCTURE.STRING, TOPIC.DATA_STRUCTURE.QUEUE, TOPIC.COUNTING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/82"
         }, {
@@ -976,7 +976,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.MATRIX, TOPIC.SIMULATION],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/81"
         }, {
@@ -992,7 +992,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.LINKED_LIST, TOPIC.MATH, TOPIC.RECURSION],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/18"
         }, {
@@ -1008,7 +1008,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.MATH],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/19"
         }, {
@@ -1024,7 +1024,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.TWO_POINTERS, TOPIC.GREEDY],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/21"
         }, {
@@ -1040,7 +1040,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.DATA_STRUCTURE.HASH, TOPIC.MATRIX],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/85"
         }, {
@@ -1056,7 +1056,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.TREE, TOPIC.BFS, TOPIC.DATA_STRUCTURE.BINARY_TREE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/26"
         }, {
@@ -1072,7 +1072,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.TREE, TOPIC.BFS, TOPIC.DATA_STRUCTURE.BINARY_TREE],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/27"
         }, {
@@ -1088,7 +1088,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.DATA_STRUCTURE.ARRAY, TOPIC.BINARY_SEARCH, TOPIC.DYNAMIC_PROGRAMMING],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": "https://philosopherprogrammer.com/35"
         }, {
@@ -1582,7 +1582,7 @@ const solvedProblemModel = {
         "language": [LANGUAGE.JAVASCRIPT],
         "topic": [],
         "url": [{
-            "name": "풀이",
+            "name": "블로그",
             "icon": ":pencil2:",
             "link": ""
         }, {
