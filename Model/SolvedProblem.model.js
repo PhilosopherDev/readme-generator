@@ -325,7 +325,7 @@ const solvedProblemModel = {
         "name": "K번째수",
         "platform": PLATFORM.PROGRAMMERS,
         "difficulty": DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1,
-        "language": [LANGUAGE.PYTHON],
+        "language": [LANGUAGE.PYTHON, LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.SORTING],
         "url": [{
             "name": "코드",
@@ -353,7 +353,7 @@ const solvedProblemModel = {
         "name": "체육복",
         "platform": PLATFORM.PROGRAMMERS,
         "difficulty": DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1,
-        "language": [LANGUAGE.PYTHON],
+        "language": [LANGUAGE.PYTHON, LANGUAGE.JAVASCRIPT],
         "topic": [TOPIC.GREEDY],
         "url": [{
             "name": "코드",
