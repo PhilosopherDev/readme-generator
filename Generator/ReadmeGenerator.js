@@ -39,7 +39,7 @@ function makeDifficulties() {
         }
 
         return string;
-    }).join("\n         ");
+    }).join("\n        ");
   });
 
   return difficulties;
@@ -47,25 +47,25 @@ function makeDifficulties() {
 
 function makeTopics() {
   const topics = {
-    [TOPIC.DATA_STRUCTURE.ARRAY]: {num: 0, content: ''},
-    [TOPIC.DATA_STRUCTURE.LINKED_LIST]: {num: 0, content: ''},
-    [TOPIC.DATA_STRUCTURE.HASH]: {num: 0, content: ''},
-    [TOPIC.DATA_STRUCTURE.STACK]: {num: 0, content: ''},
-    [TOPIC.DATA_STRUCTURE.QUEUE]: {num: 0, content: ''},
-    [TOPIC.SORTING]: {num: 0, content: ''},
-    [TOPIC.BRUTEFORCE]: {num: 0, content: ''},
-    [TOPIC.BFS]: {num: 0, content: ''},
-    [TOPIC.DFS]: {num: 0, content: ''},
-    [TOPIC.GREEDY]: {num: 0, content: ''},
-    [TOPIC.BINARY_SEARCH]: {num: 0, content: ''},
+    [TOPIC.DATA_STRUCTURE.ARRAY]: {num: 0, content: []},
+    [TOPIC.DATA_STRUCTURE.LINKED_LIST]: {num: 0, content: []},
+    [TOPIC.DATA_STRUCTURE.HASH]: {num: 0, content: []},
+    [TOPIC.DATA_STRUCTURE.STACK]: {num: 0, content: []},
+    [TOPIC.DATA_STRUCTURE.QUEUE]: {num: 0, content: []},
+    [TOPIC.SORTING]: {num: 0, content: []},
+    [TOPIC.BRUTEFORCE]: {num: 0, content: []},
+    [TOPIC.BFS]: {num: 0, content: []},
+    [TOPIC.DFS]: {num: 0, content: []},
+    [TOPIC.GREEDY]: {num: 0, content: []},
+    [TOPIC.BINARY_SEARCH]: {num: 0, content: []},
   }   
 
   Object.keys(topics).forEach((topic) => {
       const filteredModel = Object.keys(solvedProblemModel).filter((key) => solvedProblemModel[key].topic.indexOf(topic) > -1);
       topics[topic].num = filteredModel.length;
       topics[topic].content = filteredModel.map((key) => {
-          return `- [${solvedProblemModel[key].name}](#${solvedProblemModel[key].name.split(" ").join("-")})\n`
-      }).join("        ");
+            return { key, sentence: `- [${solvedProblemModel[key].name}](#${solvedProblemModel[key].name.split(" ").join("-")})`}
+      });
   });
 
   return topics;
@@ -98,25 +98,24 @@ function generateOverview(difficulties, topics) {
     /** algorithm */
     const sorting = topics[TOPIC.SORTING].num;
     const bruteforce = topics[TOPIC.BRUTEFORCE].num;
-    const dfs = topics[TOPIC.DFS].num;
-    const bfs = topics[TOPIC.BFS].num;
+    const dfs_bfs = combineNum([...topics[TOPIC.DFS].content, ...topics[TOPIC.BFS].content]);
     const greedy = topics[TOPIC.GREEDY].num;
     const binarySearch = topics[TOPIC.BINARY_SEARCH].num;
 
     return `# Coding Test Practice (${programmers + leetcode + boj})
  - # Overview
     - [Sort by Coding Test Platform](#sort-by-coding-test-platform)    
-      - [BOJ (${boj})](#boj-${boj})
-        - [Bronze (${bronze})](#bronze-${bronze})
-        - [Silver (${silver})](#silver-${silver})
-        - [Gold (${gold})](#gold-${gold})
       - [Programmers (${programmers})](#programmers-${programmers})
-        - [Level1 (${level1})](#level1-${level1})
-        - [Level2 (${level2})](#level2-${level2})
         - [Level3 (${level3})](#level3-${level3})
+        - [Level2 (${level2})](#level2-${level2})
+        - [Level1 (${level1})](#level1-${level1})
+      - [BOJ (${boj})](#boj-${boj})
+        - [Gold (${gold})](#gold-${gold})
+        - [Silver (${silver})](#silver-${silver})
+        - [Bronze (${bronze})](#bronze-${bronze})  
       - [Leetcode (${leetcode})](#leetcode-${leetcode})
-        - [Easy (${easy})](#easy-${easy})
         - [Medium (${medium})](#medium-${medium})  
+        - [Easy (${easy})](#easy-${easy})
     
     - [Sort by Related Topic](#sort-by-related-topic)
       - [자료구조](#자료구조)
@@ -128,8 +127,7 @@ function generateOverview(difficulties, topics) {
       - [알고리즘](#알고리즘)
         - [정렬 (${sorting})](#정렬-${sorting})
         - [완전 탐색 (${bruteforce})](#완전-탐색-${bruteforce})
-        - [DFS (${dfs})](#DFS-${dfs})
-        - [BFS (${bfs})](#BFS-${bfs})
+        - [DFS/BFS (${dfs_bfs})](#dfsbfs-${dfs_bfs})
         - [탐욕법 (${greedy})](#탐욕법-${greedy})
         - [이분 탐색 (${binarySearch})](#이분-탐색-${binarySearch})
     `
@@ -170,40 +168,40 @@ function generatePlatformProblems(difficulties) {
 
     - ## Programmers (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num + difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num + difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
   
-      - ### Level1 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num})
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].content}
-      - ### Level2 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num})
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].content}
       - ### Level3 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
         ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].content}
-
-    - ## Leetcode (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num + difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
-
-      - ### Easy (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num})
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].content}
-      - ### Medium (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].content}
+      - ### Level2 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num})
+        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].content}
+      - ### Level1 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num})
+        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].content}
 
     - ## BOJ (${bronze + silver + gold})
 
-      - ### Bronze (${bronze})
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].content}
-      - ### Silver (${silver})
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].content}
       - ### Gold (${gold})
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].content}
         ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].content}
+      - ### Silver (${silver})
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].content}
+      - ### Bronze (${bronze})
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].content}
+        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].content}
+    
+    - ## Leetcode (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num + difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
+
+      - ### Medium (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
+        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].content}
+      - ### Easy (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num})
+        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].content}
     `
 }
 
@@ -214,29 +212,47 @@ function generatorRelatedToTopicProblems(topics) {
 
  - ## 자료구조
     - ## 배열 (${topics[TOPIC.DATA_STRUCTURE.ARRAY].num})
-        ${topics[TOPIC.DATA_STRUCTURE.ARRAY].content}  
+        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.ARRAY].content)}  
     - ## 연결 리스트 (${topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].num})
-        ${topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].content}
+        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].content)}
     - ## 해시 (${topics[TOPIC.DATA_STRUCTURE.HASH].num})
-        ${topics[TOPIC.DATA_STRUCTURE.HASH].content}
+        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.HASH].content)}
     - ## 스택 (${topics[TOPIC.DATA_STRUCTURE.STACK].num})
-        ${topics[TOPIC.DATA_STRUCTURE.STACK].content}
+        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.STACK].content)}
     - ## 큐 (${topics[TOPIC.DATA_STRUCTURE.QUEUE].num})
-        ${topics[TOPIC.DATA_STRUCTURE.QUEUE].content}
+        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.QUEUE].content)}
  - ## 알고리즘
     - ## 정렬 (${topics[TOPIC.SORTING].num})
-        ${topics[TOPIC.SORTING].content}
+        ${combineSentence(topics[TOPIC.SORTING].content)}
     - ## 완전 탐색 (${topics[TOPIC.BRUTEFORCE].num})
-        ${topics[TOPIC.BRUTEFORCE].content}
-    - ## DFS (${topics[TOPIC.DFS].num})
-        ${topics[TOPIC.DFS].content}
-    - ## BFS (${topics[TOPIC.BFS].num})
-        ${topics[TOPIC.BFS].content}
+        ${combineSentence(topics[TOPIC.BRUTEFORCE].content)}
+    - ## DFS/BFS (${combineNum([...topics[TOPIC.DFS].content, ...topics[TOPIC.BFS].content])})
+        ${combineSentence([...topics[TOPIC.DFS].content, ...topics[TOPIC.BFS].content])}
     - ## 탐욕법 (${topics[TOPIC.GREEDY].num})
-        ${topics[TOPIC.GREEDY].content}
+        ${combineSentence(topics[TOPIC.GREEDY].content)}
     - ## 이분 탐색 (${topics[TOPIC.BINARY_SEARCH].num})
-        ${topics[TOPIC.BINARY_SEARCH].content}
+        ${combineSentence(topics[TOPIC.BINARY_SEARCH].content)}
     `;
+}
+
+function combineSentence(content) {
+  const keyHash = content.reduce((obj, val) => {
+    if (!obj[val.key]) obj[val.key] = val.sentence;
+    return obj;
+  }, {});
+
+  return Object.keys(keyHash).map((key) => {
+    return keyHash[key]
+  }).join("\n        ");
+}
+
+function combineNum(content) {
+  const set = new Set([]);
+  content.forEach((val) => {
+    if (!set.has(val.key)) set.add(val.key);
+  });
+
+  return set.size;
 }
 
 function generateREADME() {
