@@ -1,5 +1,5 @@
 {
-  "name": "cote-output-generator",
+  "name": "readme-generator",
   "version": "1.0.0",
   "description": "Generate coding test output to README.md and charts",
   "main": "index.js",
