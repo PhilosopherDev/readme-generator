@@ -1,6 +1,6 @@
 import * as fs from "fs";
-import * as CodingTest from "../Model/CodingTest.model";
-import { codingTestData } from "../Data/CodingTest.data";
+import * as CodingTest from "../model/CodingTest.model";
+import { codingTestData } from "../data/CodingTest.data";
 
 function makeDifficulties(): CodingTest.DifficultiesViewModel {
   const difficulties: CodingTest.DifficultiesViewModel = {
