@@ -1,3 +1,3 @@
-const { generateREADME } = require("./Generator/ReadmeGenerator");
+const { generateREADME } = require("./Generator/CodingTest.generator");
 
 generateREADME();

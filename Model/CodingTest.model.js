@@ -1,6 +1,6 @@
-const { PLATFORM, DIFFICULTY, TOPIC, LANGUAGE } = require('../Type/SolvedProblem.type');
+const { PLATFORM, DIFFICULTY, TOPIC, LANGUAGE } = require('../Type/CodingTest.type');
 
-const solvedProblemModel = {
+const codingTestModel = {
     "_0viyqfp": {
         "name": "위장",
         "platform": PLATFORM.PROGRAMMERS,
@@ -1605,4 +1605,4 @@ const solvedProblemModel = {
     }
  */
 
-module.exports = { solvedProblemModel };
+module.exports = { codingTestModel };
