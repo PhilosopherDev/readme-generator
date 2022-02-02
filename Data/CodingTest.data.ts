@@ -1,4 +1,4 @@
-import * as CodingTest from '../Model/CodingTest.model';
+import * as CodingTest from '../model/CodingTest.model';
 
 export const codingTestModel: Array<CodingTest.CodingTestModel> = [
   {
