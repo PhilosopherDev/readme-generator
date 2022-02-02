@@ -4,11 +4,12 @@ export interface CodingTestModel {
     cote_id: string;
     name: string;
     number?: number;
+    company?: Company;
     platform: Platform;
     difficulty: DifficultyType;
     language: Array<Language>;
     topic: Array<Topic>;
-    url: Array<URLType>
+    url: Array<URLType>;
 }
 
 export type Topic = DataStructure | Algorithms;
@@ -20,6 +21,10 @@ export type DifficultiesViewModel = { [key: string]: { num: number, content: str
 export type TopicsViewModel = { [key: string]: { num: number, content: Array<TopicsViewModelContent> } }
 
 export type TopicsViewModelContent = { key: string, sentence: string };
+
+export enum Company {
+    KAKAO = "kakao"
+}
 
 export enum Platform {
     PROGRAMMERS = "programmers",
