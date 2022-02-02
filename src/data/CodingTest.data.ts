@@ -1,4 +1,5 @@
 import * as CodingTest from '../model/CodingTest.model';
+import { Icon } from '../model/Common.model';
 
 export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
@@ -15,12 +16,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/86"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%9C%84%EC%9E%A5"
       }
     ]
@@ -39,12 +40,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/40"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95"
       }
     ]
@@ -63,12 +64,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/41"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%98%A4%ED%94%88%EC%B1%84%ED%8C%85%EB%B0%A9"
       }
     ]
@@ -87,12 +88,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/39"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/124%EB%82%98%EB%9D%BC%EC%9D%98%EC%88%AB%EC%9E%90"
       }
     ]
@@ -112,12 +113,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/15"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C"
       }
     ]
@@ -136,12 +137,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/38"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84"
       }
     ]
@@ -160,12 +161,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/37"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%A7%9D%EC%A7%80%EC%96%B4%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0"
       }
     ]
@@ -184,12 +185,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/49"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%ED%94%84%EB%A6%B0%ED%84%B0"
       }
     ]
@@ -208,12 +209,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/53"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EA%B0%80%EC%9E%A5%20%ED%81%B0%20%EC%88%98"
       }
     ]
@@ -232,12 +233,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/48"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0"
       }
     ]
@@ -256,12 +257,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/50"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%8B%A4%EB%A6%AC%EB%A5%BC%EC%A7%80%EB%82%98%EB%8A%94%ED%8A%B8%EB%9F%AD"
       }
     ]
@@ -280,12 +281,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/54"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/H-Index"
       }
     ]
@@ -304,12 +305,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/46"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%B9%B4%ED%8E%AB"
       }
     ]
@@ -328,12 +329,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/69"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0"
       }
     ]
@@ -352,12 +353,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/70"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8"
       }
     ]
@@ -376,12 +377,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/44"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%A1%9C%EB%98%90%EC%9D%98%EC%B5%9C%EA%B3%A0%EC%88%9C%EC%9C%84%EC%99%80%EC%B5%9C%EC%A0%80%EC%88%9C%EC%9C%84"
       }
     ]
@@ -401,12 +402,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/45"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%88%AB%EC%9E%90%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B3%BC%EC%98%81%EB%8B%A8%EC%96%B4"
       }
     ]
@@ -425,12 +426,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/52"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%97%86%EB%8A%94%EC%88%AB%EC%9E%90%EB%8D%94%ED%95%98%EA%B8%B0"
       }
     ]
@@ -449,12 +450,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/8"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%9D%8C%EC%96%91%EB%8D%94%ED%95%98%EA%B8%B0"
       }
     ]
@@ -473,12 +474,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/7"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%EB%AA%BB%ED%95%9C%EC%84%A0%EC%88%98"
       }
     ]
@@ -498,7 +499,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/K%EB%B2%88%EC%A8%B0%EC%88%98"
       }
     ]
@@ -517,12 +518,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/47"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC"
       }
     ]
@@ -542,7 +543,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5"
       }
     ]
@@ -561,12 +562,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/9"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%ED%8F%B0%EC%BC%93%EB%AA%AC"
       }
     ]
@@ -585,12 +586,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/55"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%8B%A4%ED%8C%A8%EC%9C%A8"
       }
     ]
@@ -609,12 +610,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/79"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%95%BD%EC%88%98%EC%9D%98%EA%B0%9C%EC%88%98%EC%99%80%EB%8D%A7%EC%85%88"
       }
     ]
@@ -633,12 +634,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/59"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0"
       }
     ]
@@ -657,12 +658,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/67"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/2016%EB%85%84"
       }
     ]
@@ -681,12 +682,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/80"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%B5%9C%EC%86%8C%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95"
       }
     ]
@@ -705,12 +706,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/75"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%801%EC%9D%B4%EB%90%98%EB%8A%94%EC%88%98%EC%B0%BE%EA%B8%B0"
       }
     ]
@@ -729,12 +730,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/43"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%B6%80%EC%A1%B1%ED%95%9C%EA%B8%88%EC%95%A1%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0"
       }
     ]
@@ -753,12 +754,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/74"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EA%B0%80%EC%9A%B4%EB%8D%B0%EA%B8%80%EC%9E%90%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0"
       }
     ]
@@ -777,12 +778,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/77"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EA%B0%99%EC%9D%80%EC%88%AB%EC%9E%90%EB%8A%94%EC%8B%AB%EC%96%B4"
       }
     ]
@@ -801,12 +802,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/78"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%82%98%EB%88%84%EC%96%B4%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94%EC%88%AB%EC%9E%90%EB%B0%B0%EC%97%B4"
       }
     ]
@@ -825,12 +826,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/76"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%91%90%EC%A0%95%EC%88%98%EC%82%AC%EC%9D%B4%EC%9D%98%ED%95%A9"
       }
     ]
@@ -849,12 +850,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/68"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0"
       }
     ]
@@ -873,12 +874,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/73"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C%EA%B9%80%EC%84%9C%EB%B0%A9%EC%B0%BE%EA%B8%B0"
       }
     ]
@@ -898,12 +899,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/51"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level3/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94"
       }
     ]
@@ -924,12 +925,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/17"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/1"
       }
     ]
@@ -949,12 +950,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/20"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/9"
       }
     ]
@@ -974,12 +975,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/22"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/14"
       }
     ]
@@ -1000,12 +1001,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/14"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/20"
       }
     ]
@@ -1025,12 +1026,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/28"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/21"
       }
     ]
@@ -1051,12 +1052,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/57"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/53"
       }
     ]
@@ -1078,12 +1079,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/30"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/70"
       }
     ]
@@ -1105,12 +1106,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/58"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/88"
       }
     ]
@@ -1132,12 +1133,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/24"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/94"
       }
     ]
@@ -1158,12 +1159,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/36"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/118"
       }
     ]
@@ -1184,12 +1185,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/72"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/121"
       }
     ]
@@ -1210,12 +1211,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/32"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/136"
       }
     ]
@@ -1237,12 +1238,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/87"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/141"
       }
     ]
@@ -1264,12 +1265,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/23"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/144"
       }
     ]
@@ -1291,12 +1292,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/25"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/145"
       }
     ]
@@ -1317,12 +1318,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/16"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/155"
       }
     ]
@@ -1346,12 +1347,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/29"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/169"
       }
     ]
@@ -1373,12 +1374,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/34"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/202"
       }
     ]
@@ -1400,12 +1401,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/56"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/217"
       }
     ]
@@ -1427,12 +1428,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/84"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/242"
       }
     ]
@@ -1456,12 +1457,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/71"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/350"
       }
     ]
@@ -1483,12 +1484,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/83"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/383"
       }
     ]
@@ -1511,12 +1512,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/82"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/387"
       }
     ]
@@ -1538,12 +1539,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/81"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/1_Easy/566"
       }
     ]
@@ -1565,12 +1566,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/18"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/2"
       }
     ]
@@ -1590,12 +1591,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/19"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/7"
       }
     ]
@@ -1617,12 +1618,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/21"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/11"
       }
     ]
@@ -1644,12 +1645,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/85"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/36"
       }
     ]
@@ -1671,12 +1672,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/26"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/102"
       }
     ]
@@ -1698,12 +1699,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/27"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/107"
       }
     ]
@@ -1725,12 +1726,12 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Blog",
-        "icon": CodingTest.Icon.BLOG,
+        "icon": Icon.BLOG,
         "link": "https://philosopherprogrammer.com/35"
       },
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/LeetCode/2_Medium/718"
       }
     ]
@@ -1752,7 +1753,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/1000"
       }
     ]
@@ -1773,7 +1774,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/1001"
       }
     ]
@@ -1793,7 +1794,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/2557"
       }
     ]
@@ -1814,7 +1815,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/3046"
       }
     ]
@@ -1834,7 +1835,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/10699"
       }
     ]
@@ -1854,7 +1855,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/5/10718"
       }
     ]
@@ -1875,7 +1876,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/2309"
       }
     ]
@@ -1896,7 +1897,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/2675"
       }
     ]
@@ -1916,7 +1917,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/3040"
       }
     ]
@@ -1937,7 +1938,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/10448"
       }
     ]
@@ -1958,7 +1959,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/10808"
       }
     ]
@@ -1979,7 +1980,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/10809"
       }
     ]
@@ -2000,7 +2001,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/2/15552"
       }
     ]
@@ -2020,7 +2021,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/1_Bronze/1/9093"
       }
     ]
@@ -2040,7 +2041,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/1158"
       }
     ]
@@ -2060,7 +2061,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/7785"
       }
     ]
@@ -2082,7 +2083,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/1302"
       }
     ]
@@ -2102,7 +2103,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/2164"
       }
     ]
@@ -2123,7 +2124,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/9012"
       }
     ]
@@ -2143,7 +2144,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10828"
       }
     ]
@@ -2163,7 +2164,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10845"
       }
     ]
@@ -2183,7 +2184,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10866"
       }
     ]
@@ -2204,7 +2205,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/11866"
       }
     ]
@@ -2225,7 +2226,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/1406"
       }
     ]
@@ -2246,7 +2247,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/1449"
       }
     ]
@@ -2266,7 +2267,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/1874"
       }
     ]
@@ -2287,7 +2288,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/3085"
       }
     ]
@@ -2307,7 +2308,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/11659"
       }
     ]
@@ -2329,7 +2330,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/3/17413"
       }
     ]
@@ -2350,7 +2351,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/2/1931"
       }
     ]
@@ -2370,7 +2371,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/2/11279"
       }
     ]
@@ -2392,7 +2393,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/2/11724"
       }
     ]
@@ -2412,7 +2413,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/1/1927"
       }
     ]
@@ -2433,7 +2434,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/1/2178"
       }
     ]
@@ -2453,7 +2454,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/1/11286"
       }
     ]
@@ -2473,7 +2474,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/3_Gold/4/17298"
       }
     ]
@@ -2495,7 +2496,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/5/4673"
       }
     ]
@@ -2515,7 +2516,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/1920"
       }
     ]
@@ -2536,7 +2537,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10773"
       }
     ]
@@ -2555,7 +2556,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "url": [
       {
         "name": "Code",
-        "icon": CodingTest.Icon.CODE,
+        "icon": Icon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84"
       }
     ]
@@ -2572,11 +2573,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "topic": [],
       "url": [{
           "name": "Blog",
-          "icon": CodingTest.Icon.BLOG,
+          "icon": Icon.BLOG,
           "link": ""
       }, {
           "name": "Code",
-          "icon": CodingTest.Icon.CODE,
+          "icon": Icon.CODE,
           "link": ""    
       }]
     }

@@ -1,3 +1,5 @@
+import { URLType } from "./Common.model";
+
 export interface CodingTestModel {
     cote_id: string;
     name: string;
@@ -7,12 +9,6 @@ export interface CodingTestModel {
     language: Array<Language>;
     topic: Array<Topic>;
     url: Array<URLType>
-}
-
-export type URLType = {
-    name: string;
-    icon: Icon;
-    link: string;
 }
 
 export type Topic = DataStructure | Algorithms;
@@ -102,11 +98,3 @@ export enum Algorithms {
     CUMULATIVE_SUM = "cumulative_sum"
 }
 
-export enum Icon {
-    GITHUB = ":file_cabinet:",
-    CODE = ":computer:",
-    SOLUTION = ":crystal_ball:",
-    LIVE_SITE = ":globe_with_meridians:",
-    COMMIT = ":dart:",
-    BLOG = ":pencil2:"
-}
