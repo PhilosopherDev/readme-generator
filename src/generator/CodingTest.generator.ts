@@ -1,13 +1,9 @@
 import * as fs from "fs";
-import * as CodingTest from "../model/CodingTest.model";
-import { codingTestData } from "../data/CodingTest.data";
+import * as CodingTest from "../Model/CodingTest.model";
+import { codingTestData } from "../Data/CodingTest.data";
 
-type difficulties = { [key: string]: { num: number, content: string } }
-type topics = { [key: string]: { num: number, content: Array<topicContent> } }
-type topicContent = { key: string, sentence: string };
-
-function makeDifficulties(): difficulties {
-  const difficulties: difficulties = {
+function makeDifficulties(): CodingTest.DifficultiesViewModel {
+  const difficulties: CodingTest.DifficultiesViewModel = {
     [CodingTest.ProgrammersLevel.LEVEL1]: {num: 0, content: ''},
     [CodingTest.ProgrammersLevel.LEVEL2]: {num: 0, content: ''},
     [CodingTest.ProgrammersLevel.LEVEL3]: {num: 0, content: ''},
@@ -48,8 +44,8 @@ function makeDifficulties(): difficulties {
   return difficulties;
 }
 
-function makeTopics(): topics {
-  const topics: topics = {
+function makeTopics(): CodingTest.TopicsViewModel {
+  const topics: CodingTest.TopicsViewModel = {
     [CodingTest.DataStructure.ARRAY]: {num: 0, content: []},
     [CodingTest.DataStructure.LINKED_LIST]: {num: 0, content: []},
     [CodingTest.DataStructure.HASH]: {num: 0, content: []},
@@ -75,7 +71,7 @@ function makeTopics(): topics {
 }
 
 
-function generateOverview(difficulties: difficulties, topics: topics) {
+function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics: CodingTest.TopicsViewModel) {
     /** difficulty */
     const level1 = difficulties[CodingTest.ProgrammersLevel.LEVEL1].num;
     const level2 = difficulties[CodingTest.ProgrammersLevel.LEVEL2].num
@@ -162,7 +158,7 @@ function generateOverview(difficulties: difficulties, topics: topics) {
      */
 }
 
-function generatePlatformProblems(difficulties: difficulties) {
+function generatePlatformProblems(difficulties: CodingTest.DifficultiesViewModel) {
     const bronze = difficulties[CodingTest.BOJLevel.BRONZE5].num + difficulties[CodingTest.BOJLevel.BRONZE4].num + difficulties[CodingTest.BOJLevel.BRONZE3].num + difficulties[CodingTest.BOJLevel.BRONZE2].num + difficulties[CodingTest.BOJLevel.BRONZE1].num;
     const silver = difficulties[CodingTest.BOJLevel.SILVER5].num + difficulties[CodingTest.BOJLevel.SILVER4].num + difficulties[CodingTest.BOJLevel.SILVER3].num + difficulties[CodingTest.BOJLevel.SILVER2].num + difficulties[CodingTest.BOJLevel.SILVER1].num;
     const gold = difficulties[CodingTest.BOJLevel.GOLD5].num + difficulties[CodingTest.BOJLevel.GOLD4].num + difficulties[CodingTest.BOJLevel.GOLD3].num + difficulties[CodingTest.BOJLevel.GOLD2].num + difficulties[CodingTest.BOJLevel.GOLD1].num;
@@ -208,7 +204,7 @@ function generatePlatformProblems(difficulties: difficulties) {
     `
 }
 
-function generatorRelatedToTopicProblems(topics: topics) {
+function generatorRelatedToTopicProblems(topics: CodingTest.TopicsViewModel) {
   
     return `
  - ## Sort by Related Topic
@@ -249,7 +245,7 @@ function combineSentence(content: Array<any>) {
   }).join("\n        ");
 }
 
-function combineNum(content: Array<topicContent>) {
+function combineNum(content: Array<CodingTest.TopicsViewModelContent>) {
   const set = new Set([]);
   content.forEach((val) => {
     if (!set.has(val.key as never)) set.add(val.key as never);
@@ -258,11 +254,9 @@ function combineNum(content: Array<topicContent>) {
   return set.size;
 }
 
-function generateREADME() {
+export function generateREADME() {
     const difficulties = makeDifficulties();
     const topics = makeTopics();
     const README = generateOverview(difficulties, topics) + "\n" + generatePlatformProblems(difficulties) + "\n" + generatorRelatedToTopicProblems(topics);
-    fs.writeFileSync('dist/README.md', README);
+    fs.writeFileSync('./README.md', README);
 }
- 
-module.exports = { generateREADME }
