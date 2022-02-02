@@ -2,9 +2,12 @@ import * as fs from "fs";
 import * as CodingTest from "../model/CodingTest.model";
 import { codingTestData } from "../data/CodingTest.data";
 
+type difficulties = { [key: string]: { num: number, content: string } }
+type topics = { [key: string]: { num: number, content: Array<topicContent> } }
+type topicContent = { key: string, sentence: string };
 
-function makeDifficulties() {
-  const difficulties = {
+function makeDifficulties(): difficulties {
+  const difficulties: difficulties = {
     [CodingTest.ProgrammersLevel.LEVEL1]: {num: 0, content: ''},
     [CodingTest.ProgrammersLevel.LEVEL2]: {num: 0, content: ''},
     [CodingTest.ProgrammersLevel.LEVEL3]: {num: 0, content: ''},
@@ -45,8 +48,8 @@ function makeDifficulties() {
   return difficulties;
 }
 
-function makeTopics() {
-  const topics = {
+function makeTopics(): topics {
+  const topics: topics = {
     [CodingTest.DataStructure.ARRAY]: {num: 0, content: []},
     [CodingTest.DataStructure.LINKED_LIST]: {num: 0, content: []},
     [CodingTest.DataStructure.HASH]: {num: 0, content: []},
@@ -72,16 +75,16 @@ function makeTopics() {
 }
 
 
-function generateOverview(difficulties, topics) {
+function generateOverview(difficulties: difficulties, topics: topics) {
     /** difficulty */
-    const level1 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num;
-    const level2 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num
-    const level3 = difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num
-    const easy = difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num;
-    const medium = difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num;
-    const bronze = difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num;
-    const silver = difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num
-    const gold = difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num;
+    const level1 = difficulties[CodingTest.ProgrammersLevel.LEVEL1].num;
+    const level2 = difficulties[CodingTest.ProgrammersLevel.LEVEL2].num
+    const level3 = difficulties[CodingTest.ProgrammersLevel.LEVEL3].num
+    const easy = difficulties[CodingTest.LeetcodeLevel.EASY].num;
+    const medium = difficulties[CodingTest.LeetcodeLevel.MEDIUM].num;
+    const bronze = difficulties[CodingTest.BOJLevel.BRONZE5].num + difficulties[CodingTest.BOJLevel.BRONZE4].num + difficulties[CodingTest.BOJLevel.BRONZE3].num + difficulties[CodingTest.BOJLevel.BRONZE2].num + difficulties[CodingTest.BOJLevel.BRONZE1].num;
+    const silver = difficulties[CodingTest.BOJLevel.SILVER5].num + difficulties[CodingTest.BOJLevel.SILVER4].num + difficulties[CodingTest.BOJLevel.SILVER3].num + difficulties[CodingTest.BOJLevel.SILVER2].num + difficulties[CodingTest.BOJLevel.SILVER1].num
+    const gold = difficulties[CodingTest.BOJLevel.GOLD5].num + difficulties[CodingTest.BOJLevel.GOLD4].num + difficulties[CodingTest.BOJLevel.GOLD3].num + difficulties[CodingTest.BOJLevel.GOLD2].num + difficulties[CodingTest.BOJLevel.GOLD1].num;
 
     /** platform */
     const programmers = level1 + level2 + level3;
@@ -89,18 +92,18 @@ function generateOverview(difficulties, topics) {
     const boj = bronze + silver + gold;
 
     /** data structure */
-    const array = topics[TOPIC.DATA_STRUCTURE.ARRAY].num;
-    const linkedList = topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].num;
-    const hash = topics[TOPIC.DATA_STRUCTURE.HASH].num;
-    const stack = topics[TOPIC.DATA_STRUCTURE.STACK].num;
-    const queue = topics[TOPIC.DATA_STRUCTURE.QUEUE].num;
+    const array = topics[CodingTest.DataStructure.ARRAY].num;
+    const linkedList = topics[CodingTest.DataStructure.LINKED_LIST].num;
+    const hash = topics[CodingTest.DataStructure.HASH].num;
+    const stack = topics[CodingTest.DataStructure.STACK].num;
+    const queue = topics[CodingTest.DataStructure.QUEUE].num;
 
     /** algorithm */
-    const sorting = topics[TOPIC.SORTING].num;
-    const bruteforce = topics[TOPIC.BRUTEFORCE].num;
-    const dfs_bfs = combineNum([...topics[TOPIC.DFS].content, ...topics[TOPIC.BFS].content]);
-    const greedy = topics[TOPIC.GREEDY].num;
-    const binarySearch = topics[TOPIC.BINARY_SEARCH].num;
+    const sorting = topics[CodingTest.Algorithms.SORTING].num;
+    const bruteforce = topics[CodingTest.Algorithms.BRUTEFORCE].num;
+    const dfs_bfs = combineNum([...topics[CodingTest.Algorithms.DFS].content, ...topics[CodingTest.Algorithms.BFS].content]);
+    const greedy = topics[CodingTest.Algorithms.GREEDY].num;
+    const binarySearch = topics[CodingTest.Algorithms.BINARY_SEARCH].num;
 
     return `# Coding Test Practice (${programmers + leetcode + boj})
  - # Overview
@@ -159,83 +162,83 @@ function generateOverview(difficulties, topics) {
      */
 }
 
-function generatePlatformProblems(difficulties) {
-    const bronze = difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].num;
-    const silver = difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].num;
-    const gold = difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].num + difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].num;
+function generatePlatformProblems(difficulties: difficulties) {
+    const bronze = difficulties[CodingTest.BOJLevel.BRONZE5].num + difficulties[CodingTest.BOJLevel.BRONZE4].num + difficulties[CodingTest.BOJLevel.BRONZE3].num + difficulties[CodingTest.BOJLevel.BRONZE2].num + difficulties[CodingTest.BOJLevel.BRONZE1].num;
+    const silver = difficulties[CodingTest.BOJLevel.SILVER5].num + difficulties[CodingTest.BOJLevel.SILVER4].num + difficulties[CodingTest.BOJLevel.SILVER3].num + difficulties[CodingTest.BOJLevel.SILVER2].num + difficulties[CodingTest.BOJLevel.SILVER1].num;
+    const gold = difficulties[CodingTest.BOJLevel.GOLD5].num + difficulties[CodingTest.BOJLevel.GOLD4].num + difficulties[CodingTest.BOJLevel.GOLD3].num + difficulties[CodingTest.BOJLevel.GOLD2].num + difficulties[CodingTest.BOJLevel.GOLD1].num;
 
     return `- ## Sort by Coding Test Platform
 
-    - ## Programmers (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num + difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num + difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
+    - ## Programmers (${difficulties[CodingTest.ProgrammersLevel.LEVEL1].num + difficulties[CodingTest.ProgrammersLevel.LEVEL2].num + difficulties[CodingTest.ProgrammersLevel.LEVEL3].num})
   
-      - ### Level3 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].num})
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL3].content}
-      - ### Level2 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].num})
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL2].content}
-      - ### Level1 (${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].num})
-        ${difficulties[DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1].content}
+      - ### Level3 (${difficulties[CodingTest.ProgrammersLevel.LEVEL3].num})
+        ${difficulties[CodingTest.ProgrammersLevel.LEVEL3].content}
+      - ### Level2 (${difficulties[CodingTest.ProgrammersLevel.LEVEL2].num})
+        ${difficulties[CodingTest.ProgrammersLevel.LEVEL2].content}
+      - ### Level1 (${difficulties[CodingTest.ProgrammersLevel.LEVEL1].num})
+        ${difficulties[CodingTest.ProgrammersLevel.LEVEL1].content}
 
     - ## BOJ (${bronze + silver + gold})
 
       - ### Gold (${gold})
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[5]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[4]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[3]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[2]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].GOLD[1]].content}
+        ${difficulties[CodingTest.BOJLevel.GOLD5].content}
+        ${difficulties[CodingTest.BOJLevel.GOLD4].content}
+        ${difficulties[CodingTest.BOJLevel.GOLD3].content}
+        ${difficulties[CodingTest.BOJLevel.GOLD2].content}
+        ${difficulties[CodingTest.BOJLevel.GOLD1].content}
       - ### Silver (${silver})
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[5]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[4]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[3]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[2]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].SILVER[1]].content}
+        ${difficulties[CodingTest.BOJLevel.SILVER5].content}
+        ${difficulties[CodingTest.BOJLevel.SILVER4].content}
+        ${difficulties[CodingTest.BOJLevel.SILVER3].content}
+        ${difficulties[CodingTest.BOJLevel.SILVER2].content}
+        ${difficulties[CodingTest.BOJLevel.SILVER1].content}
       - ### Bronze (${bronze})
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[5]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[4]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[3]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[2]].content}
-        ${difficulties[DIFFICULTY[PLATFORM.BOJ].BRONZE[1]].content}
+        ${difficulties[CodingTest.BOJLevel.BRONZE5].content}
+        ${difficulties[CodingTest.BOJLevel.BRONZE4].content}
+        ${difficulties[CodingTest.BOJLevel.BRONZE3].content}
+        ${difficulties[CodingTest.BOJLevel.BRONZE2].content}
+        ${difficulties[CodingTest.BOJLevel.BRONZE1].content}
     
-    - ## Leetcode (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num + difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
+    - ## Leetcode (${difficulties[CodingTest.LeetcodeLevel.EASY].num + difficulties[CodingTest.LeetcodeLevel.MEDIUM].num})
 
-      - ### Medium (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].num})
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].MEDIUM].content}
-      - ### Easy (${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].num})
-        ${difficulties[DIFFICULTY[PLATFORM.LEETCODE].EASY].content}
+      - ### Medium (${difficulties[CodingTest.LeetcodeLevel.MEDIUM].num})
+        ${difficulties[CodingTest.LeetcodeLevel.MEDIUM].content}
+      - ### Easy (${difficulties[CodingTest.LeetcodeLevel.EASY].num})
+        ${difficulties[CodingTest.LeetcodeLevel.EASY].content}
     `
 }
 
-function generatorRelatedToTopicProblems(topics) {
+function generatorRelatedToTopicProblems(topics: topics) {
   
     return `
  - ## Sort by Related Topic
 
  - ## 자료구조
-    - ## 배열 (${topics[TOPIC.DATA_STRUCTURE.ARRAY].num})
-        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.ARRAY].content)}  
-    - ## 연결 리스트 (${topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].num})
-        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.LINKED_LIST].content)}
-    - ## 해시 (${topics[TOPIC.DATA_STRUCTURE.HASH].num})
-        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.HASH].content)}
-    - ## 스택 (${topics[TOPIC.DATA_STRUCTURE.STACK].num})
-        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.STACK].content)}
-    - ## 큐 (${topics[TOPIC.DATA_STRUCTURE.QUEUE].num})
-        ${combineSentence(topics[TOPIC.DATA_STRUCTURE.QUEUE].content)}
+    - ## 배열 (${topics[CodingTest.DataStructure.ARRAY].num})
+        ${combineSentence(topics[CodingTest.DataStructure.ARRAY].content)}  
+    - ## 연결 리스트 (${topics[CodingTest.DataStructure.LINKED_LIST].num})
+        ${combineSentence(topics[CodingTest.DataStructure.LINKED_LIST].content)}
+    - ## 해시 (${topics[CodingTest.DataStructure.HASH].num})
+        ${combineSentence(topics[CodingTest.DataStructure.HASH].content)}
+    - ## 스택 (${topics[CodingTest.DataStructure.STACK].num})
+        ${combineSentence(topics[CodingTest.DataStructure.STACK].content)}
+    - ## 큐 (${topics[CodingTest.DataStructure.QUEUE].num})
+        ${combineSentence(topics[CodingTest.DataStructure.QUEUE].content)}
  - ## 알고리즘
-    - ## 정렬 (${topics[TOPIC.SORTING].num})
-        ${combineSentence(topics[TOPIC.SORTING].content)}
-    - ## 완전 탐색 (${topics[TOPIC.BRUTEFORCE].num})
-        ${combineSentence(topics[TOPIC.BRUTEFORCE].content)}
-    - ## DFS/BFS (${combineNum([...topics[TOPIC.DFS].content, ...topics[TOPIC.BFS].content])})
-        ${combineSentence([...topics[TOPIC.DFS].content, ...topics[TOPIC.BFS].content])}
-    - ## 탐욕법 (${topics[TOPIC.GREEDY].num})
-        ${combineSentence(topics[TOPIC.GREEDY].content)}
-    - ## 이분 탐색 (${topics[TOPIC.BINARY_SEARCH].num})
-        ${combineSentence(topics[TOPIC.BINARY_SEARCH].content)}
+    - ## 정렬 (${topics[CodingTest.Algorithms.SORTING].num})
+        ${combineSentence(topics[CodingTest.Algorithms.SORTING].content)}
+    - ## 완전 탐색 (${topics[CodingTest.Algorithms.BRUTEFORCE].num})
+        ${combineSentence(topics[CodingTest.Algorithms.BRUTEFORCE].content)}
+    - ## DFS/BFS (${combineNum([...topics[CodingTest.Algorithms.DFS].content, ...topics[CodingTest.Algorithms.BFS].content])})
+        ${combineSentence([...topics[CodingTest.Algorithms.DFS].content, ...topics[CodingTest.Algorithms.BFS].content])}
+    - ## 탐욕법 (${topics[CodingTest.Algorithms.GREEDY].num})
+        ${combineSentence(topics[CodingTest.Algorithms.GREEDY].content)}
+    - ## 이분 탐색 (${topics[CodingTest.Algorithms.BINARY_SEARCH].num})
+        ${combineSentence(topics[CodingTest.Algorithms.BINARY_SEARCH].content)}
     `;
 }
 
-function combineSentence(content) {
+function combineSentence(content: Array<any>) {
   const keyHash = content.reduce((obj, val) => {
     if (!obj[val.key]) obj[val.key] = val.sentence;
     return obj;
@@ -246,10 +249,10 @@ function combineSentence(content) {
   }).join("\n        ");
 }
 
-function combineNum(content) {
+function combineNum(content: Array<topicContent>) {
   const set = new Set([]);
   content.forEach((val) => {
-    if (!set.has(val.key)) set.add(val.key);
+    if (!set.has(val.key as never)) set.add(val.key as never);
   });
 
   return set.size;
