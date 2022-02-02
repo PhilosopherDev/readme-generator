@@ -1571,6 +1571,18 @@ const solvedProblemModel = {
             "icon": ":computer:",
             "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/10773"    
         }]
+    },
+    "_qloepyo": { 
+        "name": "다트 게임",
+        "platform": PLATFORM.PROGRAMMERS,
+        "difficulty": DIFFICULTY[PLATFORM.PROGRAMMERS].LEVEL1,
+        "language": [LANGUAGE.JAVASCRIPT],
+        "topic": [TOPIC.DATA_STRUCTURE.STRING],
+        "url": [{
+            "name": "Code",
+            "icon": ":computer:",
+            "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84"    
+        }]
     }
 }
 
