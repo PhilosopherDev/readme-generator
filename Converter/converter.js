@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {codingTestModel} = require('../Model/CodingTest.model');
+const {codingTestModel} = require('../Data/CodingTest.data');
 
 const convert = Object.keys(codingTestModel).map((key) => {        
     const num_name = codingTestModel[key].name.split(" "); 

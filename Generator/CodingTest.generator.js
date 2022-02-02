@@ -1,6 +1,6 @@
 const fs = require("fs");
-const { TOPIC, DIFFICULTY, PLATFORM } = require("../Type/CodingTest.type");
-const { codingTestModel } = require("../Model/CodingTest.model");
+const { TOPIC, DIFFICULTY, PLATFORM } = require("../Model/CodingTest.model");
+const { codingTestData } = require("../Data/CodingTest.data");
 
 
 function makeDifficulties() {
@@ -29,13 +29,13 @@ function makeDifficulties() {
   } 
 
   Object.keys(difficulties).forEach((diff) => {
-    const filteredModel = Object.keys(codingTestModel).filter((key) => codingTestModel[key].difficulty === diff);
+    const filteredModel = Object.keys(codingTestData).filter((key) => codingTestData[key].difficulty === diff);
     difficulties[diff].num = filteredModel.length;
-    difficulties[diff].content = filteredModel.sort((a, b) => codingTestModel[a].name.localeCompare(codingTestModel[b].name)).map((key) => {            
-        let string = "- #### " + codingTestModel[key].name;
+    difficulties[diff].content = filteredModel.sort((a, b) => codingTestData[a].name.localeCompare(codingTestData[b].name)).map((key) => {            
+        let string = "- #### " + codingTestData[key].name;
 
-        if (codingTestModel[key].url && Array.isArray(codingTestModel[key].url) && codingTestModel[key].url.length > 0) {
-            codingTestModel[key].url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
+        if (codingTestData[key].url && Array.isArray(codingTestData[key].url) && codingTestData[key].url.length > 0) {
+            codingTestData[key].url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
         }
 
         return string;
@@ -61,10 +61,10 @@ function makeTopics() {
   }   
 
   Object.keys(topics).forEach((topic) => {
-      const filteredModel = Object.keys(codingTestModel).filter((key) => codingTestModel[key].topic.indexOf(topic) > -1);
+      const filteredModel = Object.keys(codingTestData).filter((key) => codingTestData[key].topic.indexOf(topic) > -1);
       topics[topic].num = filteredModel.length;
       topics[topic].content = filteredModel.map((key) => {
-            return { key, sentence: `- [${codingTestModel[key].name}](#${codingTestModel[key].name.split(" ").join("-")})`}
+            return { key, sentence: `- [${codingTestData[key].name}](#${codingTestData[key].name.split(" ").join("-")})`}
       });
   });
 
