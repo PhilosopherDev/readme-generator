@@ -2563,20 +2563,21 @@ export const codingTestModel: Array<CodingTest.CodingTestModel> = [
 ]
 
 /**
-    "_id": { 
-        "name": "",
-        "platform": PLATFORM,
-        "difficulty": DIFFICULTY,        
-        "language": [LANGUAGE.JAVASCRIPT],
-        "topic": [],
-        "url": [{
-            "name": "풀이",
-            "icon": CodingTest.Icon.BLOG,
-            "link": ""
-        }, {
-            "name": "코드",
-            "icon": CodingTest.Icon.CODE,
-            "link": ""    
-        }]
+    { 
+      "cote_id": ""
+      "name": "",
+      "platform": PLATFORM,
+      "difficulty": DIFFICULTY,        
+      "language": [LANGUAGE.JAVASCRIPT],
+      "topic": [],
+      "url": [{
+          "name": "Blog",
+          "icon": CodingTest.Icon.BLOG,
+          "link": ""
+      }, {
+          "name": "Code",
+          "icon": CodingTest.Icon.CODE,
+          "link": ""    
+      }]
     }
  */
