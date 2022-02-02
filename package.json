@@ -1,19 +1,25 @@
 {
-  "name": "cote-output-generator",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "Generate coding test output to README.md and charts",
+  "description": "Generate various types of README.md",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "webpack --stats-error-details"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PhilosopherProgrammer/CoTe-Output-Generator.git"
+    "url": "git+https://github.com/PhilosopherProgrammer/readme-Generator.git"
   },
   "author": "BYUNGMIN CHOI",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/PhilosopherProgrammer/CoTe-Output-Generator/issues"
+    "url": "https://github.com/PhilosopherProgrammer/readme-Generator/issues"
   },
-  "homepage": "https://github.com/PhilosopherProgrammer/CoTe-Output-Generator#readme"
+  "homepage": "https://github.com/PhilosopherProgrammer/readme-Generator#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
