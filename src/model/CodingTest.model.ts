@@ -19,6 +19,12 @@ export type Topic = DataStructure | Algorithms;
 
 export type DifficultyType = ProgrammersLevel | LeetcodeLevel | BOJLevel;
 
+export type DifficultiesViewModel = { [key: string]: { num: number, content: string } }
+
+export type TopicsViewModel = { [key: string]: { num: number, content: Array<TopicsViewModelContent> } }
+
+export type TopicsViewModelContent = { key: string, sentence: string };
+
 export enum Platform {
     PROGRAMMERS = "programmers",
     LEETCODE = "leetcode",
