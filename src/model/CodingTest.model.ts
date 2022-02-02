@@ -5,17 +5,19 @@ export interface CodingTestModel {
     platform: Platform;
     difficulty: DifficultyType;
     language: Array<Language>;
-    topic: Array<DataStructure | Algorithms>;
+    topic: Array<Topic>;
     url: Array<URLType>
 }
 
-type URLType = {
+export type URLType = {
     name: string;
     icon: Icon;
     link: string;
 }
 
-type DifficultyType = ProgrammersLevel | LeetcodeLevel | BOJLevel;
+export type Topic = DataStructure | Algorithms;
+
+export type DifficultyType = ProgrammersLevel | LeetcodeLevel | BOJLevel;
 
 export enum Platform {
     PROGRAMMERS = "programmers",

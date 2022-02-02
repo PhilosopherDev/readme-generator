@@ -1,6 +1,6 @@
 import * as CodingTest from '../model/CodingTest.model';
 
-export const codingTestModel: Array<CodingTest.CodingTestModel> = [
+export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_0viyqfp",
     "name": "위장",
