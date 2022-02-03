@@ -1,10 +1,20 @@
 export type URLType = {
-    name: string;
-    icon: Icon;
+    name: URLName;
+    icon: URLIcon;
     link: string;
 }
 
-export enum Icon {
+export enum URLName {
+    GITHUB = "Github",
+    CODE = "Code",
+    SOLUTION = "Solution",
+    LIVE_SITE = "Live Site",
+    COMMIT = "Commit",
+    BLOG = "Blog",
+    CERTIFICATION = "Certification"
+}
+
+export enum URLIcon {
     GITHUB = ":file_cabinet:",
     CODE = ":computer:",
     SOLUTION = ":crystal_ball:",
