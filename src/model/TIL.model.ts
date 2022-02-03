@@ -6,7 +6,7 @@ export interface TILModel {
     description?: string;
     date: string;
     category: Category;
-    foreign_key?: foreignKey;
+    foreign_key?: string;
     url: Array<URLType>;  // 추후 foreign key 로 일원화
 }
 
@@ -16,12 +16,4 @@ export enum Category {
     CHALLENGE = "challenge",
     CLONE_CODING = "clone_coding",
     FOUNDATIONAL_KNOWLEDGE = "foundational_knowledge"
-}
-
-export type foreignKey = {
-    cote_id?: string;
-    side_id?: string;
-    challenge_id?: string;
-    clone_id?: string;
-    foundation_id?: string;
 }
