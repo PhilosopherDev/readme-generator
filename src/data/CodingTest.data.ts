@@ -886,7 +886,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   },
   {
     "cote_id": "_4h3th2h",
-    "name": "베스트앨범",
+    "name": "베스트 앨범",
     "platform": CodingTest.Platform.PROGRAMMERS,
     "difficulty": CodingTest.ProgrammersLevel.LEVEL3,
     "language": [
