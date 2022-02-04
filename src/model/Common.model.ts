@@ -11,7 +11,8 @@ export enum URLName {
     LIVE_SITE = "Live Site",
     COMMIT = "Commit",
     BLOG = "Blog",
-    CERTIFICATION = "Certification"
+    CERTIFICATION = "Certification",
+    LECTURE = "Lecture"
 }
 
 export enum URLIcon {
@@ -21,5 +22,6 @@ export enum URLIcon {
     LIVE_SITE = ":globe_with_meridians:",
     COMMIT = ":dart:",
     BLOG = ":pencil2:",
-    CERTIFICATION = ":1st_place_medal:"
+    CERTIFICATION = ":1st_place_medal:",
+    LECTURE = ":mortar_board:"
 }
