@@ -10,3 +10,5 @@ var ID = function () {
 };
 
 console.log(ID());
+
+module.exports = ID;
