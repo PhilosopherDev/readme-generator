@@ -500,7 +500,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       {
         "name": URLName.CODE,
         "icon": URLIcon.CODE,
-        "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/K%EB%B2%88%EC%A8%B0%EC%88%98"
+        "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/K%EB%B2%88%EC%A7%B8%EC%88%98"
       }
     ]
   },
