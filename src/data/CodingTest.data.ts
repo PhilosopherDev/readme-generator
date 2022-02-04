@@ -2515,6 +2515,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     ],
     "url": [
       {
+        "name": URLName.BLOG,
+        "icon": URLIcon.BLOG,
+        "link": "https://philosopherprogrammer.com/90"
+      },
+      {
         "name": URLName.CODE,
         "icon": URLIcon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/BOJ/2_Silver/4/1920"
@@ -2535,6 +2540,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       CodingTest.DataStructure.STACK
     ],
     "url": [
+      {
+        "name": URLName.BLOG,
+        "icon": URLIcon.BLOG,
+        "link": "https://philosopherprogrammer.com/89"
+      },
       {
         "name": URLName.CODE,
         "icon": URLIcon.CODE,
