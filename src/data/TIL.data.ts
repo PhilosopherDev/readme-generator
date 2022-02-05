@@ -4,7 +4,7 @@ import { SideProjectId, SideProjectName } from '../model/SideProject.model';
 import { CloneCodingId, CloneCodingName } from '../model/CloneCoding.model';
 import { ChallengeId, ChallengeName } from '../model/Challenge.model';
 
-export const codingTestData: Array<TILModel> = [
+export const TILData: Array<TILModel> = [
     {
         til_id: "_qd98i3i",
         name: "Lexical scope 예제",
