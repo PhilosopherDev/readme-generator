@@ -1,3 +1,4 @@
-import { generateREADME } from "./Generator/CodingTest.generator.ts";
+import { generateCodingTestReadme } from "./Generator/CodingTest.generator.ts";
+import { codingTestData } from "./data/CodingTest.data";
 
-generateREADME();
+generateCodingTestReadme(codingTestData);

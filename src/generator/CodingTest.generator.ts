@@ -1,8 +1,7 @@
 import * as fs from "fs";
 import * as CodingTest from "../model/CodingTest.model";
-import { codingTestData } from "../data/CodingTest.data";
 
-function makeDifficulties(): CodingTest.DifficultiesViewModel {
+function makeDifficulties(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.DifficultiesViewModel {
   const difficulties: CodingTest.DifficultiesViewModel = {
     [CodingTest.ProgrammersLevel.LEVEL1]: {num: 0, content: ''},
     [CodingTest.ProgrammersLevel.LEVEL2]: {num: 0, content: ''},
@@ -44,7 +43,7 @@ function makeDifficulties(): CodingTest.DifficultiesViewModel {
   return difficulties;
 }
 
-function makeTopics(): CodingTest.TopicsViewModel {
+function makeTopics(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.TopicsViewModel {
   const topics: CodingTest.TopicsViewModel = {
     [CodingTest.DataStructure.ARRAY]: {num: 0, content: []},
     [CodingTest.DataStructure.LINKED_LIST]: {num: 0, content: []},
@@ -254,9 +253,9 @@ function combineNum(content: Array<CodingTest.TopicsViewModelContent>) {
   return set.size;
 }
 
-export function generateREADME() {
-    const difficulties = makeDifficulties();
-    const topics = makeTopics();
+export function generateCodingTestReadme(codingTestData: Array<CodingTest.CodingTestModel>) {
+    const difficulties = makeDifficulties(codingTestData);
+    const topics = makeTopics(codingTestData);
     const README = generateOverview(difficulties, topics) + "\n" + generatePlatformProblems(difficulties) + "\n" + generatorRelatedToTopicProblems(topics);
     fs.writeFileSync('./README.md', README);
 }
