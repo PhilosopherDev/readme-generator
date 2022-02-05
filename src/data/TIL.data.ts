@@ -1,5 +1,8 @@
 import { TILModel, Category } from '../model/TIL.model';
 import { URLIcon, URLName } from '../model/Common.model';
+import { SideProjectId, SideProjectName } from '../model/SideProject.model';
+import { CloneCodingId, CloneCodingName } from '../model/CloneCoding.model';
+import { ChallengeId, ChallengeName } from '../model/Challenge.model';
 
 export const codingTestData: Array<TILModel> = [
     {
@@ -202,10 +205,10 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_yuilyb5",
-        "name": "Interactive developer",
-        "description": "줄에 매달려 흔들리는 상자 프로젝트",
+        "name": CloneCodingName.SWAYING_BOX_HANGING_FROM_A_STRING,
         "date": "2021-12-28",
         "category": Category.CLONE_CODING,
+        "foreign_key": CloneCodingId.SWAYING_BOX_HANGING_FROM_A_STRING,
         "url": [
             {
                 "name": URLName.LIVE_SITE,
@@ -938,10 +941,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_n8vpaxp",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "기획 및 제작 시작",
         "date": "2022-01-12",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -952,10 +956,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_1cnn4tk",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "github 생성 및 코드 이동, url 모델 구조 변경",
         "date": "2022-01-13",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -996,10 +1001,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_85mixh4",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "BOJ model 추가, type 추가, boj generating logic 추가, platform 난이도로 정렬된 문제 개수 보여주는 로직 추가, topic 으로 정렬된 문제 개수 보여주는 로직 추가",
         "date": "2022-01-14",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1038,10 +1044,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_4i8o8ev",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "ReadmeGen_1.0.0 and typescript",
         "date": "2022-01-16",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1506,10 +1513,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_avza9bs",
-        "name": "HotelBT",
+        "name": CloneCodingName.HOTEL_BT,
         "description": "navbar 추가",
         "date": "2022-01-20",
         "category": Category.CLONE_CODING,
+        "foreign_key": CloneCodingId.HOTEL_BT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1520,10 +1528,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_cajoe43",
-        "name": "HotelBT",
+        "name": CloneCodingName.HOTEL_BT,
         "description": "showcase 추가",
         "date": "2022-01-21",
         "category": Category.CLONE_CODING,
+        "foreign_key": CloneCodingId.HOTEL_BT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1534,10 +1543,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_cm0mi3s",
-        "name": "NFT Preview Card Component",
+        "name": ChallengeName.NFT_PREVIEW_CARD_COMPONENT,
         "description": "overall layout",
         "date": "2022-01-21",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.NFT_PREVIEW_CARD_COMPONENT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1562,10 +1572,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_419s1bv",
-        "name": "NFT Preview Card Component",
+        "name": ChallengeName.NFT_PREVIEW_CARD_COMPONENT,
         "description": "responsive layout, hover, cursor, font-size etc",
         "date": "2022-01-22",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.NFT_PREVIEW_CARD_COMPONENT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1581,10 +1592,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_srr9rz1",
-        "name": "NFT Preview Card Component",
+        "name": ChallengeName.NFT_PREVIEW_CARD_COMPONENT,
         "description": "Image hover 적용 및 정리",
         "date": "2022-01-23",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.NFT_PREVIEW_CARD_COMPONENT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1605,10 +1617,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_dzvovjx",
-        "name": "NFT Preview Card Component",
+        "name": ChallengeName.NFT_PREVIEW_CARD_COMPONENT,
         "description": "Accessibility 조정",
         "date": "2022-01-24",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.NFT_PREVIEW_CARD_COMPONENT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1629,10 +1642,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_sktnxtn",
-        "name": "Time Tracking Dashboard",
+        "name": ChallengeName.TIME_TRACKING_DASHBOARD,
         "description": "initialize",
         "date": "2022-01-25",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.TIME_TRACKING_DASHBOARD,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1643,10 +1657,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_mmr2col",
-        "name": "Time Tracking Dashboard",
+        "name": ChallengeName.TIME_TRACKING_DASHBOARD,
         "description": "template component, webpack setting(webpack-dev-server, style-loader, css-loader, file-loader), Overall layout",
         "date": "2022-01-26",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.TIME_TRACKING_DASHBOARD,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1657,10 +1672,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_vf0qsau",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "Coding Test Practice Readme Difficulty 내림차순으로 변경, DFS/BFS 결합",
         "date": "2022-01-27",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1671,10 +1687,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_su9y7u0",
-        "name": "Time Tracking Dashboard",
+        "name": ChallengeName.TIME_TRACKING_DASHBOARD,
         "description": "bem modifier, mouse cursor range",
         "date": "2022-01-27",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.TIME_TRACKING_DASHBOARD,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1685,10 +1702,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_19j6rzr",
-        "name": "HotelBT",
+        "name": CloneCodingName.HOTEL_BT,
         "description": "home info, features footer",
         "date": "2022-01-27",
         "category": Category.CLONE_CODING,
+        "foreign_key": CloneCodingId.HOTEL_BT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1699,10 +1717,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_i7wztpl",
-        "name": "byungmin-choi",
+        "name": SideProjectName.BYUNMIN_CHOI,
         "description": "startbootstrap 포트폴리오 디자인 확인",
         "date": "2022-01-27",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.BYUNMIN_CHOI,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1713,10 +1732,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_vva1ale",
-        "name": "Sentence Shaker",
+        "name": SideProjectName.SENTENCE_SHAKER,
         "description": "init, style, basic feature",
         "date": "2022-01-28",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.SENTENCE_SHAKER,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1727,10 +1747,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_tbvc4wh",
-        "name": "Time Tracking Dashboard",
+        "name": ChallengeName.TIME_TRACKING_DASHBOARD,
         "description": "card html layout, create element and add, css",
         "date": "2022-01-28",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.TIME_TRACKING_DASHBOARD,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1741,10 +1762,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_9ityteg",
-        "name": "줄에 매달려 흔들리는 상자",
+        "name": CloneCodingName.SWAYING_BOX_HANGING_FROM_A_STRING,
         "description": "attribution, favicon, title 추가",
         "date": "2022-01-29",
         "category": Category.CLONE_CODING,
+        "foreign_key": CloneCodingId.SWAYING_BOX_HANGING_FROM_A_STRING,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1760,10 +1782,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_x1neu9r",
-        "name": "NFT Preview Card Component",
+        "name": ChallengeName.NFT_PREVIEW_CARD_COMPONENT,
         "description": "favicon 생성, 추가, font-weight 조정",
         "date": "2022-01-29",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.NFT_PREVIEW_CARD_COMPONENT,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1784,10 +1807,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_e8tr67j",
-        "name": "Time Tracking Dashboard",
+        "name": ChallengeName.TIME_TRACKING_DASHBOARD,
         "description": "favicon 추가, css 적용 방식 변경, mobile to desktop",
         "date": "2022-01-30",
         "category": Category.CHALLENGE,
+        "foreign_key": ChallengeId.TIME_TRACKING_DASHBOARD,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1812,10 +1836,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_p089i88",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "typescript 로 프로젝트 전체 변환 후 merge",
         "date": "2022-02-02",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1839,10 +1864,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_6u3i4bs",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "TIL data 정리, type 조정",
         "date": "2022-02-03",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
@@ -1853,10 +1879,11 @@ export const codingTestData: Array<TILModel> = [
     },
     {
         "til_id": "_9yrvhns",
-        "name": "Readme Generator",
+        "name": SideProjectName.README_GENERATOR,
         "description": "TIL data 추가, type 정리, typo 처리",
         "date": "2022-02-03",
         "category": Category.SIDE_PROJECT,
+        "foreign_key": SideProjectId.README_GENERATOR,
         "url": [
             {
                 "name": URLName.GITHUB,
