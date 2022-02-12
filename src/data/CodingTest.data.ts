@@ -2565,21 +2565,42 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     ],
     "url": [
       {
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.tistory.com/93"
+      }, {
         "name": URLName.CODE,
         "icon": URLIcon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84"
       }
     ]
-  }
+  },
+  { 
+      "cote_id": "_zmgvocc",
+      "name": "신고 결과 받기",
+      "platform": CodingTest.Platform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
+      "language": [CodingTest.Language.JAVASCRIPT],
+      "topic": [CodingTest.Algorithms.IMPLEMENT],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.tistory.com/92"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%8B%A0%EA%B3%A0%EA%B2%B0%EA%B3%BC%EB%B0%9B%EA%B8%B0"    
+      }]
+    }
 ]
 
 /**
     { 
-      "cote_id": ""
+      "cote_id": "",
       "name": "",
-      "platform": PLATFORM,
-      "difficulty": DIFFICULTY,        
-      "language": [LANGUAGE.JAVASCRIPT],
+      "platform": CodingTest.Platform,
+      "difficulty": CodingTest,        
+      "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [],
       "url": [{
           "name": URLName.BLOG,
