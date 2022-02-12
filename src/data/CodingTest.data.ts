@@ -30,6 +30,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_71tjp1e",
     "name": "문자열 압축",
     "platform": CodingTest.Platform.PROGRAMMERS,
+    "company": CodingTest.Company.KAKAO,
     "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
     "language": [
       CodingTest.Language.JAVASCRIPT
@@ -54,6 +55,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_1r9n3cy",
     "name": "오픈채팅방",
     "platform": CodingTest.Platform.PROGRAMMERS,
+    "company": CodingTest.Company.KAKAO,
     "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
     "language": [
       CodingTest.Language.JAVASCRIPT
@@ -392,6 +394,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "name": "숫자 문자열과 영단어",
     "platform": CodingTest.Platform.PROGRAMMERS,
     "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "company": CodingTest.Company.KAKAO,
     "language": [
       CodingTest.Language.JAVASCRIPT
     ],
@@ -577,6 +580,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "name": "실패율",
     "platform": CodingTest.Platform.PROGRAMMERS,
     "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "company": CodingTest.Company.KAKAO,
     "language": [
       CodingTest.Language.JAVASCRIPT
     ],
@@ -2557,6 +2561,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "name": "다트 게임",
     "platform": CodingTest.Platform.PROGRAMMERS,
     "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "company": CodingTest.Company.KAKAO,
     "language": [
       CodingTest.Language.JAVASCRIPT
     ],
@@ -2580,6 +2585,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "name": "신고 결과 받기",
       "platform": CodingTest.Platform.PROGRAMMERS,
       "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
+      "company": CodingTest.Company.KAKAO,
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [CodingTest.Algorithms.IMPLEMENT],
       "url": [{
