@@ -44,19 +44,15 @@ function makeDifficulties(codingTestData: Array<CodingTest.CodingTestModel>): Co
 }
 
 function makeTopics(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.TopicsViewModel {
-  const topics: CodingTest.TopicsViewModel = {
-    [CodingTest.DataStructure.ARRAY]: {num: 0, content: []},
-    [CodingTest.DataStructure.LINKED_LIST]: {num: 0, content: []},
-    [CodingTest.DataStructure.HASH]: {num: 0, content: []},
-    [CodingTest.DataStructure.STACK]: {num: 0, content: []},
-    [CodingTest.DataStructure.QUEUE]: {num: 0, content: []},
-    [CodingTest.Algorithms.SORTING]: {num: 0, content: []},
-    [CodingTest.Algorithms.BRUTEFORCE]: {num: 0, content: []},
-    [CodingTest.Algorithms.BFS]: {num: 0, content: []},
-    [CodingTest.Algorithms.DFS]: {num: 0, content: []},
-    [CodingTest.Algorithms.GREEDY]: {num: 0, content: []},
-    [CodingTest.Algorithms.BINARY_SEARCH]: {num: 0, content: []},
-  }   
+  const topics: CodingTest.TopicsViewModel = {};
+
+  for (const key in CodingTest.DataStructure) {
+    topics[(CodingTest.DataStructure as any)[key]] = { num: 0, content: [] };
+  }
+
+  for (const key in CodingTest.Algorithms) {
+    topics[(CodingTest.Algorithms as any)[key]] = { num: 0, content: [] };
+  }
 
   Object.keys(topics).forEach((topic) => {
       const filteredModel = codingTestData.filter((item) => (item.topic as any).indexOf(topic) > -1);
@@ -93,12 +89,34 @@ function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics
     const stack = topics[CodingTest.DataStructure.STACK].num;
     const queue = topics[CodingTest.DataStructure.QUEUE].num;
 
+    const string = topics[CodingTest.DataStructure.STRING].num;
+    const tree = topics[CodingTest.DataStructure.TREE].num;
+    const binary_tree = topics[CodingTest.DataStructure.BINARY_TREE].num;
+    const deque = topics[CodingTest.DataStructure.DEQUE].num;
+    const priority_queue = topics[CodingTest.DataStructure.PRIORITY_QUEUE].num;
+    const graph = topics[CodingTest.DataStructure.GRAPH].num;
+  
+
     /** algorithm */
     const sorting = topics[CodingTest.Algorithms.SORTING].num;
     const bruteforce = topics[CodingTest.Algorithms.BRUTEFORCE].num;
     const dfs_bfs = combineNum([...topics[CodingTest.Algorithms.DFS].content, ...topics[CodingTest.Algorithms.BFS].content]);
     const greedy = topics[CodingTest.Algorithms.GREEDY].num;
     const binarySearch = topics[CodingTest.Algorithms.BINARY_SEARCH].num;
+    
+    const implement = topics[CodingTest.Algorithms.IMPLEMENT].num;
+    const math = topics[CodingTest.Algorithms.MATH].num;
+    const recursion = topics[CodingTest.Algorithms.RECURSION].num;
+    const dynamic_programming = topics[CodingTest.Algorithms.DYNAMIC_PROGRAMMING].num;
+    const memoization = topics[CodingTest.Algorithms.MEMOIZATION].num;
+    const two_pointers = topics[CodingTest.Algorithms.TWO_POINTERS].num;
+    const bit_manipulation = topics[CodingTest.Algorithms.BIT_MANIPULATION].num;
+    const design = topics[CodingTest.Algorithms.DESIGN].num;
+    const divide_and_conquer = topics[CodingTest.Algorithms.DVIDE_AND_CONQUER].num;
+    const counting = topics[CodingTest.Algorithms.COUNTING].num;
+    const matrix = topics[CodingTest.Algorithms.MATRIX].num;
+    const simulation = topics[CodingTest.Algorithms.SIMULATION].num;
+    const cumulative_sum = topics[CodingTest.Algorithms.CUMULATIVE_SUM].num;
 
     return `# Coding Test Practice (${programmers + leetcode + boj})
  - # Overview
@@ -122,39 +140,32 @@ function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics
         - [해시 (${hash})](#해시-${hash})
         - [스택 (${stack})](#스택-${stack})
         - [큐 (${queue})](#큐-${queue})
+        - [문자열 (${string})](#문자열-${string})
+        - [트리 (${tree})](#트리-${tree})
+        - [이진 트리 (${binary_tree})](#이진-트리-${binary_tree})
+        - [덱 (${deque})](#덱-${deque})
+        - [우선순위 큐 (${priority_queue})](#우선순위-큐-${priority_queue})
+        - [그래프 (${graph})](#그래프-${graph})
       - [알고리즘](#알고리즘)
         - [정렬 (${sorting})](#정렬-${sorting})
         - [완전 탐색 (${bruteforce})](#완전-탐색-${bruteforce})
         - [DFS/BFS (${dfs_bfs})](#dfsbfs-${dfs_bfs})
         - [탐욕법 (${greedy})](#탐욕법-${greedy})
         - [이분 탐색 (${binarySearch})](#이분-탐색-${binarySearch})
+        - [구현 (${implement})](#구현-${implement})        
+        - [수학 (${math})](#수학-${math})        
+        - [재귀 (${recursion})](#재귀-${recursion})        
+        - [동적계획법 (${dynamic_programming})](#동적계획법-${dynamic_programming})        
+        - [메모이제이션 (${memoization})](#메모이제이션-${memoization})        
+        - [Two Pointers (${two_pointers})](#two-pointers-${two_pointers})        
+        - [비트 연산 (${bit_manipulation})](#비트-연산-${bit_manipulation})        
+        - [디자인 (${design})](#디자인-${design})        
+        - [분할 정복 (${divide_and_conquer})](#분할-정복-${divide_and_conquer})        
+        - [카운팅 (${counting})](#카운팅-${counting})        
+        - [Matrix (${matrix})](#matrix-${matrix})        
+        - [시뮬레이션 (${simulation})](#시뮬레이션-${simulation})        
+        - [누적 합 (${cumulative_sum})](#누적-합-${cumulative_sum})        
     `
-
-    /**
-    <!--
-      선택 목록2
-    
-      - [힙](#힙)
-        - [우선 순위 큐](#우선-순위-큐)
-      - [그래프](#그래프)
-        - [트리](#트리)
-        - [트라이](#트라이)
-        - [최단 경로](#최단-경로)
-        - [최소 신장](#최소-신장)
-      - [동적계획법](#동적계획법)
-      - [비트 연산](#비트-연산) -->
-    
-    <!--
-    - [Presets](#Presets)
-      - [연결 리스트 Preset]
-      - [스택 Preset](#스택-preset)
-      - [큐 Preset](#큐-preset)
-      - [힙 Preset](#힙-preset)
-        - [우선 순위 큐 Preset](#우선-순위-큐-preset)
-      - [이분 탐색 Preset](#이분-탐색-preset)
-      - [그래프 Preset](#그래프-preset)
-        - [트리 Preset](#트리-preset) -->
-     */
 }
 
 function generatePlatformProblems(difficulties: CodingTest.DifficultiesViewModel) {
@@ -219,6 +230,18 @@ function generatorRelatedToTopicProblems(topics: CodingTest.TopicsViewModel) {
         ${combineSentence(topics[CodingTest.DataStructure.STACK].content)}
     - ## 큐 (${topics[CodingTest.DataStructure.QUEUE].num})
         ${combineSentence(topics[CodingTest.DataStructure.QUEUE].content)}
+    - ## 문자열 (${topics[CodingTest.DataStructure.STRING].num})
+        ${combineSentence(topics[CodingTest.DataStructure.STRING].content)}
+    - ## 트리 (${topics[CodingTest.DataStructure.TREE].num})
+        ${combineSentence(topics[CodingTest.DataStructure.TREE].content)}
+    - ## 이진 트리 (${topics[CodingTest.DataStructure.BINARY_TREE].num})
+        ${combineSentence(topics[CodingTest.DataStructure.BINARY_TREE].content)}
+    - ## 덱 (${topics[CodingTest.DataStructure.DEQUE].num})
+        ${combineSentence(topics[CodingTest.DataStructure.DEQUE].content)}
+    - ## 우선순위 큐 (${topics[CodingTest.DataStructure.PRIORITY_QUEUE].num})
+        ${combineSentence(topics[CodingTest.DataStructure.PRIORITY_QUEUE].content)}
+    - ## 그래프 (${topics[CodingTest.DataStructure.GRAPH].num})
+        ${combineSentence(topics[CodingTest.DataStructure.GRAPH].content)}
  - ## 알고리즘
     - ## 정렬 (${topics[CodingTest.Algorithms.SORTING].num})
         ${combineSentence(topics[CodingTest.Algorithms.SORTING].content)}
@@ -230,6 +253,32 @@ function generatorRelatedToTopicProblems(topics: CodingTest.TopicsViewModel) {
         ${combineSentence(topics[CodingTest.Algorithms.GREEDY].content)}
     - ## 이분 탐색 (${topics[CodingTest.Algorithms.BINARY_SEARCH].num})
         ${combineSentence(topics[CodingTest.Algorithms.BINARY_SEARCH].content)}
+    - ## 구현 (${topics[CodingTest.Algorithms.IMPLEMENT].num})
+        ${combineSentence(topics[CodingTest.Algorithms.IMPLEMENT].content)}
+    - ## 수학 (${topics[CodingTest.Algorithms.MATH].num})
+        ${combineSentence(topics[CodingTest.Algorithms.MATH].content)}
+    - ## 재귀 (${topics[CodingTest.Algorithms.RECURSION].num})
+        ${combineSentence(topics[CodingTest.Algorithms.RECURSION].content)}
+    - ## 동적계획법 (${topics[CodingTest.Algorithms.DYNAMIC_PROGRAMMING].num})
+        ${combineSentence(topics[CodingTest.Algorithms.DYNAMIC_PROGRAMMING].content)}
+    - ## 메모이제이션 (${topics[CodingTest.Algorithms.MEMOIZATION].num})
+        ${combineSentence(topics[CodingTest.Algorithms.MEMOIZATION].content)}
+    - ## Two Pointers (${topics[CodingTest.Algorithms.TWO_POINTERS].num})
+        ${combineSentence(topics[CodingTest.Algorithms.TWO_POINTERS].content)}
+    - ## 비트 연산 (${topics[CodingTest.Algorithms.BIT_MANIPULATION].num})
+        ${combineSentence(topics[CodingTest.Algorithms.BIT_MANIPULATION].content)}
+    - ## 디자인 (${topics[CodingTest.Algorithms.DESIGN].num})
+        ${combineSentence(topics[CodingTest.Algorithms.DESIGN].content)}
+    - ## 분할 정복 (${topics[CodingTest.Algorithms.DVIDE_AND_CONQUER].num})
+        ${combineSentence(topics[CodingTest.Algorithms.DVIDE_AND_CONQUER].content)}
+    - ## 카운팅 (${topics[CodingTest.Algorithms.COUNTING].num})
+        ${combineSentence(topics[CodingTest.Algorithms.COUNTING].content)}
+    - ## Matrix (${topics[CodingTest.Algorithms.MATRIX].num})
+        ${combineSentence(topics[CodingTest.Algorithms.MATRIX].content)}
+    - ## 시뮬레이션 (${topics[CodingTest.Algorithms.SIMULATION].num})
+        ${combineSentence(topics[CodingTest.Algorithms.SIMULATION].content)}
+    - ## 누적 합 (${topics[CodingTest.Algorithms.CUMULATIVE_SUM].num})
+        ${combineSentence(topics[CodingTest.Algorithms.CUMULATIVE_SUM].content)}
     `;
 }
 
