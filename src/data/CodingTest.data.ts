@@ -2621,6 +2621,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "name": "메뉴 리뉴얼",
       "platform": CodingTest.Platform.PROGRAMMERS,
       "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
+      "company": CodingTest.Company.KAKAO,
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [CodingTest.Algorithms.BRUTEFORCE],
       "url": [{
