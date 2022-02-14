@@ -2572,7 +2572,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       {
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
-          "link": "https://philosopherprogrammer.tistory.com/93"
+          "link": "https://philosopherprogrammer.com/93"
       }, {
         "name": URLName.CODE,
         "icon": URLIcon.CODE,
@@ -2591,7 +2591,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
-          "link": "https://philosopherprogrammer.tistory.com/92"
+          "link": "https://philosopherprogrammer.com/92"
       }, {
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2609,7 +2609,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
-          "link": "https://philosopherprogrammer.tistory.com/94"
+          "link": "https://philosopherprogrammer.com/94"
       }, {
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2627,7 +2627,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
-          "link": "https://philosopherprogrammer.tistory.com/95"
+          "link": "https://philosopherprogrammer.com/95"
       }, {
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
