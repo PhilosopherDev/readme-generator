@@ -2615,6 +2615,23 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
           "icon": URLIcon.CODE,
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84"    
       }]
+    },
+    { 
+      "cote_id": "_8hw51mj",
+      "name": "메뉴 리뉴얼",
+      "platform": CodingTest.Platform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
+      "language": [CodingTest.Language.JAVASCRIPT],
+      "topic": [CodingTest.Algorithms.BRUTEFORCE],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.tistory.com/95"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%A9%94%EB%89%B4%EB%A6%AC%EB%89%B4%EC%96%BC"    
+      }]
     }
 ]
 
