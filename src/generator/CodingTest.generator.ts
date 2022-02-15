@@ -30,17 +30,22 @@ function makeDifficulties(codingTestData: Array<CodingTest.CodingTestModel>): Co
     const filteredModel = codingTestData.filter((data) => data.difficulty === level);
     (difficulties as any)[level].num = filteredModel.length;
     (difficulties as any)[level].content = filteredModel.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {            
-        let string = "- #### " + item.name;
-        if (item.company) string += `\n             - :bulb: ${item.company} 기출`;
-        if (item.url && Array.isArray(item.url) && item.url.length > 0) {
-            item.url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
-        }
+      let string = "- #### " + item.name;
+      if (item.language.length > 0) string += `\n             - :gem: ${item.language.sort().map(capitalizeFirstLetter).join(", ")}`;
+      if (item.company) string += `\n             - :bulb: ${capitalizeFirstLetter(item.company)} 기출`;
+      if (item.url && Array.isArray(item.url) && item.url.length > 0) {
+          item.url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
+      }
 
         return string;
     }).join("\n        ");
   });
 
   return difficulties;
+}
+
+function capitalizeFirstLetter(str: string) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 function makeTopics(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.TopicsViewModel {
