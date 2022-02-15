@@ -1769,7 +1769,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.MATH,
@@ -1790,7 +1790,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       
@@ -1810,7 +1810,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.MATH,
@@ -1831,7 +1831,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.IMPLEMENT
@@ -1851,7 +1851,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.IMPLEMENT
@@ -1871,7 +1871,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.BRUTEFORCE,
@@ -1892,7 +1892,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.STRING,
@@ -1913,7 +1913,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.BRUTEFORCE
@@ -1933,7 +1933,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.BRUTEFORCE,
@@ -1954,7 +1954,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.IMPLEMENT,
@@ -1975,7 +1975,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.STRING,
@@ -1996,7 +1996,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.MATH,
@@ -2017,7 +2017,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.BRONZE1,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       
@@ -2037,7 +2037,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.QUEUE
@@ -2057,7 +2057,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER5,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.HASH,
@@ -2077,7 +2077,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.STRING,
@@ -2099,7 +2099,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.QUEUE
@@ -2119,7 +2119,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.STRING,
@@ -2140,7 +2140,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.STACK
@@ -2160,7 +2160,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.QUEUE
@@ -2180,7 +2180,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.DataStructure.DEQUE,
@@ -2304,7 +2304,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.CUMULATIVE_SUM
@@ -2324,7 +2324,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.IMPLEMENT,
