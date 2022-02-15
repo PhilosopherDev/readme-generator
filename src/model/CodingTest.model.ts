@@ -23,7 +23,7 @@ export type TopicsViewModel = { [key: string]: { num: number, content: Array<Top
 export type TopicsViewModelContent = { key: string, sentence: string };
 
 export enum Company {
-    KAKAO = "Kakao"
+    KAKAO = "kakao"
 }
 
 export enum Platform {
