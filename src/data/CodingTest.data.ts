@@ -2200,7 +2200,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "platform": CodingTest.Platform.BOJ,
     "difficulty": CodingTest.BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON,
+      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
     ],
     "topic": [
       CodingTest.Algorithms.IMPLEMENT,
