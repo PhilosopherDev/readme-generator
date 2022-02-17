@@ -1,47 +1,85 @@
 import * as fs from "fs";
 import * as CodingTest from "../model/CodingTest.model";
 
-function makeDifficulties(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.DifficultiesViewModel {
-  const difficulties: CodingTest.DifficultiesViewModel = {
-    [CodingTest.ProgrammersLevel.LEVEL1]: {num: 0, content: ''},
-    [CodingTest.ProgrammersLevel.LEVEL2]: {num: 0, content: ''},
-    [CodingTest.ProgrammersLevel.LEVEL3]: {num: 0, content: ''},
-    [CodingTest.LeetcodeLevel.EASY]: {num: 0, content: ''},
-    [CodingTest.LeetcodeLevel.MEDIUM]: {num: 0, content: ''},
-    // [CodingTest.LeetcodeLevel.HARD]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.BRONZE5]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.BRONZE4]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.BRONZE3]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.BRONZE2]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.BRONZE1]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.SILVER5]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.SILVER4]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.SILVER3]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.SILVER2]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.SILVER1]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.GOLD5]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.GOLD4]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.GOLD3]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.GOLD2]: {num: 0, content: ''},
-    [CodingTest.BOJLevel.GOLD1]: {num: 0, content: ''}
-  } 
+function makeEducationData(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.DifficultiesViewModel {
+  const educationData: CodingTest.DifficultiesViewModel = {} 
+  
+  for (const key in CodingTest.Lecture) {
+    educationData[(CodingTest.Lecture as any)[key]] = { num: 0, content: '' };
+  }
 
+  return makeEducationContent(codingTestData, educationData);
+}
+
+function makeEducationContent(codingTestData: Array<CodingTest.CodingTestModel>, educationData: CodingTest.DifficultiesViewModel): CodingTest.DifficultiesViewModel {
+  Object.keys(educationData).forEach((lecture) => {
+    const filteredModel = codingTestData.filter((data) => data.lecture && data.lecture === lecture);
+    (educationData as any)[lecture].num = filteredModel.length;
+    (educationData as any)[lecture].content = filteredModel.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {            
+        let string = makeTitle(item.name);
+        if (item.language.length > 0) string += makeLanguageContent(item.language);
+        if (item.url && Array.isArray(item.url) && item.url.length > 0) {
+            item.url.forEach((u) => string += makrUrlContent(u)); 
+        }
+
+        return string;
+    }).join("\n        ");
+  });
+
+  return educationData;
+}
+
+function makeDifficulties(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.DifficultiesViewModel {
+  const difficulties: CodingTest.DifficultiesViewModel = {} 
+
+  for (const key in CodingTest.ProgrammersLevel) {
+    difficulties[(CodingTest.ProgrammersLevel as any)[key]] = { num: 0, content: '' };
+  }
+
+  for (const key in CodingTest.LeetcodeLevel) {
+    difficulties[(CodingTest.LeetcodeLevel as any)[key]] = { num: 0, content: '' };
+  }
+
+  for (const key in CodingTest.BOJLevel) {
+    difficulties[(CodingTest.BOJLevel as any)[key]] = { num: 0, content: '' };
+  }
+
+  return makeDifficultyContent(codingTestData, difficulties);
+}
+
+function makeDifficultyContent(codingTestData: Array<CodingTest.CodingTestModel>, difficulties: CodingTest.DifficultiesViewModel): CodingTest.DifficultiesViewModel {
   Object.keys(difficulties).forEach((level) => {
     const filteredModel = codingTestData.filter((data) => data.difficulty === level);
     (difficulties as any)[level].num = filteredModel.length;
     (difficulties as any)[level].content = filteredModel.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {            
-      let string = "- #### " + item.name;
-      if (item.language.length > 0) string += `\n             - :gem: ${item.language.sort().map(capitalizeFirstLetter).join(", ")}`;
-      if (item.company) string += `\n             - :bulb: ${capitalizeFirstLetter(item.company)} 기출`;
-      if (item.url && Array.isArray(item.url) && item.url.length > 0) {
-          item.url.forEach((u) => string += ("\n" + "             - " + u.icon + " [" + u.name + "]" + "(" + u.link  + ")")); 
-      }
+        let string = makeTitle(item.name);
+        if (item.language.length > 0) string += makeLanguageContent(item.language);
+        if (item.company) string += makeCompanyContent(item.company);
+        if (item.url && Array.isArray(item.url) && item.url.length > 0) {
+            item.url.forEach((u) => string += makrUrlContent(u)); 
+        }
 
         return string;
     }).join("\n        ");
   });
 
   return difficulties;
+}
+
+function makeTitle(title: string): string {
+  return "- #### " + title;
+}
+
+function makeLanguageContent(language: Array<string>): string {
+  return `\n             - :gem: ${language.sort().map(capitalizeFirstLetter).join(", ")}`;
+}
+
+function makeCompanyContent(company: string): string {
+  return `\n             - :bulb: ${capitalizeFirstLetter(company)} 기출`;
+}
+
+function makrUrlContent(urlData: any): string {
+  return ("\n" + "             - " + urlData.icon + " [" + urlData.name + "]" + "(" + urlData.link + ")");
 }
 
 function capitalizeFirstLetter(str: string) {
@@ -71,7 +109,7 @@ function makeTopics(codingTestData: Array<CodingTest.CodingTestModel>): CodingTe
 }
 
 
-function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics: CodingTest.TopicsViewModel) {
+function generateOverview(codingTestDataLength: number, difficulties: CodingTest.DifficultiesViewModel, edu: CodingTest.DifficultiesViewModel, topics: CodingTest.TopicsViewModel) {
     /** difficulty */
     const level1 = difficulties[CodingTest.ProgrammersLevel.LEVEL1].num;
     const level2 = difficulties[CodingTest.ProgrammersLevel.LEVEL2].num
@@ -82,10 +120,14 @@ function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics
     const silver = difficulties[CodingTest.BOJLevel.SILVER5].num + difficulties[CodingTest.BOJLevel.SILVER4].num + difficulties[CodingTest.BOJLevel.SILVER3].num + difficulties[CodingTest.BOJLevel.SILVER2].num + difficulties[CodingTest.BOJLevel.SILVER1].num
     const gold = difficulties[CodingTest.BOJLevel.GOLD5].num + difficulties[CodingTest.BOJLevel.GOLD4].num + difficulties[CodingTest.BOJLevel.GOLD3].num + difficulties[CodingTest.BOJLevel.GOLD2].num + difficulties[CodingTest.BOJLevel.GOLD1].num;
 
-    /** platform */
+    /** coding test platform */
     const programmers = level1 + level2 + level3;
     const leetcode = easy + medium;
     const boj = bronze + silver + gold;
+
+    /** education platform */    
+    const javascript_algorithm_problem_solving = edu[CodingTest.Lecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING].num;
+    const inflearnNum = javascript_algorithm_problem_solving;
 
     /** data structure */
     const array = topics[CodingTest.DataStructure.ARRAY].num;
@@ -123,7 +165,7 @@ function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics
     const simulation = topics[CodingTest.Algorithms.SIMULATION].num;
     const cumulative_sum = topics[CodingTest.Algorithms.CUMULATIVE_SUM].num;
 
-    return `# Coding Test Practice (${programmers + leetcode + boj})
+    return `# Coding Test Practice (${codingTestDataLength})
  - # Overview
     - [Sort by Coding Test Platform](#sort-by-coding-test-platform)    
       - [Programmers (${programmers})](#programmers-${programmers})
@@ -137,7 +179,11 @@ function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics
       - [Leetcode (${leetcode})](#leetcode-${leetcode})
         - [Medium (${medium})](#medium-${medium})  
         - [Easy (${easy})](#easy-${easy})
-    
+
+    - [Sort by Education Platform](#sort-by-education-platform)
+      - [Inflearn (${inflearnNum})](#inflearn-${inflearnNum})
+        - [자바스크립트 알고리즘 문제풀이 (${javascript_algorithm_problem_solving})](#자바스크립트-알고리즘-문제풀이-${javascript_algorithm_problem_solving})
+
     - [Sort by Related Topic](#sort-by-related-topic)
       - [자료구조](#자료구조)
         - [배열 (${array})](#배열-${array})
@@ -173,7 +219,7 @@ function generateOverview(difficulties: CodingTest.DifficultiesViewModel, topics
     `
 }
 
-function generatePlatformProblems(difficulties: CodingTest.DifficultiesViewModel) {
+function generateCodingTestPlatformProblems(difficulties: CodingTest.DifficultiesViewModel) {
     const bronze = difficulties[CodingTest.BOJLevel.BRONZE5].num + difficulties[CodingTest.BOJLevel.BRONZE4].num + difficulties[CodingTest.BOJLevel.BRONZE3].num + difficulties[CodingTest.BOJLevel.BRONZE2].num + difficulties[CodingTest.BOJLevel.BRONZE1].num;
     const silver = difficulties[CodingTest.BOJLevel.SILVER5].num + difficulties[CodingTest.BOJLevel.SILVER4].num + difficulties[CodingTest.BOJLevel.SILVER3].num + difficulties[CodingTest.BOJLevel.SILVER2].num + difficulties[CodingTest.BOJLevel.SILVER1].num;
     const gold = difficulties[CodingTest.BOJLevel.GOLD5].num + difficulties[CodingTest.BOJLevel.GOLD4].num + difficulties[CodingTest.BOJLevel.GOLD3].num + difficulties[CodingTest.BOJLevel.GOLD2].num + difficulties[CodingTest.BOJLevel.GOLD1].num;
@@ -216,6 +262,18 @@ function generatePlatformProblems(difficulties: CodingTest.DifficultiesViewModel
         ${difficulties[CodingTest.LeetcodeLevel.MEDIUM].content}
       - ### Easy (${difficulties[CodingTest.LeetcodeLevel.EASY].num})
         ${difficulties[CodingTest.LeetcodeLevel.EASY].content}
+    `
+}
+
+function generateEducationPlatformProblems(edu: CodingTest.DifficultiesViewModel) {
+    const inflearnNum = edu[CodingTest.Lecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING].num;
+
+    return `- ## Sort by Education Platform
+
+    - ## Inflearn (${inflearnNum})
+  
+      - ### 자바스크립트 알고리즘 문제풀이 (${edu[CodingTest.Lecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING].num})
+        ${edu[CodingTest.Lecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING].content}
     `
 }
 
@@ -308,8 +366,9 @@ function combineNum(content: Array<CodingTest.TopicsViewModelContent>) {
 }
 
 export function generateCodingTestReadme(codingTestData: Array<CodingTest.CodingTestModel>) {
+    const edu = makeEducationData(codingTestData);  
     const difficulties = makeDifficulties(codingTestData);
     const topics = makeTopics(codingTestData);
-    const README = generateOverview(difficulties, topics) + "\n" + generatePlatformProblems(difficulties) + "\n" + generatorRelatedToTopicProblems(topics);
+    const README = generateOverview(codingTestData.length, difficulties, edu, topics) + "\n" + generateCodingTestPlatformProblems(difficulties) + "\n" + generateEducationPlatformProblems(edu) + "\n" + generatorRelatedToTopicProblems(topics);
     fs.writeFileSync('./README.md', README);
 }
