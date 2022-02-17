@@ -6,11 +6,14 @@ export interface CodingTestModel {
     number?: number;
     company?: Company;
     platform: Platform;
-    difficulty: DifficultyType;
+    difficulty?: DifficultyType;
+    lecture?: Lecture;
     language: Array<Language>;
     topic: Array<Topic>;
     url: Array<URLType>;
 }
+
+export type Platform = CodingTestPlatform | EducationPlatform;
 
 export type Topic = DataStructure | Algorithms;
 
@@ -26,10 +29,22 @@ export enum Company {
     KAKAO = "kakao"
 }
 
-export enum Platform {
+export enum CodingTestPlatform {
     PROGRAMMERS = "programmers",
     LEETCODE = "leetcode",
     BOJ = "boj"
+}
+
+export enum EducationPlatform {
+    INFLEARN = "inflearn",
+    UDEMY = "udemy"
+}
+
+export enum Lecture {
+    /** Inflearn */
+    JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING = "javascript_algorithm_problem_solving",
+    
+    /** Udemy */
 }
 
 export enum Language {
