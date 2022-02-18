@@ -2664,6 +2664,58 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
           "icon": URLIcon.CODE,
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/EducationPlatform/Inflearn/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/8_%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98_%EC%99%84%EC%A0%84%ED%83%90%EC%83%89_DFS/%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98"    
       }]
+    },
+    { 
+      "cote_id": "_3bgpj0w",
+      "name": "문자열을 정수로 바꾸기",
+      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
+      "language": [CodingTest.Language.JAVASCRIPT],
+      "topic": [CodingTest.Algorithms.IMPLEMENT],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84%EC%A0%95%EC%88%98%EB%A1%9C%EB%B0%94%EA%BE%B8%EA%B8%B0"    
+      }]
+    },
+    { 
+      "cote_id": "_noishoh",
+      "name": "더 맵게",
+      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
+      "language": [CodingTest.Language.PYTHON],
+      "topic": [CodingTest.DataStructure.HEAP],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%8D%94%EB%A7%B5%EA%B2%8C"    
+      }]
+    },
+    { 
+      "cote_id": "_r7jfam5",
+      "name": "전화번호 목록",
+      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
+      "language": [CodingTest.Language.PYTHON],
+      "topic": [CodingTest.DataStructure.HASH],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D"    
+      }]
+    },
+    { 
+      "cote_id": "_oe17hrv",
+      "name": "주식가격",
+      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
+      "language": [CodingTest.Language.PYTHON],
+      "topic": [CodingTest.DataStructure.QUEUE],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9"    
+      }]
     }
 ]
 
@@ -2671,7 +2723,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "",
       "name": "",
-      "platform": CodingTest.,
+      "platform": CodingTest,
       "difficulty": CodingTest,        
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [],
