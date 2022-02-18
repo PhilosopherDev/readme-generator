@@ -90,7 +90,6 @@ function makeTopics(codingTestData: Array<CodingTest.CodingTestModel>): CodingTe
 
 
 function generateOverview(codingTestDataLength: number, difficulties: CodingTest.ViewModel, education: CodingTest.ViewModel, topics: CodingTest.TopicsViewModel) {
-    
     const [programmersTotal, programmersContent] = generateOverviewIndex(difficulties, CodingTest.ProgrammersLevel);
     const [bojTotal, bojContent] = generateOverviewIndex(difficulties, CodingTest.BOJLevel);
     const [leetcodeTotal, leetcodeContent] = generateOverviewIndex(difficulties, CodingTest.LeetcodeLevel);
