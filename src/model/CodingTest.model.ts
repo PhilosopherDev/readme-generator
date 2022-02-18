@@ -19,7 +19,9 @@ export type Topic = DataStructure | Algorithms;
 
 export type DifficultyType = ProgrammersLevel | LeetcodeLevel | BOJLevel;
 
-export type DifficultiesViewModel = { [key: string]: { num: number, content: string } }
+export type Lecture = InflearnLecture | UdemyLecture;
+
+export type ViewModel = { [key: string]: { num: number, content: string } }
 
 export type TopicsViewModel = { [key: string]: { num: number, content: Array<TopicsViewModelContent> } }
 
@@ -40,11 +42,12 @@ export enum EducationPlatform {
     UDEMY = "udemy"
 }
 
-export enum Lecture {
-    /** Inflearn */
+export enum InflearnLecture {
     JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING = "javascript_algorithm_problem_solving",
-    
-    /** Udemy */
+}
+
+export enum UdemyLecture {
+
 }
 
 export enum Language {
@@ -53,33 +56,50 @@ export enum Language {
 }
 
 export enum ProgrammersLevel {
-    LEVEL1 = "level1",
+    LEVEL5 = "level5",
+    LEVEL4 = "level4",
+    LEVEL3 = "level3",
     LEVEL2 = "level2",
-    LEVEL3 = "level3"
+    LEVEL1 = "level1",
 }
 
 export enum LeetcodeLevel {
-    EASY = "easy",
+    HARD = "hard",
     MEDIUM = "medium",
-    HARD = "hard"
+    EASY = "easy",
 }
 
 export enum BOJLevel {
-    BRONZE1 = "bronze1",
-    BRONZE2 = "bronze2",
-    BRONZE3 = "bronze3",
-    BRONZE4 = "bronze4",
-    BRONZE5 = "bronze5",
+    RUBY1 = "ruby1",
+    RUBY2 = "ruby2",
+    RUBY3 = "ruby3",
+    RUBY4 = "ruby4",
+    RUBY5 = "ruby5",
+    DIAMOND1 = "diamond1",
+    DIAMOND2 = "diamond2",
+    DIAMOND3 = "diamond3",
+    DIAMOND4 = "diamond4",
+    DIAMOND5 = "diamond5",
+    PLATINUM1 = "platinum1",
+    PLATINUM2 = "platinum2",
+    PLATINUM3 = "platinum3",
+    PLATINUM4 = "platinum4",
+    PLATINUM5 = "platinum5",
+    GOLD1 = "gold1",
+    GOLD2 = "gold2",
+    GOLD3 = "gold3",
+    GOLD4 = "gold4",
+    GOLD5 = "gold5",
     SILVER1 = "silver1",
     SILVER2 = "silver2",
     SILVER3 = "silver3",
     SILVER4 = "silver4",
     SILVER5 = "silver5",
-    GOLD1 = "gold1",
-    GOLD2 = "gold2",
-    GOLD3 = "gold3",
-    GOLD4 = "gold4",
-    GOLD5 = "gold5"
+    BRONZE1 = "bronze1",
+    BRONZE2 = "bronze2",
+    BRONZE3 = "bronze3",
+    BRONZE4 = "bronze4",
+    BRONZE5 = "bronze5",
 }
 
 export enum DataStructure {
@@ -100,11 +120,11 @@ export enum DataStructure {
 export enum Algorithms {
     SORTING = "sorting",
     BRUTEFORCE = "bruteforce",
-    DFS = "dfs",
-    BFS = "bfs",
+    DFS = "DFS",
+    BFS = "BFS",
     GREEDY = "greedy",
     BINARY_SEARCH = "binary_search",
-    IMPLEMENT = "implement",
+    IMPLEMENT = "implementation",
     MATH = "math",
     RECURSION = "recursion",
     DYNAMIC_PROGRAMMING = "dynamic_programming",
