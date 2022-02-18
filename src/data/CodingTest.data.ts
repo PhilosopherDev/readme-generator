@@ -2656,7 +2656,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "cote_id": "_n6owklo",
       "name": "재귀 함수",
       "platform": CodingTest.EducationPlatform.INFLEARN,
-      "lecture": CodingTest.Lecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
+      "lecture": CodingTest.InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [CodingTest.Algorithms.RECURSION],
       "url": [{
