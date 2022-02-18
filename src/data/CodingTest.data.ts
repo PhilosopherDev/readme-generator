@@ -2723,7 +2723,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "platform": CodingTest.EducationPlatform.INFLEARN,
       "lecture": CodingTest.InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
       "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.RECURSION],
+      "topic": [CodingTest.Algorithms.RECURSION, CodingTest.Algorithms.DFS],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
