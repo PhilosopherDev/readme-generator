@@ -139,6 +139,7 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
     const string = topics[CodingTest.DataStructure.STRING].num;
     const tree = topics[CodingTest.DataStructure.TREE].num;
     const binary_tree = topics[CodingTest.DataStructure.BINARY_TREE].num;
+    const heap = topics[CodingTest.DataStructure.HEAP].num;
     const deque = topics[CodingTest.DataStructure.DEQUE].num;
     const priority_queue = topics[CodingTest.DataStructure.PRIORITY_QUEUE].num;
     const graph = topics[CodingTest.DataStructure.GRAPH].num;
@@ -167,7 +168,7 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
 
     return `# Coding Test Practice (${codingTestDataLength})
  - # Overview
-    - [Sort by Coding Test Platform](#sort-by-coding-test-platform)    
+    - [Coding Test Platform](#coding-test-platform)    
       - [Programmers (${programmers})](#programmers-${programmers})
         - [Level3 (${level3})](#level3-${level3})
         - [Level2 (${level2})](#level2-${level2})
@@ -180,11 +181,11 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
         - [Medium (${medium})](#medium-${medium})  
         - [Easy (${easy})](#easy-${easy})
 
-    - [Sort by Education Platform](#sort-by-education-platform)
+    - [Education Platform](#education-platform)
       - [Inflearn (${inflearnNum})](#inflearn-${inflearnNum})
         - [자바스크립트 알고리즘 문제풀이 (${javascript_algorithm_problem_solving})](#자바스크립트-알고리즘-문제풀이-${javascript_algorithm_problem_solving})
 
-    - [Sort by Related Topic](#sort-by-related-topic)
+    - [Related Topic](#related-topic)
       - [자료구조](#자료구조)
         - [배열 (${array})](#배열-${array})
         - [연결 리스트 (${linkedList})](#연결-리스트-${linkedList})
@@ -194,6 +195,7 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
         - [문자열 (${string})](#문자열-${string})
         - [트리 (${tree})](#트리-${tree})
         - [이진 트리 (${binary_tree})](#이진-트리-${binary_tree})
+        - [힙 (${heap})](#힙-${heap})
         - [덱 (${deque})](#덱-${deque})
         - [우선순위 큐 (${priority_queue})](#우선순위-큐-${priority_queue})
         - [그래프 (${graph})](#그래프-${graph})
@@ -224,7 +226,7 @@ function generateCodingTestPlatformProblems(difficulties: CodingTest.Difficultie
     const silver = difficulties[CodingTest.BOJLevel.SILVER5].num + difficulties[CodingTest.BOJLevel.SILVER4].num + difficulties[CodingTest.BOJLevel.SILVER3].num + difficulties[CodingTest.BOJLevel.SILVER2].num + difficulties[CodingTest.BOJLevel.SILVER1].num;
     const gold = difficulties[CodingTest.BOJLevel.GOLD5].num + difficulties[CodingTest.BOJLevel.GOLD4].num + difficulties[CodingTest.BOJLevel.GOLD3].num + difficulties[CodingTest.BOJLevel.GOLD2].num + difficulties[CodingTest.BOJLevel.GOLD1].num;
 
-    return `- ## Sort by Coding Test Platform
+    return `- ## Coding Test Platform
 
     - ## Programmers (${difficulties[CodingTest.ProgrammersLevel.LEVEL1].num + difficulties[CodingTest.ProgrammersLevel.LEVEL2].num + difficulties[CodingTest.ProgrammersLevel.LEVEL3].num})
   
@@ -268,7 +270,7 @@ function generateCodingTestPlatformProblems(difficulties: CodingTest.Difficultie
 function generateEducationPlatformProblems(edu: CodingTest.DifficultiesViewModel) {
     const inflearnNum = edu[CodingTest.Lecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING].num;
 
-    return `- ## Sort by Education Platform
+    return `- ## Education Platform
 
     - ## Inflearn (${inflearnNum})
   
@@ -280,7 +282,7 @@ function generateEducationPlatformProblems(edu: CodingTest.DifficultiesViewModel
 function generatorRelatedToTopicProblems(topics: CodingTest.TopicsViewModel) {
   
     return `
- - ## Sort by Related Topic
+ - ## Related Topic
 
  - ## 자료구조
     - ## 배열 (${topics[CodingTest.DataStructure.ARRAY].num})
@@ -299,6 +301,8 @@ function generatorRelatedToTopicProblems(topics: CodingTest.TopicsViewModel) {
         ${combineSentence(topics[CodingTest.DataStructure.TREE].content)}
     - ## 이진 트리 (${topics[CodingTest.DataStructure.BINARY_TREE].num})
         ${combineSentence(topics[CodingTest.DataStructure.BINARY_TREE].content)}
+    - ## 힙 (${topics[CodingTest.DataStructure.HEAP].num})
+        ${combineSentence(topics[CodingTest.DataStructure.HEAP].content)}
     - ## 덱 (${topics[CodingTest.DataStructure.DEQUE].num})
         ${combineSentence(topics[CodingTest.DataStructure.DEQUE].content)}
     - ## 우선순위 큐 (${topics[CodingTest.DataStructure.PRIORITY_QUEUE].num})
