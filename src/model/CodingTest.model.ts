@@ -93,7 +93,8 @@ export enum DataStructure {
     BINARY_TREE = "binary_tree",
     DEQUE = "deque",
     PRIORITY_QUEUE = "priority_queue",
-    GRAPH = "graph"
+    GRAPH = "graph",
+    HEAP = "heap"
 }
 
 export enum Algorithms {
