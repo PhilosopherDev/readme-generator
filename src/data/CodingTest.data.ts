@@ -2765,7 +2765,25 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
           "icon": URLIcon.CODE,
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%ED%82%A4%ED%8C%A8%EB%93%9C%EB%88%84%EB%A5%B4%EA%B8%B0"    
       }]
-    }
+    },
+  {
+    "cote_id": "_bwqq6th",
+    "name": "신규 아이디 추천",
+    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "company": CodingTest.Company.KAKAO,
+    "language": [CodingTest.Language.JAVASCRIPT],
+    "topic": [CodingTest.DataStructure.STRING],
+    "url": [{
+      "name": URLName.BLOG,
+      "icon": URLIcon.BLOG,
+      "link": "https://philosopherprogrammer.com/99"
+    }, {
+      "name": URLName.CODE,
+      "icon": URLIcon.CODE,
+      "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%8B%A0%EA%B7%9C%EC%95%84%EC%9D%B4%EB%94%94%EC%B6%94%EC%B2%9C"
+    }]
+  }
 ]
 
 /**
