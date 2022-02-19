@@ -2735,6 +2735,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "name": "크레인 인형뽑기 게임",
       "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
       "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+      "company": CodingTest.Company.KAKAO,
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [CodingTest.DataStructure.STACK],
       "url": [{
@@ -2746,7 +2747,25 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
         "icon": URLIcon.CODE,
         "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%ED%81%AC%EB%A0%88%EC%9D%B8%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%EA%B2%8C%EC%9E%84"
     }]
-  }
+  },
+  { 
+      "cote_id": "_qh7nz7f",
+      "name": "키패드 누르기",
+      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
+      "company": CodingTest.Company.KAKAO,
+      "language": [CodingTest.Language.JAVASCRIPT],
+      "topic": [CodingTest.Algorithms.BFS, CodingTest.DataStructure.GRAPH],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.com/98"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%ED%82%A4%ED%8C%A8%EB%93%9C%EB%88%84%EB%A5%B4%EA%B8%B0"    
+      }]
+    }
 ]
 
 /**
@@ -2754,7 +2773,9 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "cote_id": "",
       "name": "",
       "platform": CodingTest,
-      "difficulty": CodingTest,        
+      "difficulty": CodingTest,       
+      "company": CodingTest,
+      "lecture": CodingTest, 
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [],
       "url": [{
