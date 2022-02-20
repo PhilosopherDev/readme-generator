@@ -2783,7 +2783,25 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "icon": URLIcon.CODE,
       "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%8B%A0%EA%B7%9C%EC%95%84%EC%9D%B4%EB%94%94%EC%B6%94%EC%B2%9C"
     }]
-  }
+  },
+  { 
+      "cote_id": "_u25qt9l",
+      "name": "뉴스 클러스터링",
+      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
+      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,       
+      "company": CodingTest.Company.KAKAO,
+      "language": [CodingTest.Language.JAVASCRIPT],
+      "topic": [CodingTest.Algorithms.IMPLEMENT],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.com/100"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%89%B4%EC%8A%A4%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81"
+      }]
+    },
 ]
 
 /**
@@ -2791,9 +2809,9 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "cote_id": "",
       "name": "",
       "platform": CodingTest,
-      "difficulty": CodingTest,       
+      "difficulty": CodingTest,
       "company": CodingTest,
-      "lecture": CodingTest, 
+      "lecture": CodingTest,
       "language": [CodingTest.Language.JAVASCRIPT],
       "topic": [],
       "url": [{
@@ -2803,7 +2821,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       }, {
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
-          "link": ""    
+          "link": ""
       }]
-    }
+    },
  */
