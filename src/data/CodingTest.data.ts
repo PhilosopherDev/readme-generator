@@ -1,17 +1,29 @@
-import * as CodingTest from '../model/CodingTest.model';
+import {
+  Algorithms,
+  BOJLevel,
+  Company,
+  CodingTestModel,
+  CodingTestPlatform,
+  DataStructure,
+  EducationPlatform,
+  InflearnLecture,
+  Language,
+  LeetcodeLevel,
+  ProgrammersLevel,
+} from '../model/CodingTest.model';
 import { URLName, URLIcon } from '../model/Common.model';
 
-export const codingTestData: Array<CodingTest.CodingTestModel> = [
+export const codingTestData: Array<CodingTestModel> = [
   {
     "cote_id": "_0viyqfp",
     "name": "위장",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH
+      DataStructure.HASH
     ],
     "url": [
       {
@@ -29,14 +41,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_71tjp1e",
     "name": "문자열 압축",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "company": CodingTest.Company.KAKAO,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "company": Company.KAKAO,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING
+      DataStructure.STRING
     ],
     "url": [
       {
@@ -54,14 +66,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_1r9n3cy",
     "name": "오픈채팅방",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "company": CodingTest.Company.KAKAO,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "company": Company.KAKAO,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH
+      DataStructure.HASH
     ],
     "url": [
       {
@@ -79,13 +91,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_g14do6z",
     "name": "124 나라의 숫자",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -103,14 +115,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_9dcthrp",
     "name": "기능개발",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK,
-      CodingTest.DataStructure.QUEUE
+      DataStructure.STACK,
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -128,13 +140,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_1r5knqx",
     "name": "타겟 넘버",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BFS
+      Algorithms.BFS
     ],
     "url": [
       {
@@ -152,13 +164,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_0ru5rxa",
     "name": "짝지어 제거하기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -176,13 +188,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_der0deq",
     "name": "프린터",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.QUEUE
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -200,13 +212,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_vbfjyvl",
     "name": "가장 큰 수",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.SORTING
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -224,13 +236,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_06r1ho3",
     "name": "소수 찾기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -248,13 +260,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_0zrm6wp",
     "name": "다리를 지나는 트럭",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.QUEUE
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -272,13 +284,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_s9zhz6b",
     "name": "H-Index",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.SORTING
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -296,13 +308,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_gm0hstg",
     "name": "카펫",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -320,13 +332,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_j2kmc5j",
     "name": "큰 수 만들기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.GREEDY
+      Algorithms.GREEDY
     ],
     "url": [
       {
@@ -344,13 +356,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_mexl2gj",
     "name": "구명보트",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL2,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.GREEDY
+      Algorithms.GREEDY
     ],
     "url": [
       {
@@ -368,13 +380,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_lu2j0t7",
     "name": "로또의 최고 순위와 최저 순위",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -392,15 +404,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_iikzzl4",
     "name": "숫자 문자열과 영단어",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
-    "company": CodingTest.Company.KAKAO,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "company": Company.KAKAO,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
-      CodingTest.DataStructure.ARRAY
+      DataStructure.STRING,
+      DataStructure.ARRAY
     ],
     "url": [
       {
@@ -418,13 +430,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_5tvrf7k",
     "name": "없는 숫자 더하기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -442,13 +454,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_a7nh88e",
     "name": "음양 더하기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY
+      DataStructure.ARRAY
     ],
     "url": [
       {
@@ -466,13 +478,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_3h01sl3",
     "name": "완주하지 못한 선수",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
+      DataStructure.HASH,
     ],
     "url": [
       {
@@ -490,14 +502,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_xh4fvdm",
     "name": "K번째수",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.PYTHON,
-      CodingTest.Language.JAVASCRIPT
+      Language.PYTHON,
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.SORTING
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -510,13 +522,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_d9srm2b",
     "name": "모의고사",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -534,14 +546,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_dfxs57t",
     "name": "체육복",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.PYTHON,
-      CodingTest.Language.JAVASCRIPT
+      Language.PYTHON,
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.GREEDY
+      Algorithms.GREEDY
     ],
     "url": [
       {
@@ -554,10 +566,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_xjhphb0",
     "name": "폰켓몬",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
       
@@ -578,14 +590,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_t2qsumx",
     "name": "실패율",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
-    "company": CodingTest.Company.KAKAO,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "company": Company.KAKAO,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -603,13 +615,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_wmeggre",
     "name": "약수의 개수와 덧셈",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -627,13 +639,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_t02ndka",
     "name": "두 개 뽑아서 더하기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -651,13 +663,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_qqifjyj",
     "name": "2016년",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -675,13 +687,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_wzupg4s",
     "name": "최소 직사각형",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.SORTING
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -699,13 +711,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_7j0lshd",
     "name": "나머지가 1이 되는 수 찾기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -723,13 +735,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_5zux91w",
     "name": "부족한 금액 계산하기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -747,13 +759,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_o9t7srk",
     "name": "가운데 글자 가져오기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
+      DataStructure.STRING,
     ],
     "url": [
       {
@@ -771,13 +783,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_iyyh7m0",
     "name": "같은 숫자는 싫어",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -795,13 +807,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_53izypg",
     "name": "나누어 떨어지는 숫자 배열",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY
+      DataStructure.ARRAY
     ],
     "url": [
       {
@@ -819,13 +831,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_41bjb67",
     "name": "두 정수 사이의 합",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -843,13 +855,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_xx00z8i",
     "name": "문자열 내림차순으로 배치하기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.SORTING
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -867,13 +879,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_kyutoog",
     "name": "서울에서 김서방 찾기",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -891,14 +903,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_4h3th2h",
     "name": "베스트 앨범",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL3,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL3,
     "language": [
-      CodingTest.Language.JAVASCRIPT,
-      CodingTest.Language.PYTHON,
+      Language.JAVASCRIPT,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
+      DataStructure.HASH,
     ],
     "url": [
       {
@@ -917,14 +929,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_pll9wr4",
     "name": "Two Sum",
     "number": 1,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.DataStructure.HASH,
+      DataStructure.ARRAY,
+      DataStructure.HASH,
     ],
     "url": [
       {
@@ -943,13 +955,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_g8srr4o",
     "name": "Palindrome Number",
     "number": 9,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
+      Algorithms.MATH,
     ],
     "url": [
       {
@@ -968,13 +980,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_56dhoek",
     "name": "Longest Common Prefix",
     "number": 14,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
+      DataStructure.STRING,
     ],
     "url": [
       {
@@ -993,14 +1005,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_w8iyalr",
     "name": "Valid Parentheses",
     "number": 20,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
-      CodingTest.DataStructure.STACK
+      DataStructure.STRING,
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -1019,10 +1031,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_2m67d4h",
     "name": "Merge Two Sorted Lists",
     "number": 21,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
       
@@ -1044,14 +1056,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_9bj4hop",
     "name": "Maximum Subarray",
     "number": 53,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.LINKED_LIST,
-      CodingTest.Algorithms.RECURSION,
+      DataStructure.LINKED_LIST,
+      Algorithms.RECURSION,
     ],
     "url": [
       {
@@ -1070,15 +1082,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_ptf5gts",
     "name": "Climbing Stairs",
     "number": 70,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.DYNAMIC_PROGRAMMING,
-      CodingTest.Algorithms.MEMOIZATION,
+      Algorithms.MATH,
+      Algorithms.DYNAMIC_PROGRAMMING,
+      Algorithms.MEMOIZATION,
     ],
     "url": [
       {
@@ -1097,15 +1109,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_nfea6ul",
     "name": "Merge Sorted Array",
     "number": 88,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.TWO_POINTERS,
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.SORTING
+      Algorithms.TWO_POINTERS,
+      DataStructure.ARRAY,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -1124,15 +1136,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_1v40272",
     "name": "Binary Tree Inorder Traversal",
     "number": 94,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK,
-      CodingTest.DataStructure.TREE,
-      CodingTest.Algorithms.DFS
+      DataStructure.STACK,
+      DataStructure.TREE,
+      Algorithms.DFS
     ],
     "url": [
       {
@@ -1151,14 +1163,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_35jmctp",
     "name": "Pascals Triangle",
     "number": 118,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.DYNAMIC_PROGRAMMING,
+      DataStructure.ARRAY,
+      Algorithms.DYNAMIC_PROGRAMMING,
     ],
     "url": [
       {
@@ -1177,14 +1189,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_brav39k",
     "name": "Best Time to Buy and Sell Stock",
     "number": 121,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.DYNAMIC_PROGRAMMING,
+      DataStructure.ARRAY,
+      Algorithms.DYNAMIC_PROGRAMMING,
     ],
     "url": [
       {
@@ -1203,14 +1215,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_u5avgy7",
     "name": "Single Number",
     "number": 136,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.BIT_MANIPULATION,
+      DataStructure.ARRAY,
+      Algorithms.BIT_MANIPULATION,
     ],
     "url": [
       {
@@ -1229,15 +1241,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_jh6x11b",
     "name": "Linked List Cycle",
     "number": 141,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
-      CodingTest.DataStructure.LINKED_LIST,
-      CodingTest.Algorithms.TWO_POINTERS,
+      DataStructure.HASH,
+      DataStructure.LINKED_LIST,
+      Algorithms.TWO_POINTERS,
     ],
     "url": [
       {
@@ -1256,15 +1268,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_x40oyse",
     "name": "Binary Tree Preorder Traversal",
     "number": 144,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK,
-      CodingTest.DataStructure.TREE,
-      CodingTest.Algorithms.DFS
+      DataStructure.STACK,
+      DataStructure.TREE,
+      Algorithms.DFS
     ],
     "url": [
       {
@@ -1283,15 +1295,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_1dchodw",
     "name": "Binary Tree Postorder Traversal",
     "number": 145,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK,
-      CodingTest.DataStructure.TREE,
-      CodingTest.Algorithms.DFS
+      DataStructure.STACK,
+      DataStructure.TREE,
+      Algorithms.DFS
     ],
     "url": [
       {
@@ -1310,14 +1322,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_ssa1qfl",
     "name": "Min Stack",
     "number": 155,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK,
-      CodingTest.Algorithms.DESIGN
+      DataStructure.STACK,
+      Algorithms.DESIGN
     ],
     "url": [
       {
@@ -1336,17 +1348,17 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_5wdiax0",
     "name": "Majority Element",
     "number": 169,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.DataStructure.HASH,
-      CodingTest.Algorithms.SORTING,
-      CodingTest.Algorithms.COUNTING,
-      CodingTest.Algorithms.DVIDE_AND_CONQUER,
+      DataStructure.ARRAY,
+      DataStructure.HASH,
+      Algorithms.SORTING,
+      Algorithms.COUNTING,
+      Algorithms.DVIDE_AND_CONQUER,
     ],
     "url": [
       {
@@ -1365,15 +1377,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_j9tdd3m",
     "name": "Happy Number",
     "number": 202,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.TWO_POINTERS,
+      DataStructure.HASH,
+      Algorithms.MATH,
+      Algorithms.TWO_POINTERS,
     ],
     "url": [
       {
@@ -1392,15 +1404,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_p5m41w7",
     "name": "Contains Duplicate",
     "number": 217,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.DataStructure.HASH,
-      CodingTest.Algorithms.SORTING
+      DataStructure.ARRAY,
+      DataStructure.HASH,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -1419,15 +1431,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_ipqsu0d",
     "name": "Valid Anagram",
     "number": 242,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
-      CodingTest.DataStructure.STRING,
-      CodingTest.Algorithms.SORTING
+      DataStructure.HASH,
+      DataStructure.STRING,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -1446,17 +1458,17 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_bjg1eor",
     "name": "Intersection of Two Arrays II",
     "number": 350,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.DataStructure.HASH,
-      CodingTest.Algorithms.TWO_POINTERS,
-      CodingTest.Algorithms.BINARY_SEARCH,
-      CodingTest.Algorithms.SORTING
+      DataStructure.ARRAY,
+      DataStructure.HASH,
+      Algorithms.TWO_POINTERS,
+      Algorithms.BINARY_SEARCH,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -1475,15 +1487,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_35npo4q",
     "name": "Ransom Note",
     "number": 383,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
-      CodingTest.DataStructure.STRING,
-      CodingTest.Algorithms.COUNTING,
+      DataStructure.HASH,
+      DataStructure.STRING,
+      Algorithms.COUNTING,
     ],
     "url": [
       {
@@ -1502,16 +1514,16 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_ae3gy8c",
     "name": "First Unique Character in a String",
     "number": 387,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
-      CodingTest.DataStructure.STRING,
-      CodingTest.DataStructure.QUEUE,
-      CodingTest.Algorithms.COUNTING,
+      DataStructure.HASH,
+      DataStructure.STRING,
+      DataStructure.QUEUE,
+      Algorithms.COUNTING,
     ],
     "url": [
       {
@@ -1530,15 +1542,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_9js8ek2",
     "name": "Reshape the Matrix",
     "number": 566,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.EASY,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.EASY,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.MATRIX,
-      CodingTest.Algorithms.SIMULATION,
+      DataStructure.ARRAY,
+      Algorithms.MATRIX,
+      Algorithms.SIMULATION,
     ],
     "url": [
       {
@@ -1557,15 +1569,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_djo7pdb",
     "name": "Add Two Numbers",
     "number": 2,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.LINKED_LIST,
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.RECURSION,
+      DataStructure.LINKED_LIST,
+      Algorithms.MATH,
+      Algorithms.RECURSION,
     ],
     "url": [
       {
@@ -1584,13 +1596,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_e0zag9b",
     "name": "Reverse Integer",
     "number": 7,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
+      Algorithms.MATH,
     ],
     "url": [
       {
@@ -1609,15 +1621,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_7uwsxnt",
     "name": "Container with Most Water",
     "number": 11,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.TWO_POINTERS,
-      CodingTest.Algorithms.GREEDY
+      DataStructure.ARRAY,
+      Algorithms.TWO_POINTERS,
+      Algorithms.GREEDY
     ],
     "url": [
       {
@@ -1636,15 +1648,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_labx0go",
     "name": "Valid Sudoku",
     "number": 36,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.DataStructure.HASH,
-      CodingTest.Algorithms.MATRIX,
+      DataStructure.ARRAY,
+      DataStructure.HASH,
+      Algorithms.MATRIX,
     ],
     "url": [
       {
@@ -1663,15 +1675,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_orkq2f6",
     "name": "Binary Tree Level Order Traversal",
     "number": 102,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.TREE,
-      CodingTest.Algorithms.BFS,
-      CodingTest.DataStructure.BINARY_TREE,
+      DataStructure.TREE,
+      Algorithms.BFS,
+      DataStructure.BINARY_TREE,
     ],
     "url": [
       {
@@ -1690,15 +1702,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_7h5ye5q",
     "name": "Binary Tree Level Order Traversal II",
     "number": 107,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.TREE,
-      CodingTest.Algorithms.BFS,
-      CodingTest.DataStructure.BINARY_TREE,
+      DataStructure.TREE,
+      Algorithms.BFS,
+      DataStructure.BINARY_TREE,
     ],
     "url": [
       {
@@ -1717,15 +1729,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_enejm8t",
     "name": "Maximum Length of Repeated Subarray",
     "number": 718,
-    "platform": CodingTest.CodingTestPlatform.LEETCODE,
-    "difficulty": CodingTest.LeetcodeLevel.MEDIUM,
+    "platform": CodingTestPlatform.LEETCODE,
+    "difficulty": LeetcodeLevel.MEDIUM,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.ARRAY,
-      CodingTest.Algorithms.BINARY_SEARCH,
-      CodingTest.Algorithms.DYNAMIC_PROGRAMMING,
+      DataStructure.ARRAY,
+      Algorithms.BINARY_SEARCH,
+      Algorithms.DYNAMIC_PROGRAMMING,
     ],
     "url": [
       {
@@ -1744,15 +1756,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_q2k6jhc",
     "name": "A+B",
     "number": 1000,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON,
-      CodingTest.Language.JAVASCRIPT
+      Language.PYTHON,
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.Algorithms.MATH,
+      Algorithms.IMPLEMENTATION,
+      Algorithms.MATH,
     ],
     "url": [
       {
@@ -1766,14 +1778,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_893t5j2",
     "name": "A-B",
     "number": 1001,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.MATH,
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -1787,10 +1799,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_wy3mob4",
     "name": "Hello World",
     "number": 2557,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
       
@@ -1807,14 +1819,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_y3kx8p5",
     "name": "R2",
     "number": 3046,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.MATH,
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -1828,13 +1840,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_kzpd5rh",
     "name": "오늘 날짜",
     "number": 10699,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -1848,13 +1860,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_1a68hh8",
     "name": "We love kriii",
     "number": 10718,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -1868,14 +1880,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_p5tp2df",
     "name": "일곱 난쟁이",
     "number": 2309,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE,
-      CodingTest.Algorithms.SORTING
+      Algorithms.BRUTEFORCE,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -1889,14 +1901,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_v81921t",
     "name": "문자열 반복",
     "number": 2675,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
-      CodingTest.Algorithms.IMPLEMENT
+      DataStructure.STRING,
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -1910,13 +1922,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_phrpp6h",
     "name": "백설 공주와 일곱 난쟁이",
     "number": 3040,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -1930,14 +1942,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_l6d8c6k",
     "name": "유레카 이론",
     "number": 10448,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BRUTEFORCE,
-      CodingTest.Algorithms.MATH,
+      Algorithms.BRUTEFORCE,
+      Algorithms.MATH,
     ],
     "url": [
       {
@@ -1951,14 +1963,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_bc4lpd1",
     "name": "알파벳 개수",
     "number": 10808,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.DataStructure.STRING,
+      Algorithms.IMPLEMENTATION,
+      DataStructure.STRING,
     ],
     "url": [
       {
@@ -1972,14 +1984,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_rjz3bk5",
     "name": "알파벳 찾기",
     "number": 10809,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
-      CodingTest.Algorithms.IMPLEMENT
+      DataStructure.STRING,
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -1993,14 +2005,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_dmbas93",
     "name": "빠른 A+B",
     "number": 15552,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE2,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.IMPLEMENT
+      Algorithms.MATH,
+      Algorithms.IMPLEMENTATION
     ],
     "url": [
       {
@@ -2014,10 +2026,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_jn0c1zs",
     "name": "단어 뒤집기",
     "number": 9093,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.BRONZE1,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.BRONZE1,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
       
@@ -2034,13 +2046,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_yhqvbt7",
     "name": "요세푸스 문제",
     "number": 1158,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.QUEUE
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -2054,13 +2066,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_6uz2dc1",
     "name": "회사에 있는 사람",
     "number": 7785,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER5,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.HASH,
+      DataStructure.HASH,
     ],
     "url": [
       {
@@ -2074,15 +2086,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_3pte8xb",
     "name": "베스트셀러",
     "number": 1302,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
-      CodingTest.Algorithms.SORTING,
-      CodingTest.DataStructure.HASH,
+      DataStructure.STRING,
+      Algorithms.SORTING,
+      DataStructure.HASH,
     ],
     "url": [
       {
@@ -2096,13 +2108,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_2n034jy",
     "name": "카드2",
     "number": 2164,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.QUEUE
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -2116,14 +2128,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_mzqrpw4",
     "name": "괄호",
     "number": 9012,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
-      CodingTest.DataStructure.STACK
+      DataStructure.STRING,
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2137,13 +2149,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_yvj2atm",
     "name": "스택",
     "number": 10828,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STACK
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2157,13 +2169,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_0tsqetw",
     "name": "큐",
     "number": 10845,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.QUEUE
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -2177,13 +2189,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_8ns6653",
     "name": "덱",
     "number": 10866,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.DEQUE,
+      DataStructure.DEQUE,
     ],
     "url": [
       {
@@ -2197,14 +2209,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_hetqhyr",
     "name": "요세푸스 문제 0",
     "number": 11866,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.DataStructure.QUEUE
+      Algorithms.IMPLEMENTATION,
+      DataStructure.QUEUE
     ],
     "url": [
       {
@@ -2218,14 +2230,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_626bdbe",
     "name": "에디터",
     "number": 1406,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER3,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.LINKED_LIST,
-      CodingTest.DataStructure.STACK
+      DataStructure.LINKED_LIST,
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2239,14 +2251,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_feqb35y",
     "name": "수리공 항승",
     "number": 1449,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER3,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.Algorithms.GREEDY,
-      CodingTest.Algorithms.SORTING
+      Algorithms.GREEDY,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -2260,13 +2272,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_lhpyfky",
     "name": "스택 수열",
     "number": 1874,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER3,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.STACK
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2280,14 +2292,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_ljn3u9v",
     "name": "사탕 게임",
     "number": 3085,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER3,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.IMPLEMENTATION,
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -2301,13 +2313,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_g5nyz9f",
     "name": "구간 합 구하기 4",
     "number": 11659,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER3,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.CUMULATIVE_SUM
+      Algorithms.CUMULATIVE_SUM
     ],
     "url": [
       {
@@ -2321,15 +2333,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_unb693k",
     "name": "단어 뒤집기 2",
     "number": 17413,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER3,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER3,
     "language": [
-      CodingTest.Language.PYTHON, CodingTest.Language.JAVASCRIPT
+      Language.PYTHON, Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.DataStructure.STRING,
-      CodingTest.DataStructure.STACK
+      Algorithms.IMPLEMENTATION,
+      DataStructure.STRING,
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2343,14 +2355,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_m5w5w45",
     "name": "회의실 배정",
     "number": 1931,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER2,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.Algorithms.GREEDY,
-      CodingTest.Algorithms.SORTING
+      Algorithms.GREEDY,
+      Algorithms.SORTING
     ],
     "url": [
       {
@@ -2364,13 +2376,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_hwsguil",
     "name": "최대 힙",
     "number": 11279,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER2,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.PRIORITY_QUEUE,
+      DataStructure.PRIORITY_QUEUE,
     ],
     "url": [
       {
@@ -2384,15 +2396,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_o74yxhc",
     "name": "연결 요소의 개수",
     "number": 11724,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER2,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER2,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.GRAPH,
-      CodingTest.Algorithms.BFS,
-      CodingTest.Algorithms.DFS
+      DataStructure.GRAPH,
+      Algorithms.BFS,
+      Algorithms.DFS
     ],
     "url": [
       {
@@ -2406,13 +2418,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_i6kfia3",
     "name": "최소 힙",
     "number": 1927,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER1,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER1,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.PRIORITY_QUEUE,
+      DataStructure.PRIORITY_QUEUE,
     ],
     "url": [
       {
@@ -2426,14 +2438,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_5bs0hgp",
     "name": "미로 탐색",
     "number": 2178,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER1,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER1,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.GRAPH,
-      CodingTest.Algorithms.BFS,
+      DataStructure.GRAPH,
+      Algorithms.BFS,
     ],
     "url": [
       {
@@ -2447,13 +2459,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_rfz7ibx",
     "name": "절대값 힙",
     "number": 11286,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER1,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER1,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.PRIORITY_QUEUE,
+      DataStructure.PRIORITY_QUEUE,
     ],
     "url": [
       {
@@ -2467,13 +2479,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_ozilgei",
     "name": "오큰수",
     "number": 17298,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.GOLD4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.GOLD4,
     "language": [
-      CodingTest.Language.PYTHON,
+      Language.PYTHON,
     ],
     "topic": [
-      CodingTest.DataStructure.STACK
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2487,15 +2499,15 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_bcz365r",
     "name": "셀프 넘버",
     "number": 4673,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER5,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER5,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.MATH,
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.Algorithms.BRUTEFORCE
+      Algorithms.MATH,
+      Algorithms.IMPLEMENTATION,
+      Algorithms.BRUTEFORCE
     ],
     "url": [
       {
@@ -2509,13 +2521,13 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_pag9dc2",
     "name": "수 찾기",
     "number": 1920,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.BINARY_SEARCH
+      Algorithms.BINARY_SEARCH
     ],
     "url": [
       {
@@ -2534,14 +2546,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     "cote_id": "_coi5mln",
     "name": "제로",
     "number": 10773,
-    "platform": CodingTest.CodingTestPlatform.BOJ,
-    "difficulty": CodingTest.BOJLevel.SILVER4,
+    "platform": CodingTestPlatform.BOJ,
+    "difficulty": BOJLevel.SILVER4,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.Algorithms.IMPLEMENT,
-      CodingTest.DataStructure.STACK
+      Algorithms.IMPLEMENTATION,
+      DataStructure.STACK
     ],
     "url": [
       {
@@ -2559,14 +2571,14 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_qloepyo",
     "name": "다트 게임",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
-    "company": CodingTest.Company.KAKAO,
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "company": Company.KAKAO,
     "language": [
-      CodingTest.Language.JAVASCRIPT
+      Language.JAVASCRIPT
     ],
     "topic": [
-      CodingTest.DataStructure.STRING,
+      DataStructure.STRING,
     ],
     "url": [
       {
@@ -2583,11 +2595,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   { 
       "cote_id": "_zmgvocc",
       "name": "신고 결과 받기",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.IMPLEMENT],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,        
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.IMPLEMENTATION],
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
@@ -2601,11 +2613,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_9repycu",
       "name": "비밀 지도",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.BIT_MANIPULATION],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,        
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.BIT_MANIPULATION],
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
@@ -2619,11 +2631,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_8hw51mj",
       "name": "메뉴 리뉴얼",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.BRUTEFORCE],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,        
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.BRUTEFORCE],
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
@@ -2637,11 +2649,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_l5p7e84",
       "name": "방금그곡",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.DataStructure.STRING, CodingTest.Algorithms.IMPLEMENT],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,        
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.STRING, Algorithms.IMPLEMENTATION],
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
@@ -2655,10 +2667,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_n6owklo",
       "name": "재귀 함수",
-      "platform": CodingTest.EducationPlatform.INFLEARN,
-      "lecture": CodingTest.InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.RECURSION],
+      "platform": EducationPlatform.INFLEARN,
+      "lecture": InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.RECURSION],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2668,10 +2680,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_3bgpj0w",
       "name": "문자열을 정수로 바꾸기",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.IMPLEMENT],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,        
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.IMPLEMENTATION],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2681,10 +2693,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_noishoh",
       "name": "더 맵게",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
-      "language": [CodingTest.Language.PYTHON],
-      "topic": [CodingTest.DataStructure.HEAP],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,        
+      "language": [Language.PYTHON],
+      "topic": [DataStructure.HEAP],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2694,10 +2706,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_r7jfam5",
       "name": "전화번호 목록",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
-      "language": [CodingTest.Language.PYTHON],
-      "topic": [CodingTest.DataStructure.HASH],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,        
+      "language": [Language.PYTHON],
+      "topic": [DataStructure.HASH],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2707,10 +2719,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_oe17hrv",
       "name": "주식가격",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,        
-      "language": [CodingTest.Language.PYTHON],
-      "topic": [CodingTest.DataStructure.QUEUE],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,        
+      "language": [Language.PYTHON],
+      "topic": [DataStructure.QUEUE],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2720,10 +2732,10 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
     { 
       "cote_id": "_6fps9cx",
       "name": "이진수 출력",
-      "platform": CodingTest.EducationPlatform.INFLEARN,
-      "lecture": CodingTest.InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.RECURSION, CodingTest.Algorithms.DFS],
+      "platform": EducationPlatform.INFLEARN,
+      "lecture": InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.RECURSION, Algorithms.DFS],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
@@ -2733,11 +2745,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
       "cote_id": "_gxx3emk",
       "name": "크레인 인형뽑기 게임",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.DataStructure.STACK],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.STACK],
       "url": [{
         "name": URLName.BLOG,
         "icon": URLIcon.BLOG,
@@ -2751,11 +2763,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   { 
       "cote_id": "_qh7nz7f",
       "name": "키패드 누르기",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL1,        
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.BFS, CodingTest.DataStructure.GRAPH],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,        
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.BFS, DataStructure.GRAPH],
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
@@ -2769,11 +2781,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   {
     "cote_id": "_bwqq6th",
     "name": "신규 아이디 추천",
-    "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-    "difficulty": CodingTest.ProgrammersLevel.LEVEL1,
-    "company": CodingTest.Company.KAKAO,
-    "language": [CodingTest.Language.JAVASCRIPT],
-    "topic": [CodingTest.DataStructure.STRING],
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "company": Company.KAKAO,
+    "language": [Language.JAVASCRIPT],
+    "topic": [DataStructure.STRING],
     "url": [{
       "name": URLName.BLOG,
       "icon": URLIcon.BLOG,
@@ -2787,11 +2799,11 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
   { 
       "cote_id": "_u25qt9l",
       "name": "뉴스 클러스터링",
-      "platform": CodingTest.CodingTestPlatform.PROGRAMMERS,
-      "difficulty": CodingTest.ProgrammersLevel.LEVEL2,       
-      "company": CodingTest.Company.KAKAO,
-      "language": [CodingTest.Language.JAVASCRIPT],
-      "topic": [CodingTest.Algorithms.IMPLEMENT],
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,       
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.IMPLEMENTATION],
       "url": [{
           "name": URLName.BLOG,
           "icon": URLIcon.BLOG,
@@ -2800,6 +2812,24 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%89%B4%EC%8A%A4%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81"
+      }]
+    },
+    { 
+      "cote_id": "_jkqo9c9",
+      "name": "괄호 변환",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.RECURSION, Algorithms.IMPLEMENTATION],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.com/101"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EA%B4%84%ED%98%B8%EB%B3%80%ED%99%98"
       }]
     },
 ]
@@ -2812,7 +2842,7 @@ export const codingTestData: Array<CodingTest.CodingTestModel> = [
       "difficulty": CodingTest,
       "company": CodingTest,
       "lecture": CodingTest,
-      "language": [CodingTest.Language.JAVASCRIPT],
+      "language": [Language.JAVASCRIPT],
       "topic": [],
       "url": [{
           "name": URLName.BLOG,
