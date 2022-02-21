@@ -124,7 +124,7 @@ export enum Algorithms {
     BFS = "BFS",
     GREEDY = "greedy",
     BINARY_SEARCH = "binary_search",
-    IMPLEMENT = "implementation",
+    IMPLEMENTATION = "implementation",
     MATH = "math",
     RECURSION = "recursion",
     DYNAMIC_PROGRAMMING = "dynamic_programming",
