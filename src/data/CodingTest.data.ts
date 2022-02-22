@@ -2832,16 +2832,34 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EA%B4%84%ED%98%B8%EB%B3%80%ED%99%98"
       }]
     },
+    { 
+      "cote_id": "_w978h5y",
+      "name": "캐시",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "company": Company.KAKAO,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.QUEUE],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.com/102"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%BA%90%EC%8B%9C"
+      }]
+    },
 ]
 
 /**
     { 
       "cote_id": "",
       "name": "",
-      "platform": CodingTest,
-      "difficulty": CodingTest,
-      "company": CodingTest,
-      "lecture": CodingTest,
+      "platform": ,
+      "difficulty": ,
+      "company": ,
+      "lecture": ,
       "language": [Language.JAVASCRIPT],
       "topic": [],
       "url": [{
