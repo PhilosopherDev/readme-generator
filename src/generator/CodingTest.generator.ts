@@ -230,7 +230,6 @@ function generateModelContent(model: CodingTest.ViewModel, type: any, sortByNum:
 
 function generateTopicContent(topic: CodingTest.TopicsViewModel, type: any): string {
   const stringArr = [];
-  let total = 0;
 
   for (const key in type as any) {
     const num = topic[(type as any)[key]].num;
@@ -238,7 +237,6 @@ function generateTopicContent(topic: CodingTest.TopicsViewModel, type: any): str
     const title = type[key];
     const name = capitalizeFirstLetter(title).replace(/_/g, " ");
     
-    total += num;
     let str = `- ## ${name} (${num})\n        ${combineSentence(content)}`;
     str += makeBackToTop(true);
     
@@ -254,18 +252,9 @@ function combineSentence(content: Array<any>) {
     return obj;
   }, {});
 
-  return Object.keys(keyHash).map((key) => {
+  return Object.keys(keyHash).sort((a, b) => keyHash[a].localeCompare(keyHash[b])).map((key) => {
     return keyHash[key]
   }).join("\n        ");
-}
-
-function combineNum(content: Array<CodingTest.TopicsViewModelContent>) {
-  const set = new Set([]);
-  content.forEach((val) => {
-    if (!set.has(val.key as never)) set.add(val.key as never);
-  });
-
-  return set.size;
 }
 
 export function generateCodingTestReadme(codingTestData: Array<CodingTest.CodingTestModel>) {
