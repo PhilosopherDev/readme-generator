@@ -2850,6 +2850,40 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%BA%90%EC%8B%9C"
       }]
     },
+    { 
+      "cote_id": "_gwjquvn",
+      "name": "피보나치 수",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.MATH, DataStructure.ARRAY],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.com/103"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98"
+      }]
+    },
+    { 
+      "cote_id": "_9w2iq37",
+      "name": "이상한 문자 만들기",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.STRING],
+      "url": [{
+          "name": URLName.BLOG,
+          "icon": URLIcon.BLOG,
+          "link": "https://philosopherprogrammer.com/104"
+      }, {
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%9D%B4%EC%83%81%ED%95%9C%EB%AC%B8%EC%9E%90%EB%A7%8C%EB%93%A4%EA%B8%B0"
+      }]
+    },
 ]
 
 /**
