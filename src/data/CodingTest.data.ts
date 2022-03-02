@@ -2914,6 +2914,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%9E%90%EB%A6%BF%EC%88%98%EB%8D%94%ED%95%98%EA%B8%B0"
       }]
     },
+    { 
+      "cote_id": "_w34rd5o",
+      "name": "문자열내 p와 y의 개수",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4p%EC%99%80y%EC%9D%98%EA%B0%9C%EC%88%98"
+      }]
+    },
 ]
 
 /**
