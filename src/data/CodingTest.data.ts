@@ -2920,7 +2920,7 @@ export const codingTestData: Array<CodingTestModel> = [
       "platform": CodingTestPlatform.PROGRAMMERS,
       "difficulty": ProgrammersLevel.LEVEL1,
       "language": [Language.JAVASCRIPT],
-      "topic": [],
+      "topic": [DataStructure.STRING, Algorithms.IMPLEMENTATION],
       "url": [{
           "name": URLName.CODE,
           "icon": URLIcon.CODE,
