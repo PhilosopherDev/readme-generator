@@ -106,7 +106,7 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
 
     return `# Coding Test Practice (${codingTestDataLength})
  - # Overview
-    - [Coding Test Platform](#coding-test-platform)    
+    - [Coding Test Platform (${programmersTotal + leetcodeTotal + bojTotal})](#coding-test-platform-${programmersTotal + leetcodeTotal + bojTotal})    
       - [Programmers (${programmersTotal})](#programmers-${programmersTotal})
         ${programmersContent}
       - [BOJ (${bojTotal})](#boj-${bojTotal})
@@ -114,7 +114,7 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
       - [Leetcode (${leetcodeTotal})](#leetcode-${leetcodeTotal})
         ${leetcodeContent}
 
-    - [Education Platform](#education-platform)
+    - [Education Platform (${inflearnTotal})](#education-platform-${inflearnTotal})
       - [Inflearn (${inflearnTotal})](#inflearn-${inflearnTotal})
         ${inflearnContent}
 
@@ -131,7 +131,7 @@ function generateCodingTestPlatformProblems(difficulties: CodingTest.ViewModel) 
     const [bojTotal, bojContent] = generateModelContent(difficulties, CodingTest.BOJLevel);
     const [leetcodeTotal, leetcodeContent] = generateModelContent(difficulties, CodingTest.LeetcodeLevel);
 
-    return `- ## Coding Test Platform
+    return `- ## Coding Test Platform (${programmersTotal + bojTotal + leetcodeTotal})
 
     - ## Programmers (${programmersTotal})
       ${programmersContent}
@@ -147,7 +147,7 @@ function generateCodingTestPlatformProblems(difficulties: CodingTest.ViewModel) 
 function generateEducationPlatformProblems(education: CodingTest.ViewModel) {
     const [inflearnTotal, inflearnContent] = generateModelContent(education, CodingTest.InflearnLecture);
   
-    return `- ## Education Platform
+    return `- ## Education Platform (${inflearnTotal})
 
     - ## Inflearn (${inflearnTotal})
       ${inflearnContent}
