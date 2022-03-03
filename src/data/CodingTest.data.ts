@@ -2927,6 +2927,23 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4p%EC%99%80y%EC%9D%98%EA%B0%9C%EC%88%98"
       }]
     },
+  {
+      "cote_id": "_t2w2df9",
+      "name": "숫자의 표현",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.BRUTEFORCE],
+      "url": [{
+        "name": URLName.BLOG,
+        "icon": URLIcon.BLOG,
+        "link": "https://philosopherprogrammer.com/106"
+      }, {
+        "name": URLName.CODE,
+        "icon": URLIcon.CODE,
+        "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%88%AB%EC%9E%90%EC%9D%98%ED%91%9C%ED%98%84"
+      }]
+  },
 ]
 
 /**
