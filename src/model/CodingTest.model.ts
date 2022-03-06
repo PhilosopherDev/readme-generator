@@ -8,6 +8,7 @@ export interface CodingTestModel {
     platform: Platform;
     difficulty?: DifficultyType;
     lecture?: Lecture;
+    section?: Section;
     language: Array<Language>;
     topic: Array<Topic>;
     url: Array<URLType>;
@@ -20,6 +21,8 @@ export type Topic = DataStructure | Algorithms;
 export type DifficultyType = ProgrammersLevel | LeetcodeLevel | BOJLevel;
 
 export type Lecture = InflearnLecture | UdemyLecture;
+
+export type Section = JSAlgorithmProblemSolvingSection;
 
 export type ViewModel = { [key: string]: { num: number, content: string } }
 
@@ -100,6 +103,20 @@ export enum BOJLevel {
     BRONZE3 = "bronze3",
     BRONZE4 = "bronze4",
     BRONZE5 = "bronze5",
+}
+
+export enum JSAlgorithmProblemSolvingSection {
+    SECTION0 = "JAPS_Section0",
+    SECTION1 = "JAPS_Section1",
+    SECTION2 = "JAPS_Section2",
+    SECTION3 = "JAPS_Section3",
+    SECTION4 = "JAPS_Section4",
+    SECTION5 = "JAPS_Section5",
+    SECTION6 = "JAPS_Section6",
+    SECTION7 = "JAPS_Section7",
+    SECTION8 = "JAPS_Section8",
+    SECTION9 = "JAPS_Section9",
+    SECTION10 = "JAPS_Section10",
 }
 
 export enum DataStructure {
