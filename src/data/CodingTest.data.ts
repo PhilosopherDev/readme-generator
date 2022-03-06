@@ -7,6 +7,7 @@ import {
   DataStructure,
   EducationPlatform,
   InflearnLecture,
+  JSAlgorithmProblemSolvingSection,
   Language,
   LeetcodeLevel,
   ProgrammersLevel,
@@ -2669,6 +2670,7 @@ export const codingTestData: Array<CodingTestModel> = [
       "name": "재귀 함수",
       "platform": EducationPlatform.INFLEARN,
       "lecture": InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
+      "section": JSAlgorithmProblemSolvingSection.SECTION8,
       "language": [Language.JAVASCRIPT],
       "topic": [Algorithms.RECURSION],
       "url": [{
@@ -2734,6 +2736,7 @@ export const codingTestData: Array<CodingTestModel> = [
       "name": "이진수 출력",
       "platform": EducationPlatform.INFLEARN,
       "lecture": InflearnLecture.JAVASCRIPT_ALGORITHM_PROBLEM_SOLVING,
+      "section": JSAlgorithmProblemSolvingSection.SECTION8,
       "language": [Language.JAVASCRIPT],
       "topic": [Algorithms.RECURSION, Algorithms.DFS],
       "url": [{
