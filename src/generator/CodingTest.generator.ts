@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as CodingTest from "../model/CodingTest.model";
+import * as Common from "../model/Common.model";
 
 function makeDifficulties(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.ViewModel {
   const difficulties: CodingTest.ViewModel = {} 
@@ -42,18 +43,18 @@ function makeDifficultyContent(codingTestData: Array<CodingTest.CodingTestModel>
 function makeEducationData(codingTestData: Array<CodingTest.CodingTestModel>): CodingTest.ViewModel {
   const educationData: CodingTest.ViewModel = {} 
   
-  for (const key in CodingTest.InflearnLecture) {
-    educationData[(CodingTest.InflearnLecture as any)[key]] = { num: 0, content: '' };
+  for (const key in CodingTest.JSAlgorithmProblemSolvingSection) {
+    educationData[(CodingTest.JSAlgorithmProblemSolvingSection as any)[key]] = { num: 0, content: '' };
   }
 
   return makeEducationContent(codingTestData, educationData);
 }
 
 function makeEducationContent(codingTestData: Array<CodingTest.CodingTestModel>, educationData: CodingTest.ViewModel): CodingTest.ViewModel {
-  Object.keys(educationData).forEach((lecture) => {
-    const filteredModel = codingTestData.filter((data) => data.lecture && data.lecture === lecture);
-    (educationData as any)[lecture].num = filteredModel.length;
-    (educationData as any)[lecture].content = filteredModel.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {            
+  Object.keys(educationData).forEach((section) => {
+    const filteredModel = codingTestData.filter((data) => data.section && data.section === section);
+    (educationData as any)[section].num = filteredModel.length;
+    (educationData as any)[section].content = filteredModel.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {            
         let string = makeTitle(item.name);
         if (item.language.length > 0) string += makeLanguageContent(item.language);
         if (item.url && Array.isArray(item.url) && item.url.length > 0) {
@@ -100,7 +101,7 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
     const [programmersTotal, programmersContent] = generateOverviewIndex(difficulties, CodingTest.ProgrammersLevel);
     const [bojTotal, bojContent] = generateOverviewIndex(difficulties, CodingTest.BOJLevel);
     const [leetcodeTotal, leetcodeContent] = generateOverviewIndex(difficulties, CodingTest.LeetcodeLevel);
-    const [inflearnTotal, inflearnContent] = generateOverviewIndex(education, CodingTest.InflearnLecture, true);
+    const [JSAlgorithmPSTotal, JSAlgorithmPSContent] = generateOverviewIndex(education, CodingTest.JSAlgorithmProblemSolvingSection, true);
     const [dataStructureTotal, dataStructureContent] = generateOverviewIndex(topics, CodingTest.DataStructure, true);
     const [algorithmTotal, algorithmContent] = generateOverviewIndex(topics, CodingTest.Algorithms, true);
 
@@ -114,9 +115,10 @@ function generateOverview(codingTestDataLength: number, difficulties: CodingTest
       - [Leetcode (${leetcodeTotal})](#leetcode-${leetcodeTotal})
         ${leetcodeContent}
 
-    - [Education Platform (${inflearnTotal})](#education-platform-${inflearnTotal})
-      - [Inflearn (${inflearnTotal})](#inflearn-${inflearnTotal})
-        ${inflearnContent}
+    - [Education Platform (${JSAlgorithmPSTotal})](#education-platform-${JSAlgorithmPSTotal})
+      - [Javascript algorithm problem solving (${JSAlgorithmPSTotal})](#javascript-algorithm-problem-solving-${JSAlgorithmPSTotal})
+        - ${Common.URLIcon.LECTURE} [Lecture](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/dashboard)
+        ${JSAlgorithmPSContent}
 
     - [Related Topic](#related-topic)
       - [Data Structure](#data-structure)
@@ -145,12 +147,12 @@ function generateCodingTestPlatformProblems(difficulties: CodingTest.ViewModel) 
 }
 
 function generateEducationPlatformProblems(education: CodingTest.ViewModel) {
-    const [inflearnTotal, inflearnContent] = generateModelContent(education, CodingTest.InflearnLecture);
+    const [JSAlgorithmPSTotal, JSAlgorithmPSContent] = generateModelContent(education, CodingTest.JSAlgorithmProblemSolvingSection);
   
-    return `- ## Education Platform (${inflearnTotal})
+    return `- ## Education Platform (${JSAlgorithmPSTotal})
 
-    - ## Inflearn (${inflearnTotal})
-      ${inflearnContent}
+    - ## Javascript algorithm problem solving (${JSAlgorithmPSTotal})
+      ${JSAlgorithmPSContent}
     `
 }
 
