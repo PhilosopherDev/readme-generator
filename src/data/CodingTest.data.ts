@@ -2990,6 +2990,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%ED%95%98%EC%83%A4%EB%93%9C%EC%88%98"
       }]
     },
+    { 
+      "cote_id": "_i6w0595",
+      "name": "짝수와 홀수",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.IMPLEMENTATION],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A7%9D%EC%88%98%EC%99%80%ED%99%80%EC%88%98"
+      }]
+    },
 ]
 
 /**
