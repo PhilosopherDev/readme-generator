@@ -3003,6 +3003,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A7%9D%EC%88%98%EC%99%80%ED%99%80%EC%88%98"
       }]
     },
+  {
+    "cote_id": "_xk5uh74",
+    "name": "제일 작은 수 제거하기",
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "language": [Language.JAVASCRIPT],
+    "topic": [DataStructure.ARRAY],
+    "url": [{
+      "name": URLName.CODE,
+      "icon": URLIcon.CODE,
+      "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A0%9C%EC%9D%BC%EC%9E%91%EC%9D%80%EC%88%98%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0"
+    }]
+  },
 ]
 
 /**
