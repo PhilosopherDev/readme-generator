@@ -3068,6 +3068,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%98%AC%EB%B0%94%EB%A5%B8%EA%B4%84%ED%98%B8"
       }]
     },
+    { 
+      "cote_id": "_frhdenl",
+      "name": "스킬트리",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.IMPLEMENTATION, DataStructure.ARRAY],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC"
+      }]
+    },
 ]
 
 /**
