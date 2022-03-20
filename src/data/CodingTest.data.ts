@@ -3094,6 +3094,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/JadenCase%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A7%8C%EB%93%A4%EA%B8%B0"
       }]
     },
+    { 
+      "cote_id": "_y0ty0op",
+      "name": "다음 큰 숫자",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.MATH, DataStructure.STRING],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%8B%A4%EC%9D%8C%ED%81%B0%EC%88%AB%EC%9E%90"
+      }]
+    },
 ]
 
 /**
