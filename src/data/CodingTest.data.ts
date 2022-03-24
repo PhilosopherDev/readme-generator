@@ -3146,6 +3146,19 @@ export const codingTestData: Array<CodingTestModel> = [
       "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%95%BD%EC%88%98%EC%9D%98%ED%95%A9"
     }]
   },
+  { 
+      "cote_id": "_ungohi1",
+      "name": "정수 내림차순으로 배치하기",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.STRING],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A0%95%EC%88%98%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0"
+      }]
+    },
 ]
 
 /**
