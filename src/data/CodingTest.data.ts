@@ -3198,6 +3198,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/N%EA%B0%9C%EC%9D%98%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98"
       }]
     },
+  {
+    "cote_id": "_o0ytck5",
+    "name": "삼각 달팽이",
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL2,
+    "language": [Language.JAVASCRIPT],
+    "topic": [DataStructure.ARRAY],
+    "url": [{
+      "name": URLName.CODE,
+      "icon": URLIcon.CODE,
+      "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%82%BC%EA%B0%81%EB%8B%AC%ED%8C%BD%EC%9D%B4"
+    }]
+  },
 ]
 
 /**
