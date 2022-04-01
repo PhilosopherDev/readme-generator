@@ -3224,6 +3224,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98"
       }]
     },
+    { 
+      "cote_id": "_fpoj8qn",
+      "name": "x만큼 간격이 있는 n개의 숫자",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.ARRAY],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/x%EB%A7%8C%ED%81%BC%EA%B0%84%EA%B2%A9%EC%9D%B4%EC%9E%88%EB%8A%94n%EA%B0%9C%EC%9D%98%EC%88%AB%EC%9E%90"
+      }]
+    },
 ]
 
 /**
