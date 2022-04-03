@@ -3250,6 +3250,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%9D%B4%EC%A7%84%EB%B3%80%ED%99%98%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0"
       }]
     },
+    { 
+      "cote_id": "_6k9d2z4",
+      "name": "n^2 배열 자르기",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.MATH],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/n%EC%A0%9C%EA%B3%B1%EB%B0%B0%EC%97%B4%EC%9E%90%EB%A5%B4%EA%B8%B0"
+      }]
+    },
 ]
 
 /**
