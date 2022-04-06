@@ -3289,6 +3289,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%ED%96%89%EB%A0%AC%EC%9D%98%EB%8D%A7%EC%85%88"
       }]
     },
+    { 
+      "cote_id": "_pz7tc3m",
+      "name": "정수 제곱근 판별",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.MATH],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A0%95%EC%88%98%EC%A0%9C%EA%B3%B1%EA%B7%BC%ED%8C%90%EB%B3%84"
+      }]
+    },
 ]
 
 /**
