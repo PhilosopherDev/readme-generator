@@ -3302,6 +3302,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A0%95%EC%88%98%EC%A0%9C%EA%B3%B1%EA%B7%BC%ED%8C%90%EB%B3%84"
       }]
     },
+  {
+    "cote_id": "_eo8toqb",
+    "name": "최대공약수와 최소공배수",
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "language": [Language.JAVASCRIPT],
+    "topic": [Algorithms.MATH],
+    "url": [{
+      "name": URLName.CODE,
+      "icon": URLIcon.CODE,
+      "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98"
+    }]
+  },
 ]
 
 /**
