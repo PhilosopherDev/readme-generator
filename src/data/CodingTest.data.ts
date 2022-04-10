@@ -3328,6 +3328,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EB%82%B4%EC%A0%81"
       }]
     },
+  {
+    "cote_id": "_20ld54r",
+    "name": "직사각형 별찍기",
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "language": [Language.JAVASCRIPT],
+    "topic": [DataStructure.STRING],
+    "url": [{
+      "name": URLName.CODE,
+      "icon": URLIcon.CODE,
+      "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95%EB%B3%84%EC%B0%8D%EA%B8%B0"
+    }]
+  },
 ]
 
 /**
