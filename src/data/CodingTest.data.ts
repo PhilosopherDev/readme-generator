@@ -3341,6 +3341,19 @@ export const codingTestData: Array<CodingTestModel> = [
       "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95%EB%B3%84%EC%B0%8D%EA%B8%B0"
     }]
   },
+  {
+    "cote_id": "_txl18jf",
+    "name": "3진법 뒤집기",
+    "platform": CodingTestPlatform.PROGRAMMERS,
+    "difficulty": ProgrammersLevel.LEVEL1,
+    "language": [Language.JAVASCRIPT],
+    "topic": [Algorithms.MATH],
+    "url": [{
+      "name": URLName.CODE,
+      "icon": URLIcon.CODE,
+      "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/3%EC%A7%84%EB%B2%95%EB%92%A4%EC%A7%91%EA%B8%B0"
+    }]
+  },
 ]
 
 /**
