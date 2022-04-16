@@ -3380,6 +3380,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%EA%B4%84%ED%98%B8%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0"
       }]
     },
+    { 
+      "cote_id": "_yayx5we",
+      "name": "행렬의 곱셈",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL2,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.MATH],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%ED%96%89%EB%A0%AC%EC%9D%98%EA%B3%B1%EC%85%88"
+      }]
+    },
 ]
 
 /**
