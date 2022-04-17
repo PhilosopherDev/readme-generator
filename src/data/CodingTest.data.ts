@@ -3393,6 +3393,19 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level2/%ED%96%89%EB%A0%AC%EC%9D%98%EA%B3%B1%EC%85%88"
       }]
     },
+    { 
+      "cote_id": "_ow2zqht",
+      "name": "소수 만들기",
+      "platform": CodingTestPlatform.PROGRAMMERS,
+      "difficulty": ProgrammersLevel.LEVEL1,
+      "language": [Language.JAVASCRIPT],
+      "topic": [Algorithms.MATH],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/Programmers/Level1/%EC%86%8C%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0"
+      }]
+    },
 ]
 
 /**
