@@ -3420,6 +3420,20 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/26"
       }]
     },
+    { 
+      "cote_id": "_axs17t5",
+      "name": "Remove Element",
+      "number": 27,
+      "platform": CodingTestPlatform.LEETCODE,
+      "difficulty": LeetcodeLevel.EASY,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.ARRAY],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/27"
+      }]
+    },
 ]
 
 /**
