@@ -3462,6 +3462,20 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/35"
       }]
     },
+    { 
+      "cote_id": "_eija682",
+      "name": "Length of Last Word",
+      "number": 58,
+      "platform": CodingTestPlatform.LEETCODE,
+      "difficulty": LeetcodeLevel.EASY,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.ARRAY],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/58"
+      }]
+    },
 ]
 
 /**
