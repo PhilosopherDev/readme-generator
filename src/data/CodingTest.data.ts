@@ -3476,6 +3476,20 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/58"
       }]
     },
+    { 
+      "cote_id": "_8s0qd4i",
+      "name": "Plus One",
+      "number": 66,
+      "platform": CodingTestPlatform.LEETCODE,
+      "difficulty": LeetcodeLevel.EASY,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.ARRAY],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/66"
+      }]
+    },
 ]
 
 /**
