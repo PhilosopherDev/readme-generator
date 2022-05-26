@@ -3517,6 +3517,20 @@ export const codingTestData: Array<CodingTestModel> = [
           "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/67"
       }]
     },
+    { 
+      "cote_id": "_br5pwrm",
+      "name": "Remove Duplicates from Sorted List",
+      "number": 83,
+      "platform": CodingTestPlatform.LEETCODE,
+      "difficulty": LeetcodeLevel.EASY,
+      "language": [Language.JAVASCRIPT],
+      "topic": [DataStructure.LINKED_LIST],
+      "url": [{
+          "name": URLName.CODE,
+          "icon": URLIcon.CODE,
+          "link": "https://github.com/PhilosopherProgrammer/Coding-Test-Practice/tree/main/CodingTestPlatform/LeetCode/1_Easy/83"
+      }]
+    },
 ]
 
 /**
