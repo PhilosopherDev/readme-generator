@@ -14,7 +14,15 @@ async function main() {
             'downloaded/TIL.json',
         );
 
-        console.log({ TIL });
+        // console.log({ TIL });
+
+        const CodingTest = await downloader.downloadToJson(
+            spreadsheetId,
+            'CodingTest',
+            'downloaded/CodingTest.json',
+        );
+
+        // console.log({ CodingTest });
     } catch (e) {
         console.error(e);
     }

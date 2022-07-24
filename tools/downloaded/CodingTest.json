@@ -1,0 +1,1395 @@
+[
+  {
+    "name": "위장",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript",
+    "topic": "hash",
+    "code_link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%9C%84%EC%9E%A5",
+    "blog_link": "https://philosopherprogrammer.com/86"
+  },
+  {
+    "name": "문자열 압축",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript",
+    "topic": "string",
+    "code_link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95",
+    "blog_link": "https://philosopherprogrammer.com/40"
+  },
+  {
+    "name": "오픈채팅방",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript",
+    "topic": "hash",
+    "code_link": "https://github.com/PhilosopherProgrammer/CodingTestPractice/tree/main/CodingTestPlatform/Programmers/Level2/%EC%98%A4%ED%94%88%EC%B1%84%ED%8C%85%EB%B0%A9",
+    "blog_link": "https://philosopherprogrammer.com/41"
+  },
+  {
+    "name": "124 나라의 숫자",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "기능개발",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "타겟 넘버",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "짝지어 제거하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "프린터",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "가장 큰 수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "소수 찾기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "다리를 지나는 트럭",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "H-Index",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "카펫",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "큰 수 만들기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "구명보트",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "로또의 최고 순위와 최저 순위",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "숫자 문자열과 영단어",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "없는 숫자 더하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "음양 더하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "완주하지 못한 선수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "K번째수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript, python"
+  },
+  {
+    "name": "모의고사",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "체육복",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript, python"
+  },
+  {
+    "name": "폰켓몬",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "실패율",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "약수의 개수와 덧셈",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "두 개 뽑아서 더하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "2016년",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "최소 직사각형",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "나머지가 1이 되는 수 찾기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "부족한 금액 계산하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "가운데 글자 가져오기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "같은 숫자는 싫어",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "나누어 떨어지는 숫자 배열",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "두 정수 사이의 합",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "문자열 내림차순으로 배치하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "서울에서 김서방 찾기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "베스트 앨범",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level3",
+    "language": "javascript, python"
+  },
+  {
+    "name": "Two Sum",
+    "number": "1",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Palindrome Number",
+    "number": "9",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Longest Common Prefix",
+    "number": "14",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Valid Parentheses",
+    "number": "20",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Merge Two Sorted Lists",
+    "number": "21",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Maximum Subarray",
+    "number": "53",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Climbing Stairs",
+    "number": "70",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Merge Sorted Array",
+    "number": "88",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Binary Tree Inorder Traversal",
+    "number": "94",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Pascals Triangle",
+    "number": "118",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Best Time to Buy and Sell Stock",
+    "number": "121",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Single Number",
+    "number": "136",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Linked List Cycle",
+    "number": "141",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Binary Tree Preorder Traversal",
+    "number": "144",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Binary Tree Postorder Traversal",
+    "number": "145",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Min Stack",
+    "number": "155",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Majority Element",
+    "number": "169",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Happy Number",
+    "number": "202",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Contains Duplicate",
+    "number": "217",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Valid Anagram",
+    "number": "242",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Intersection of Two Arrays II",
+    "number": "350",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Ransom Note",
+    "number": "383",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "First Unique Character in a String",
+    "number": "387",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Reshape the Matrix",
+    "number": "566",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Add Two Numbers",
+    "number": "2",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "Reverse Integer",
+    "number": "7",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "Container with Most Water",
+    "number": "11",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "Valid Sudoku",
+    "number": "36",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "Binary Tree Level Order Traversal",
+    "number": "102",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "Binary Tree Level Order Traversal II",
+    "number": "107",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "Maximum Length of Repeated Subarray",
+    "number": "718",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "medium",
+    "language": "javascript"
+  },
+  {
+    "name": "A+B",
+    "number": "1000",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "A-B",
+    "number": "1001",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "Hello World",
+    "number": "2557",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "R2",
+    "number": "3046",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "오늘 날짜",
+    "number": "10699",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "We love kriii",
+    "number": "10718",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "일곱 난쟁이",
+    "number": "2309",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "문자열 반복",
+    "number": "2675",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "백설 공주와 일곱 난쟁이",
+    "number": "3040",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "유레카 이론",
+    "number": "10448",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "알파벳 개수",
+    "number": "10808",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "알파벳 찾기",
+    "number": "10809",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "빠른 A+B",
+    "number": "15552",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze2",
+    "language": "javascript, python"
+  },
+  {
+    "name": "단어 뒤집기",
+    "number": "9093",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "bronze1",
+    "language": "javascript, python"
+  },
+  {
+    "name": "요세푸스 문제",
+    "number": "1158",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "회사에 있는 사람",
+    "number": "7785",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver5",
+    "language": "javascript, python"
+  },
+  {
+    "name": "베스트셀러",
+    "number": "1302",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "카드2",
+    "number": "2164",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "괄호",
+    "number": "9012",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "스택",
+    "number": "10828",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "큐",
+    "number": "10845",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "덱",
+    "number": "10866",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "요세푸스 문제 0",
+    "number": "11866",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript, python"
+  },
+  {
+    "name": "에디터",
+    "number": "1406",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver3",
+    "language": "python"
+  },
+  {
+    "name": "수리공 항승",
+    "number": "1449",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver3",
+    "language": "python"
+  },
+  {
+    "name": "스택 수열",
+    "number": "1874",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver3",
+    "language": "python"
+  },
+  {
+    "name": "사탕 게임",
+    "number": "3085",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver3",
+    "language": "python"
+  },
+  {
+    "name": "구간 합 구하기 4",
+    "number": "11659",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver3",
+    "language": "javascript, python"
+  },
+  {
+    "name": "단어 뒤집기 2",
+    "number": "17413",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver3",
+    "language": "javascript, python"
+  },
+  {
+    "name": "회의실 배정",
+    "number": "1931",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver2",
+    "language": "python"
+  },
+  {
+    "name": "최대 힙",
+    "number": "11279",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver2",
+    "language": "python"
+  },
+  {
+    "name": "연결 요소의 개수",
+    "number": "11724",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver2",
+    "language": "python"
+  },
+  {
+    "name": "최소 힙",
+    "number": "1927",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver1",
+    "language": "python"
+  },
+  {
+    "name": "미로 탐색",
+    "number": "2178",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver1",
+    "language": "python"
+  },
+  {
+    "name": "절대값 힙",
+    "number": "11286",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver1",
+    "language": "python"
+  },
+  {
+    "name": "오큰수",
+    "number": "17298",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "gold4",
+    "language": "python"
+  },
+  {
+    "name": "셀프 넘버",
+    "number": "4673",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver5",
+    "language": "javascript"
+  },
+  {
+    "name": "수 찾기",
+    "number": "1920",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript"
+  },
+  {
+    "name": "제로",
+    "number": "10773",
+    "company": "",
+    "platform": "boj",
+    "difficulty": "silver4",
+    "language": "javascript"
+  },
+  {
+    "name": "다트 게임",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "신고 결과 받기",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "비밀 지도",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "메뉴 리뉴얼",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "방금그곡",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "문자열을 정수로 바꾸기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "더 맵게",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "python"
+  },
+  {
+    "name": "전화번호 목록",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "python"
+  },
+  {
+    "name": "주식가격",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "python"
+  },
+  {
+    "name": "크레인 인형뽑기 게임",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "키패드 누르기",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "신규 아이디 추천",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "뉴스 클러스터링",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "괄호 변환",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "캐시",
+    "number": "",
+    "company": "kakao",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "피보나치 수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "이상한 문자 만들기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "콜라츠 추측",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "자릿수 더하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "문자열내 p와 y의 개수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "숫자의 표현",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "영어 끝말잇기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "핸드폰 번호 가리기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "하샤드 수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "짝수와 홀수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "제일 작은 수 제거하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "평균 구하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "최솟값 만들기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "최댓값과 최솟값",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "올바른 괄호",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "스킬트리",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "JadenCase 문자열 만들기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "다음 큰 숫자",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "문자열 내 마음대로 정렬하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "자연수 뒤집어 배열로 만들기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "약수의 합",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "정수 내림차순으로 배치하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "문자열 다루기 기본",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "시저 암호",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "N개의 최소공배수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "삼각 달팽이",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "수박수박수박수박수박수?",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "x만큼 간격이 있는 n개의 숫자",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "이진 변환 반복하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "n^2 배열 자르기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "야근 지수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level3",
+    "language": "javascript"
+  },
+  {
+    "name": "행렬의 덧셈",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "정수 제곱근 판별",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "최대공약수와 최소공배수",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "내적",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "직사각형 별찍기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "3진법 뒤집기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "예산",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "괄호 회전하기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "행렬의 곱셈",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level2",
+    "language": "javascript"
+  },
+  {
+    "name": "소수 만들기",
+    "number": "",
+    "company": "",
+    "platform": "programmers",
+    "difficulty": "level1",
+    "language": "javascript"
+  },
+  {
+    "name": "Remove Duplicates from Sorted Array",
+    "number": "26",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Remove Element",
+    "number": "27",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Implement strStr()",
+    "number": "28",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Search Insert Position",
+    "number": "35",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Length of Last Word",
+    "number": "58",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Plus One",
+    "number": "66",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Sqrt(x)",
+    "number": "69",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Add Binary",
+    "number": "67",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  },
+  {
+    "name": "Remove Duplicates from Sorted List",
+    "number": "83",
+    "company": "",
+    "platform": "leetcode",
+    "difficulty": "easy",
+    "language": "javascript"
+  }
+]
